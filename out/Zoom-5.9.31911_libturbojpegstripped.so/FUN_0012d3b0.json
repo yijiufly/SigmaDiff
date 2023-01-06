@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":[],"numargs":1,"calleesideeffect":{},"calls":[],"arg1":{"offsets":["140 load"],"isArray":false,"608":{"offsets":["80 store","72 store"],"isArray":false}},"loads":["f(ARG1): (ARG1 + 140)","f(ARG1): (ARG1 + 608)"],"calleeloads":{},"sideeffect":["f(ARG1): ([(ARG1 + 608)] + 72): f()","f(ARG1): ([(ARG1 + 608)] + 80): f(ARG1)"],"return":[]}

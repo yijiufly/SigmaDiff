@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["malloc_thunk"],"numargs":0,"calleesideeffect":{},"calls":[["f()","f(malloc_thunk@1059248)"],["f()","f(FUN_00141e80@1318528)"],["f()","f(FUN_00141a60@1317472)"]],"loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

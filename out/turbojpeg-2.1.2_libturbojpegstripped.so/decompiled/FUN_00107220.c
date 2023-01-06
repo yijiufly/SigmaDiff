@@ -1,0 +1,84 @@
+1: 
+2: void FUN_00107220(long *param_1,uint param_2,short *param_3)
+3: 
+4: {
+5: byte *pbVar1;
+6: ulong uVar2;
+7: byte *pbVar3;
+8: 
+9: uVar2 = (ulong)param_2;
+10: pbVar1 = (byte *)(*param_1 + uVar2);
+11: *param_3 = *pbVar1 - 0x80;
+12: param_3[1] = pbVar1[1] - 0x80;
+13: param_3[2] = pbVar1[2] - 0x80;
+14: param_3[3] = pbVar1[3] - 0x80;
+15: param_3[4] = pbVar1[4] - 0x80;
+16: param_3[5] = pbVar1[5] - 0x80;
+17: param_3[6] = pbVar1[6] - 0x80;
+18: param_3[7] = pbVar1[7] - 0x80;
+19: pbVar1 = (byte *)(param_1[1] + uVar2);
+20: param_3[8] = *pbVar1 - 0x80;
+21: param_3[9] = pbVar1[1] - 0x80;
+22: param_3[10] = pbVar1[2] - 0x80;
+23: param_3[0xb] = pbVar1[3] - 0x80;
+24: param_3[0xc] = pbVar1[4] - 0x80;
+25: param_3[0xd] = pbVar1[5] - 0x80;
+26: param_3[0xe] = pbVar1[6] - 0x80;
+27: param_3[0xf] = pbVar1[7] - 0x80;
+28: pbVar1 = (byte *)(param_1[2] + uVar2);
+29: param_3[0x10] = *pbVar1 - 0x80;
+30: param_3[0x11] = pbVar1[1] - 0x80;
+31: param_3[0x12] = pbVar1[2] - 0x80;
+32: param_3[0x13] = pbVar1[3] - 0x80;
+33: param_3[0x14] = pbVar1[4] - 0x80;
+34: param_3[0x15] = pbVar1[5] - 0x80;
+35: param_3[0x16] = pbVar1[6] - 0x80;
+36: param_3[0x17] = pbVar1[7] - 0x80;
+37: pbVar1 = (byte *)(param_1[3] + uVar2);
+38: param_3[0x18] = *pbVar1 - 0x80;
+39: param_3[0x19] = pbVar1[1] - 0x80;
+40: param_3[0x1a] = pbVar1[2] - 0x80;
+41: param_3[0x1b] = pbVar1[3] - 0x80;
+42: param_3[0x1c] = pbVar1[4] - 0x80;
+43: param_3[0x1d] = pbVar1[5] - 0x80;
+44: param_3[0x1e] = pbVar1[6] - 0x80;
+45: param_3[0x1f] = pbVar1[7] - 0x80;
+46: pbVar1 = (byte *)(param_1[4] + uVar2);
+47: param_3[0x20] = *pbVar1 - 0x80;
+48: param_3[0x21] = pbVar1[1] - 0x80;
+49: param_3[0x22] = pbVar1[2] - 0x80;
+50: param_3[0x23] = pbVar1[3] - 0x80;
+51: param_3[0x24] = pbVar1[4] - 0x80;
+52: param_3[0x25] = pbVar1[5] - 0x80;
+53: param_3[0x26] = pbVar1[6] - 0x80;
+54: param_3[0x27] = pbVar1[7] - 0x80;
+55: pbVar1 = (byte *)(param_1[5] + uVar2);
+56: param_3[0x28] = *pbVar1 - 0x80;
+57: param_3[0x29] = pbVar1[1] - 0x80;
+58: param_3[0x2a] = pbVar1[2] - 0x80;
+59: param_3[0x2b] = pbVar1[3] - 0x80;
+60: param_3[0x2c] = pbVar1[4] - 0x80;
+61: param_3[0x2d] = pbVar1[5] - 0x80;
+62: param_3[0x2e] = pbVar1[6] - 0x80;
+63: param_3[0x2f] = pbVar1[7] - 0x80;
+64: pbVar1 = (byte *)(param_1[6] + uVar2);
+65: pbVar3 = (byte *)(uVar2 + param_1[7]);
+66: param_3[0x30] = *pbVar1 - 0x80;
+67: param_3[0x31] = pbVar1[1] - 0x80;
+68: param_3[0x32] = pbVar1[2] - 0x80;
+69: param_3[0x33] = pbVar1[3] - 0x80;
+70: param_3[0x34] = pbVar1[4] - 0x80;
+71: param_3[0x35] = pbVar1[5] - 0x80;
+72: param_3[0x36] = pbVar1[6] - 0x80;
+73: param_3[0x37] = pbVar1[7] - 0x80;
+74: param_3[0x38] = *pbVar3 - 0x80;
+75: param_3[0x39] = pbVar3[1] - 0x80;
+76: param_3[0x3a] = pbVar3[2] - 0x80;
+77: param_3[0x3b] = pbVar3[3] - 0x80;
+78: param_3[0x3c] = pbVar3[4] - 0x80;
+79: param_3[0x3d] = pbVar3[5] - 0x80;
+80: param_3[0x3e] = pbVar3[6] - 0x80;
+81: param_3[0x3f] = pbVar3[7] - 0x80;
+82: return;
+83: }
+84: 

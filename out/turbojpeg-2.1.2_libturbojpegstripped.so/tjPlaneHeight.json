@@ -1,0 +1,1 @@
+{"arg3":"uint","stringsAndLibcalls":["__tls_get_addr_thunk"],"arg2":"int","numargs":3,"calleesideeffect":{},"calls":[["f()","f(__tls_get_addr_thunk@1058832)"]],"arg1":"uint","loads":["f(ARG3): ((ARG3 * 4) + 1637808)"],"calleeloads":{},"sideeffect":[],"return":["ARG2","ARG3"]}

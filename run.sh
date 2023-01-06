@@ -1,0 +1,1 @@
+python sigmadiff.py --input1 /home/administrator/Documents/zoom --input2 "$1" --ghidra_home /home/administrator/Downloads/Lian/ghidra_9.2.2_PUBLIC --output_dir /home/administrator/Documents/output

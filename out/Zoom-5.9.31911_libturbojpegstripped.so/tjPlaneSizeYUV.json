@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["tjPlaneWidth_thunk","tjPlaneHeight_thunk"],"numargs":5,"loads":[],"sideeffect":[],"arg3":"uint","arg2":"undefined8","arg5":"uint","calleesideeffect":{},"arg4":"int","calls":[["f(ARG1)","f(ARG2)","f(ARG5)","f(tjPlaneWidth_thunk@1059024)"],["f(ARG1)","f(ARG4)","f(ARG5)","f(tjPlaneHeight_thunk@1059344)"]],"arg1":"ulong","calleeloads":{},"return":["ARG3"]}

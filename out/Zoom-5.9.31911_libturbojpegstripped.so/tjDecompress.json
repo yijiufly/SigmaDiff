@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["tjDecompress2","tjDecompressToYUV"],"numargs":0,"calleesideeffect":{},"calls":[["f(tjDecompress2@1335552)"],["f(tjDecompressToYUV@1350624)"]],"loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

@@ -1,0 +1,1 @@
+{"arg3":"undefined4","stringsAndLibcalls":["tjPlaneWidth_thunk","tjPlaneHeight_thunk"],"arg2":"int","numargs":4,"calleesideeffect":{},"arg4":"uint","calls":[["f()","f(ARG3)","f(ARG4)","f(tjPlaneHeight_thunk@1059344)"],["f()","f(ARG1)","f(ARG4)","f(tjPlaneWidth_thunk@1059024)"]],"arg1":"undefined4","loads":[],"calleeloads":{},"sideeffect":[],"return":["ARG2"]}

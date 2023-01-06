@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["memset_thunk"],"arg2":"typedef size_t ulong","numargs":2,"calleesideeffect":{"memset_thunk@1058816":["f(ARG1): ARG1: f()"]},"calls":[["f(ARG1)","f()","f(ARG2)","f(memset_thunk@1058816)"]],"arg1":"void *","loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

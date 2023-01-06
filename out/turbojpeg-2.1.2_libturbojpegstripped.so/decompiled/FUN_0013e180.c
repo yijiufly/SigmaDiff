@@ -1,0 +1,581 @@
+1: 
+2: void FUN_0013e180(undefined (*param_1) [16])
+3: 
+4: {
+5: undefined (*pauVar1) [16];
+6: float *pfVar2;
+7: undefined (*pauVar3) [16];
+8: undefined (*pauVar4) [16];
+9: undefined (*pauVar5) [16];
+10: undefined (*pauVar6) [16];
+11: undefined (*pauVar7) [16];
+12: undefined (*pauVar8) [16];
+13: undefined (*pauVar9) [16];
+14: uint uVar10;
+15: long lVar11;
+16: int iVar12;
+17: uint uVar13;
+18: undefined (*pauVar14) [16];
+19: float fVar15;
+20: float fVar16;
+21: float fVar17;
+22: float fVar18;
+23: float fVar19;
+24: float fVar20;
+25: float fVar21;
+26: float fVar22;
+27: float fVar23;
+28: float fVar24;
+29: float fVar25;
+30: float fVar26;
+31: float fVar27;
+32: float fVar28;
+33: float fVar29;
+34: float fVar30;
+35: float fVar31;
+36: float fVar32;
+37: float fVar33;
+38: float fVar34;
+39: float fVar35;
+40: float fVar36;
+41: float fVar37;
+42: float fVar38;
+43: float fVar39;
+44: float fVar40;
+45: float fVar41;
+46: float fVar42;
+47: float fVar43;
+48: float fVar44;
+49: float fVar45;
+50: float fVar46;
+51: float fVar47;
+52: float fVar48;
+53: float fVar49;
+54: float fVar50;
+55: 
+56: uVar10 = -(int)((ulong)param_1 >> 2) & 3;
+57: fVar15 = *(float *)*param_1 - *(float *)(param_1[1] + 0xc);
+58: fVar16 = 0.0 - *(float *)(param_1[3] + 0xc);
+59: fVar17 = *(float *)param_1[4] - *(float *)(param_1[5] + 0xc);
+60: fVar18 = 0.0 - *(float *)(param_1[7] + 0xc);
+61: fVar31 = *(float *)*param_1 + *(float *)(param_1[1] + 0xc);
+62: fVar33 = *(float *)(param_1[3] + 0xc) + 0.0;
+63: fVar35 = *(float *)param_1[4] + *(float *)(param_1[5] + 0xc);
+64: fVar37 = *(float *)(param_1[7] + 0xc) + 0.0;
+65: fVar25 = *(float *)(*param_1 + 4) + 0.0;
+66: fVar27 = *(float *)(param_1[4] + 4) + 0.0;
+67: fVar23 = *(float *)(*param_1 + 4) - 0.0;
+68: fVar24 = *(float *)(param_1[4] + 4) - 0.0;
+69: fVar21 = *(float *)(*param_1 + 0xc) + 0.0;
+70: fVar22 = *(float *)(param_1[4] + 0xc) + 0.0;
+71: fVar32 = fVar31 - fVar21;
+72: fVar34 = fVar33 - 0.0;
+73: fVar36 = fVar35 - fVar22;
+74: fVar38 = fVar37 - 0.0;
+75: fVar19 = (*(float *)(*param_1 + 0xc) - 0.0) + 0.0;
+76: fVar20 = (*(float *)(param_1[4] + 0xc) - 0.0) + 0.0;
+77: fVar40 = fVar15 + fVar23;
+78: fVar41 = fVar17 + fVar24;
+79: fVar29 = fVar25 + 0.0;
+80: fVar30 = fVar27 + 0.0;
+81: fVar31 = fVar31 + fVar21;
+82: fVar33 = fVar33 + 0.0;
+83: fVar35 = fVar35 + fVar22;
+84: fVar37 = fVar37 + 0.0;
+85: fVar25 = ((fVar25 - 0.0) + fVar32) * 0.7071068;
+86: fVar26 = (fVar34 + 0.0) * 0.7071068;
+87: fVar27 = ((fVar27 - 0.0) + fVar36) * 0.7071068;
+88: fVar28 = (fVar38 + 0.0) * 0.7071068;
+89: fVar21 = (fVar23 + 0.0) * 0.7071068;
+90: fVar22 = (fVar24 + 0.0) * 0.7071068;
+91: fVar42 = (fVar19 - fVar40) * 0.3826834;
+92: fVar44 = (0.0 - (fVar16 + 0.0)) * 0.3826834;
+93: fVar46 = (fVar20 - fVar41) * 0.3826834;
+94: fVar48 = (0.0 - (fVar18 + 0.0)) * 0.3826834;
+95: fVar24 = fVar15 + fVar21;
+96: fVar39 = fVar17 + fVar22;
+97: fVar15 = fVar15 - fVar21;
+98: fVar17 = fVar17 - fVar22;
+99: fVar21 = fVar19 * 0.5411961 + fVar42;
+100: fVar22 = fVar44 + 0.0;
+101: fVar20 = fVar20 * 0.5411961 + fVar46;
+102: fVar23 = fVar48 + 0.0;
+103: fVar42 = fVar40 * 1.306563 + fVar42;
+104: fVar44 = (fVar16 + 0.0) * 1.306563 + fVar44;
+105: fVar46 = fVar41 * 1.306563 + fVar46;
+106: fVar48 = (fVar18 + 0.0) * 1.306563 + fVar48;
+107: fVar19 = *(float *)(param_1[0xf] + 0xc);
+108: *param_1 = CONCAT412(fVar15 - fVar21,
+109: CONCAT48(fVar32 + fVar25,CONCAT44(fVar42 + fVar24,fVar31 + fVar29)));
+110: param_1[1] = CONCAT412(fVar24 - fVar42,
+111: CONCAT48(fVar32 - fVar25,CONCAT44(fVar21 + fVar15,fVar31 - fVar29)));
+112: param_1[2] = CONCAT412((fVar16 - 0.0) - fVar22,
+113: CONCAT48(fVar34 + fVar26,CONCAT44(fVar44 + fVar16 + 0.0,fVar33 + 0.0)));
+114: param_1[3] = CONCAT412((fVar16 + 0.0) - fVar44,
+115: CONCAT48(fVar34 - fVar26,CONCAT44(fVar22 + (fVar16 - 0.0),fVar33 - 0.0)));
+116: param_1[4] = CONCAT412(fVar17 - fVar20,
+117: CONCAT48(fVar36 + fVar27,CONCAT44(fVar46 + fVar39,fVar35 + fVar30)));
+118: fVar15 = *(float *)param_1[8];
+119: fVar16 = *(float *)(param_1[8] + 4);
+120: fVar21 = *(float *)(param_1[8] + 0xc);
+121: param_1[5] = CONCAT412(fVar39 - fVar46,
+122: CONCAT48(fVar36 - fVar27,CONCAT44(fVar20 + fVar17,fVar35 - fVar30)));
+123: fVar17 = *(float *)(param_1[9] + 0xc);
+124: fVar22 = *(float *)(param_1[0xb] + 0xc);
+125: param_1[7] = CONCAT412((fVar18 + 0.0) - fVar48,
+126: CONCAT48(fVar38 - fVar28,CONCAT44(fVar23 + (fVar18 - 0.0),fVar37 - 0.0)));
+127: param_1[6] = CONCAT412((fVar18 - 0.0) - fVar23,
+128: CONCAT48(fVar38 + fVar28,CONCAT44(fVar48 + fVar18 + 0.0,fVar37 + 0.0)));
+129: fVar18 = fVar15 - fVar17;
+130: fVar20 = 0.0 - fVar22;
+131: fVar23 = *(float *)param_1[0xc] - *(float *)(param_1[0xd] + 0xc);
+132: fVar24 = 0.0 - fVar19;
+133: fVar15 = fVar15 + fVar17;
+134: fVar22 = fVar22 + 0.0;
+135: fVar34 = *(float *)param_1[0xc] + *(float *)(param_1[0xd] + 0xc);
+136: fVar19 = fVar19 + 0.0;
+137: fVar17 = fVar16 + 0.0;
+138: fVar25 = *(float *)(param_1[0xc] + 4) + 0.0;
+139: fVar26 = fVar21 + 0.0;
+140: fVar27 = *(float *)(param_1[0xc] + 0xc) + 0.0;
+141: fVar16 = fVar16 - 0.0;
+142: fVar33 = *(float *)(param_1[0xc] + 4) - 0.0;
+143: fVar41 = fVar15 - fVar26;
+144: fVar46 = fVar22 - 0.0;
+145: fVar48 = fVar34 - fVar27;
+146: fVar49 = fVar19 - 0.0;
+147: fVar15 = fVar15 + fVar26;
+148: fVar22 = fVar22 + 0.0;
+149: fVar34 = fVar34 + fVar27;
+150: fVar19 = fVar19 + 0.0;
+151: fVar37 = fVar17 + 0.0;
+152: fVar38 = fVar25 + 0.0;
+153: fVar28 = ((fVar17 - 0.0) + fVar41) * 0.7071068;
+154: fVar29 = (fVar46 + 0.0) * 0.7071068;
+155: fVar30 = ((fVar25 - 0.0) + fVar48) * 0.7071068;
+156: fVar31 = (fVar49 + 0.0) * 0.7071068;
+157: fVar21 = (fVar21 - 0.0) + 0.0;
+158: fVar25 = (*(float *)(param_1[0xc] + 0xc) - 0.0) + 0.0;
+159: fVar39 = fVar18 + fVar16;
+160: fVar42 = fVar23 + fVar33;
+161: fVar32 = (fVar16 + 0.0) * 0.7071068;
+162: fVar33 = (fVar33 + 0.0) * 0.7071068;
+163: fVar16 = (fVar21 - fVar39) * 0.3826834;
+164: fVar17 = (0.0 - (fVar20 + 0.0)) * 0.3826834;
+165: fVar26 = (fVar25 - fVar42) * 0.3826834;
+166: fVar27 = (0.0 - (fVar24 + 0.0)) * 0.3826834;
+167: fVar35 = fVar18 + fVar32;
+168: fVar36 = fVar23 + fVar33;
+169: fVar39 = fVar39 * 1.306563 + fVar16;
+170: fVar40 = (fVar20 + 0.0) * 1.306563 + fVar17;
+171: fVar42 = fVar42 * 1.306563 + fVar26;
+172: fVar44 = (fVar24 + 0.0) * 1.306563 + fVar27;
+173: fVar16 = fVar21 * 0.5411961 + fVar16;
+174: fVar17 = fVar17 + 0.0;
+175: fVar26 = fVar25 * 0.5411961 + fVar26;
+176: fVar27 = fVar27 + 0.0;
+177: fVar18 = fVar18 - fVar32;
+178: fVar23 = fVar23 - fVar33;
+179: param_1[8] = CONCAT412(fVar18 - fVar16,
+180: CONCAT48(fVar41 + fVar28,CONCAT44(fVar39 + fVar35,fVar15 + fVar37)));
+181: param_1[9] = CONCAT412(fVar35 - fVar39,
+182: CONCAT48(fVar41 - fVar28,CONCAT44(fVar16 + fVar18,fVar15 - fVar37)));
+183: param_1[10] = CONCAT412((fVar20 - 0.0) - fVar17,
+184: CONCAT48(fVar46 + fVar29,CONCAT44(fVar40 + fVar20 + 0.0,fVar22 + 0.0)));
+185: param_1[0xb] = CONCAT412((fVar20 + 0.0) - fVar40,
+186: CONCAT48(fVar46 - fVar29,CONCAT44(fVar17 + (fVar20 - 0.0),fVar22 - 0.0)))
+187: ;
+188: param_1[0xc] = CONCAT412(fVar23 - fVar26,
+189: CONCAT48(fVar48 + fVar30,CONCAT44(fVar42 + fVar36,fVar34 + fVar38)));
+190: param_1[0xd] = CONCAT412(fVar36 - fVar42,
+191: CONCAT48(fVar48 - fVar30,CONCAT44(fVar26 + fVar23,fVar34 - fVar38)));
+192: param_1[0xf] = CONCAT412((fVar24 + 0.0) - fVar44,
+193: CONCAT48(fVar49 - fVar31,CONCAT44(fVar27 + (fVar24 - 0.0),fVar19 - 0.0)))
+194: ;
+195: param_1[0xe] = CONCAT412((fVar24 - 0.0) - fVar27,
+196: CONCAT48(fVar49 + fVar31,CONCAT44(fVar44 + fVar24 + 0.0,fVar19 + 0.0)));
+197: if (uVar10 == 0) {
+198: iVar12 = 8;
+199: pauVar14 = param_1;
+200: }
+201: else {
+202: iVar12 = 7;
+203: fVar15 = *(float *)*param_1 - *(float *)param_1[0xe];
+204: fVar18 = *(float *)*param_1 + *(float *)param_1[0xe];
+205: fVar21 = *(float *)param_1[2] + *(float *)param_1[0xc];
+206: fVar16 = *(float *)param_1[2] - *(float *)param_1[0xc];
+207: fVar17 = *(float *)param_1[4] + *(float *)param_1[10];
+208: fVar22 = *(float *)param_1[4] - *(float *)param_1[10];
+209: fVar19 = *(float *)param_1[6] + *(float *)param_1[8];
+210: fVar23 = fVar15 + fVar16;
+211: fVar20 = fVar18 - fVar19;
+212: fVar18 = fVar18 + fVar19;
+213: fVar24 = fVar21 + fVar17;
+214: fVar19 = (*(float *)param_1[6] - *(float *)param_1[8]) + fVar22;
+215: *(float *)param_1[8] = fVar18 - fVar24;
+216: fVar17 = ((fVar21 - fVar17) + fVar20) * 0.7071068;
+217: *(float *)*param_1 = fVar18 + fVar24;
+218: fVar21 = (fVar16 + fVar22) * 0.7071068;
+219: fVar16 = fVar15 - fVar21;
+220: *(float *)param_1[0xc] = fVar20 - fVar17;
+221: fVar15 = fVar15 + fVar21;
+222: *(float *)param_1[4] = fVar20 + fVar17;
+223: fVar21 = (fVar19 - fVar23) * 0.3826834;
+224: fVar19 = fVar19 * 0.5411961 + fVar21;
+225: fVar21 = fVar23 * 1.306563 + fVar21;
+226: *(float *)param_1[10] = fVar19 + fVar16;
+227: *(float *)param_1[6] = fVar16 - fVar19;
+228: *(float *)param_1[2] = fVar21 + fVar15;
+229: *(float *)param_1[0xe] = fVar15 - fVar21;
+230: pauVar14 = (undefined (*) [16])(*param_1 + 4);
+231: if (uVar10 != 1) {
+232: iVar12 = 6;
+233: fVar15 = *(float *)(*param_1 + 4) - *(float *)(param_1[0xe] + 4);
+234: fVar17 = *(float *)(*param_1 + 4) + *(float *)(param_1[0xe] + 4);
+235: fVar21 = *(float *)(param_1[2] + 4) + *(float *)(param_1[0xc] + 4);
+236: fVar16 = *(float *)(param_1[2] + 4) - *(float *)(param_1[0xc] + 4);
+237: fVar20 = *(float *)(param_1[4] + 4) + *(float *)(param_1[10] + 4);
+238: fVar18 = *(float *)(param_1[4] + 4) - *(float *)(param_1[10] + 4);
+239: fVar23 = *(float *)(param_1[6] + 4) + *(float *)(param_1[8] + 4);
+240: fVar19 = (*(float *)(param_1[6] + 4) - *(float *)(param_1[8] + 4)) + fVar18;
+241: fVar22 = fVar17 - fVar23;
+242: fVar17 = fVar17 + fVar23;
+243: fVar23 = fVar21 + fVar20;
+244: fVar21 = ((fVar21 - fVar20) + fVar22) * 0.7071068;
+245: *(float *)(param_1[8] + 4) = fVar17 - fVar23;
+246: *(float *)(*param_1 + 4) = fVar17 + fVar23;
+247: fVar17 = fVar15 + fVar16;
+248: *(float *)(param_1[0xc] + 4) = fVar22 - fVar21;
+249: *(float *)(param_1[4] + 4) = fVar22 + fVar21;
+250: fVar21 = (fVar16 + fVar18) * 0.7071068;
+251: fVar22 = (fVar19 - fVar17) * 0.3826834;
+252: fVar19 = fVar19 * 0.5411961 + fVar22;
+253: fVar22 = fVar17 * 1.306563 + fVar22;
+254: fVar16 = fVar15 - fVar21;
+255: fVar15 = fVar15 + fVar21;
+256: *(float *)(param_1[10] + 4) = fVar19 + fVar16;
+257: *(float *)(param_1[6] + 4) = fVar16 - fVar19;
+258: *(float *)(param_1[2] + 4) = fVar22 + fVar15;
+259: *(float *)(param_1[0xe] + 4) = fVar15 - fVar22;
+260: pauVar14 = (undefined (*) [16])(*param_1 + 8);
+261: if (uVar10 == 3) {
+262: iVar12 = 5;
+263: fVar16 = *(float *)(param_1[0xc] + 8) + *(float *)(param_1[2] + 8);
+264: fVar17 = *(float *)(param_1[2] + 8) - *(float *)(param_1[0xc] + 8);
+265: fVar20 = *(float *)(param_1[8] + 8) + *(float *)(param_1[6] + 8);
+266: fVar21 = *(float *)(param_1[0xe] + 8) + *(float *)(*param_1 + 8);
+267: fVar19 = *(float *)(*param_1 + 8) - *(float *)(param_1[0xe] + 8);
+268: fVar22 = *(float *)(param_1[10] + 8) + *(float *)(param_1[4] + 8);
+269: fVar15 = *(float *)(param_1[4] + 8) - *(float *)(param_1[10] + 8);
+270: fVar18 = fVar20 + fVar21;
+271: fVar21 = fVar21 - fVar20;
+272: fVar20 = fVar22 + fVar16;
+273: fVar23 = (*(float *)(param_1[6] + 8) - *(float *)(param_1[8] + 8)) + fVar15;
+274: fVar16 = ((fVar16 - fVar22) + fVar21) * 0.7071068;
+275: fVar22 = (fVar15 + fVar17) * 0.7071068;
+276: *(float *)(*param_1 + 8) = fVar20 + fVar18;
+277: *(float *)(param_1[8] + 8) = fVar18 - fVar20;
+278: fVar15 = fVar22 + fVar19;
+279: *(float *)(param_1[4] + 8) = fVar16 + fVar21;
+280: *(float *)(param_1[0xc] + 8) = fVar21 - fVar16;
+281: fVar17 = fVar17 + fVar19;
+282: fVar19 = fVar19 - fVar22;
+283: fVar16 = (fVar23 - fVar17) * 0.3826834;
+284: fVar21 = fVar23 * 0.5411961 + fVar16;
+285: fVar16 = fVar17 * 1.306563 + fVar16;
+286: *(float *)(param_1[6] + 8) = fVar19 - fVar21;
+287: *(float *)(param_1[10] + 8) = fVar19 + fVar21;
+288: *(float *)(param_1[0xe] + 8) = fVar15 - fVar16;
+289: *(float *)(param_1[2] + 8) = fVar15 + fVar16;
+290: pauVar14 = (undefined (*) [16])(*param_1 + 0xc);
+291: }
+292: }
+293: }
+294: uVar13 = 8 - uVar10;
+295: lVar11 = (ulong)uVar10 * 4;
+296: pauVar1 = (undefined (*) [16])(*param_1 + lVar11);
+297: pauVar6 = (undefined (*) [16])(param_1[0xe] + lVar11);
+298: pauVar3 = (undefined (*) [16])(param_1[2] + lVar11);
+299: pauVar7 = (undefined (*) [16])(param_1[0xc] + lVar11);
+300: pauVar4 = (undefined (*) [16])(param_1[4] + lVar11);
+301: pauVar8 = (undefined (*) [16])(param_1[10] + lVar11);
+302: pauVar5 = (undefined (*) [16])(param_1[6] + lVar11);
+303: pauVar9 = (undefined (*) [16])(param_1[8] + lVar11);
+304: fVar23 = *(float *)*pauVar1 - *(float *)*pauVar6;
+305: fVar25 = *(float *)(*pauVar1 + 4) - *(float *)(*pauVar6 + 4);
+306: fVar27 = *(float *)(*pauVar1 + 8) - *(float *)(*pauVar6 + 8);
+307: fVar29 = *(float *)(*pauVar1 + 0xc) - *(float *)(*pauVar6 + 0xc);
+308: fVar35 = *(float *)*pauVar1 + *(float *)*pauVar6;
+309: fVar36 = *(float *)(*pauVar1 + 4) + *(float *)(*pauVar6 + 4);
+310: fVar37 = *(float *)(*pauVar1 + 8) + *(float *)(*pauVar6 + 8);
+311: fVar38 = *(float *)(*pauVar1 + 0xc) + *(float *)(*pauVar6 + 0xc);
+312: fVar17 = *(float *)*pauVar3 + *(float *)*pauVar7;
+313: fVar22 = *(float *)(*pauVar3 + 4) + *(float *)(*pauVar7 + 4);
+314: fVar18 = *(float *)(*pauVar3 + 8) + *(float *)(*pauVar7 + 8);
+315: fVar20 = *(float *)(*pauVar3 + 0xc) + *(float *)(*pauVar7 + 0xc);
+316: fVar24 = *(float *)*pauVar3 - *(float *)*pauVar7;
+317: fVar26 = *(float *)(*pauVar3 + 4) - *(float *)(*pauVar7 + 4);
+318: fVar28 = *(float *)(*pauVar3 + 8) - *(float *)(*pauVar7 + 8);
+319: fVar30 = *(float *)(*pauVar3 + 0xc) - *(float *)(*pauVar7 + 0xc);
+320: fVar31 = *(float *)*pauVar4 - *(float *)*pauVar8;
+321: fVar32 = *(float *)(*pauVar4 + 4) - *(float *)(*pauVar8 + 4);
+322: fVar33 = *(float *)(*pauVar4 + 8) - *(float *)(*pauVar8 + 8);
+323: fVar34 = *(float *)(*pauVar4 + 0xc) - *(float *)(*pauVar8 + 0xc);
+324: fVar41 = *(float *)*pauVar4 + *(float *)*pauVar8;
+325: fVar46 = *(float *)(*pauVar4 + 4) + *(float *)(*pauVar8 + 4);
+326: fVar48 = *(float *)(*pauVar4 + 8) + *(float *)(*pauVar8 + 8);
+327: fVar49 = *(float *)(*pauVar4 + 0xc) + *(float *)(*pauVar8 + 0xc);
+328: fVar43 = *(float *)*pauVar5 + *(float *)*pauVar9;
+329: fVar45 = *(float *)(*pauVar5 + 4) + *(float *)(*pauVar9 + 4);
+330: fVar47 = *(float *)(*pauVar5 + 8) + *(float *)(*pauVar9 + 8);
+331: fVar50 = *(float *)(*pauVar5 + 0xc) + *(float *)(*pauVar9 + 0xc);
+332: fVar19 = (*(float *)*pauVar5 - *(float *)*pauVar9) + fVar31;
+333: fVar15 = (*(float *)(*pauVar5 + 4) - *(float *)(*pauVar9 + 4)) + fVar32;
+334: fVar16 = (*(float *)(*pauVar5 + 8) - *(float *)(*pauVar9 + 8)) + fVar33;
+335: fVar21 = (*(float *)(*pauVar5 + 0xc) - *(float *)(*pauVar9 + 0xc)) + fVar34;
+336: fVar39 = fVar35 - fVar43;
+337: fVar40 = fVar36 - fVar45;
+338: fVar42 = fVar37 - fVar47;
+339: fVar44 = fVar38 - fVar50;
+340: fVar35 = fVar35 + fVar43;
+341: fVar36 = fVar36 + fVar45;
+342: fVar37 = fVar37 + fVar47;
+343: fVar38 = fVar38 + fVar50;
+344: fVar43 = fVar17 + fVar41;
+345: fVar45 = fVar22 + fVar46;
+346: fVar47 = fVar18 + fVar48;
+347: fVar50 = fVar20 + fVar49;
+348: fVar17 = ((fVar17 - fVar41) + fVar39) * 0.7071068;
+349: fVar22 = ((fVar22 - fVar46) + fVar40) * 0.7071068;
+350: fVar18 = ((fVar18 - fVar48) + fVar42) * 0.7071068;
+351: fVar20 = ((fVar20 - fVar49) + fVar44) * 0.7071068;
+352: *pauVar1 = CONCAT412(fVar38 + fVar50,
+353: CONCAT48(fVar37 + fVar47,CONCAT44(fVar36 + fVar45,fVar35 + fVar43)));
+354: *pauVar9 = CONCAT412(fVar38 - fVar50,
+355: CONCAT48(fVar37 - fVar47,CONCAT44(fVar36 - fVar45,fVar35 - fVar43)));
+356: *pauVar4 = CONCAT412(fVar44 + fVar20,
+357: CONCAT48(fVar42 + fVar18,CONCAT44(fVar40 + fVar22,fVar39 + fVar17)));
+358: *pauVar7 = CONCAT412(fVar44 - fVar20,
+359: CONCAT48(fVar42 - fVar18,CONCAT44(fVar40 - fVar22,fVar39 - fVar17)));
+360: fVar35 = fVar23 + fVar24;
+361: fVar36 = fVar25 + fVar26;
+362: fVar37 = fVar27 + fVar28;
+363: fVar38 = fVar29 + fVar30;
+364: fVar31 = (fVar24 + fVar31) * 0.7071068;
+365: fVar32 = (fVar26 + fVar32) * 0.7071068;
+366: fVar33 = (fVar28 + fVar33) * 0.7071068;
+367: fVar34 = (fVar30 + fVar34) * 0.7071068;
+368: fVar17 = (fVar19 - fVar35) * 0.3826834;
+369: fVar22 = (fVar15 - fVar36) * 0.3826834;
+370: fVar18 = (fVar16 - fVar37) * 0.3826834;
+371: fVar20 = (fVar21 - fVar38) * 0.3826834;
+372: fVar24 = fVar23 - fVar31;
+373: fVar26 = fVar25 - fVar32;
+374: fVar28 = fVar27 - fVar33;
+375: fVar30 = fVar29 - fVar34;
+376: fVar19 = fVar19 * 0.5411961 + fVar17;
+377: fVar15 = fVar15 * 0.5411961 + fVar22;
+378: fVar16 = fVar16 * 0.5411961 + fVar18;
+379: fVar21 = fVar21 * 0.5411961 + fVar20;
+380: fVar17 = fVar17 + fVar35 * 1.306563;
+381: fVar22 = fVar22 + fVar36 * 1.306563;
+382: fVar18 = fVar18 + fVar37 * 1.306563;
+383: fVar20 = fVar20 + fVar38 * 1.306563;
+384: fVar23 = fVar23 + fVar31;
+385: fVar25 = fVar25 + fVar32;
+386: fVar27 = fVar27 + fVar33;
+387: fVar29 = fVar29 + fVar34;
+388: *pauVar8 = CONCAT412(fVar21 + fVar30,
+389: CONCAT48(fVar16 + fVar28,CONCAT44(fVar15 + fVar26,fVar19 + fVar24)));
+390: *pauVar5 = CONCAT412(fVar30 - fVar21,
+391: CONCAT48(fVar28 - fVar16,CONCAT44(fVar26 - fVar15,fVar24 - fVar19)));
+392: *pauVar3 = CONCAT412(fVar20 + fVar29,
+393: CONCAT48(fVar18 + fVar27,CONCAT44(fVar22 + fVar25,fVar17 + fVar23)));
+394: *pauVar6 = CONCAT412(fVar29 - fVar20,
+395: CONCAT48(fVar27 - fVar18,CONCAT44(fVar25 - fVar22,fVar23 - fVar17)));
+396: if (uVar13 >> 2 == 2) {
+397: fVar22 = *(float *)pauVar1[1] - *(float *)pauVar6[1];
+398: fVar20 = *(float *)(pauVar1[1] + 4) - *(float *)(pauVar6[1] + 4);
+399: fVar24 = *(float *)(pauVar1[1] + 8) - *(float *)(pauVar6[1] + 8);
+400: fVar26 = *(float *)(pauVar1[1] + 0xc) - *(float *)(pauVar6[1] + 0xc);
+401: fVar27 = *(float *)pauVar1[1] + *(float *)pauVar6[1];
+402: fVar28 = *(float *)(pauVar1[1] + 4) + *(float *)(pauVar6[1] + 4);
+403: fVar29 = *(float *)(pauVar1[1] + 8) + *(float *)(pauVar6[1] + 8);
+404: fVar30 = *(float *)(pauVar1[1] + 0xc) + *(float *)(pauVar6[1] + 0xc);
+405: fVar19 = *(float *)pauVar3[1] + *(float *)pauVar7[1];
+406: fVar15 = *(float *)(pauVar3[1] + 4) + *(float *)(pauVar7[1] + 4);
+407: fVar16 = *(float *)(pauVar3[1] + 8) + *(float *)(pauVar7[1] + 8);
+408: fVar21 = *(float *)(pauVar3[1] + 0xc) + *(float *)(pauVar7[1] + 0xc);
+409: fVar31 = *(float *)pauVar3[1] - *(float *)pauVar7[1];
+410: fVar32 = *(float *)(pauVar3[1] + 4) - *(float *)(pauVar7[1] + 4);
+411: fVar33 = *(float *)(pauVar3[1] + 8) - *(float *)(pauVar7[1] + 8);
+412: fVar34 = *(float *)(pauVar3[1] + 0xc) - *(float *)(pauVar7[1] + 0xc);
+413: fVar41 = *(float *)pauVar4[1] + *(float *)pauVar8[1];
+414: fVar46 = *(float *)(pauVar4[1] + 4) + *(float *)(pauVar8[1] + 4);
+415: fVar48 = *(float *)(pauVar4[1] + 8) + *(float *)(pauVar8[1] + 8);
+416: fVar49 = *(float *)(pauVar4[1] + 0xc) + *(float *)(pauVar8[1] + 0xc);
+417: fVar35 = *(float *)pauVar4[1] - *(float *)pauVar8[1];
+418: fVar36 = *(float *)(pauVar4[1] + 4) - *(float *)(pauVar8[1] + 4);
+419: fVar37 = *(float *)(pauVar4[1] + 8) - *(float *)(pauVar8[1] + 8);
+420: fVar38 = *(float *)(pauVar4[1] + 0xc) - *(float *)(pauVar8[1] + 0xc);
+421: fVar43 = *(float *)pauVar5[1] + *(float *)pauVar9[1];
+422: fVar45 = *(float *)(pauVar5[1] + 4) + *(float *)(pauVar9[1] + 4);
+423: fVar47 = *(float *)(pauVar5[1] + 8) + *(float *)(pauVar9[1] + 8);
+424: fVar50 = *(float *)(pauVar5[1] + 0xc) + *(float *)(pauVar9[1] + 0xc);
+425: fVar17 = (*(float *)pauVar5[1] - *(float *)pauVar9[1]) + fVar35;
+426: fVar18 = (*(float *)(pauVar5[1] + 4) - *(float *)(pauVar9[1] + 4)) + fVar36;
+427: fVar23 = (*(float *)(pauVar5[1] + 8) - *(float *)(pauVar9[1] + 8)) + fVar37;
+428: fVar25 = (*(float *)(pauVar5[1] + 0xc) - *(float *)(pauVar9[1] + 0xc)) + fVar38;
+429: fVar39 = fVar27 - fVar43;
+430: fVar40 = fVar28 - fVar45;
+431: fVar42 = fVar29 - fVar47;
+432: fVar44 = fVar30 - fVar50;
+433: fVar27 = fVar27 + fVar43;
+434: fVar28 = fVar28 + fVar45;
+435: fVar29 = fVar29 + fVar47;
+436: fVar30 = fVar30 + fVar50;
+437: fVar43 = fVar19 + fVar41;
+438: fVar45 = fVar15 + fVar46;
+439: fVar47 = fVar16 + fVar48;
+440: fVar50 = fVar21 + fVar49;
+441: fVar19 = ((fVar19 - fVar41) + fVar39) * 0.7071068;
+442: fVar15 = ((fVar15 - fVar46) + fVar40) * 0.7071068;
+443: fVar16 = ((fVar16 - fVar48) + fVar42) * 0.7071068;
+444: fVar21 = ((fVar21 - fVar49) + fVar44) * 0.7071068;
+445: pauVar1[1] = CONCAT412(fVar30 + fVar50,
+446: CONCAT48(fVar29 + fVar47,CONCAT44(fVar28 + fVar45,fVar27 + fVar43)));
+447: pauVar9[1] = CONCAT412(fVar30 - fVar50,
+448: CONCAT48(fVar29 - fVar47,CONCAT44(fVar28 - fVar45,fVar27 - fVar43)));
+449: fVar27 = fVar22 + fVar31;
+450: fVar28 = fVar20 + fVar32;
+451: fVar29 = fVar24 + fVar33;
+452: fVar30 = fVar26 + fVar34;
+453: pauVar4[1] = CONCAT412(fVar44 + fVar21,
+454: CONCAT48(fVar42 + fVar16,CONCAT44(fVar40 + fVar15,fVar39 + fVar19)));
+455: pauVar7[1] = CONCAT412(fVar44 - fVar21,
+456: CONCAT48(fVar42 - fVar16,CONCAT44(fVar40 - fVar15,fVar39 - fVar19)));
+457: fVar19 = (fVar31 + fVar35) * 0.7071068;
+458: fVar15 = (fVar32 + fVar36) * 0.7071068;
+459: fVar16 = (fVar33 + fVar37) * 0.7071068;
+460: fVar21 = (fVar34 + fVar38) * 0.7071068;
+461: fVar35 = (fVar17 - fVar27) * 0.3826834;
+462: fVar36 = (fVar18 - fVar28) * 0.3826834;
+463: fVar37 = (fVar23 - fVar29) * 0.3826834;
+464: fVar38 = (fVar25 - fVar30) * 0.3826834;
+465: fVar31 = fVar22 - fVar19;
+466: fVar32 = fVar20 - fVar15;
+467: fVar33 = fVar24 - fVar16;
+468: fVar34 = fVar26 - fVar21;
+469: fVar22 = fVar22 + fVar19;
+470: fVar20 = fVar20 + fVar15;
+471: fVar24 = fVar24 + fVar16;
+472: fVar26 = fVar26 + fVar21;
+473: fVar19 = fVar17 * 0.5411961 + fVar35;
+474: fVar15 = fVar18 * 0.5411961 + fVar36;
+475: fVar16 = fVar23 * 0.5411961 + fVar37;
+476: fVar21 = fVar25 * 0.5411961 + fVar38;
+477: fVar35 = fVar27 * 1.306563 + fVar35;
+478: fVar36 = fVar28 * 1.306563 + fVar36;
+479: fVar37 = fVar29 * 1.306563 + fVar37;
+480: fVar38 = fVar30 * 1.306563 + fVar38;
+481: pauVar8[1] = CONCAT412(fVar21 + fVar34,
+482: CONCAT48(fVar16 + fVar33,CONCAT44(fVar15 + fVar32,fVar19 + fVar31)));
+483: pauVar5[1] = CONCAT412(fVar34 - fVar21,
+484: CONCAT48(fVar33 - fVar16,CONCAT44(fVar32 - fVar15,fVar31 - fVar19)));
+485: pauVar3[1] = CONCAT412(fVar38 + fVar26,
+486: CONCAT48(fVar37 + fVar24,CONCAT44(fVar36 + fVar20,fVar35 + fVar22)));
+487: pauVar6[1] = CONCAT412(fVar26 - fVar38,
+488: CONCAT48(fVar24 - fVar37,CONCAT44(fVar20 - fVar36,fVar22 - fVar35)));
+489: }
+490: uVar10 = uVar13 & 0xfffffffc;
+491: pfVar2 = (float *)(*pauVar14 + (ulong)uVar10 * 4);
+492: if (uVar13 != uVar10) {
+493: fVar19 = pfVar2[0x38] + *pfVar2;
+494: fVar17 = *pfVar2 - pfVar2[0x38];
+495: fVar20 = pfVar2[8] - pfVar2[0x30];
+496: fVar16 = pfVar2[8] + pfVar2[0x30];
+497: fVar22 = pfVar2[0x28] + pfVar2[0x10];
+498: fVar18 = pfVar2[0x10] - pfVar2[0x28];
+499: fVar23 = pfVar2[0x20] + pfVar2[0x18];
+500: fVar15 = (pfVar2[0x18] - pfVar2[0x20]) + fVar18;
+501: fVar21 = fVar23 + fVar19;
+502: fVar19 = fVar19 - fVar23;
+503: fVar23 = fVar22 + fVar16;
+504: fVar24 = fVar20 + fVar17;
+505: *pfVar2 = fVar23 + fVar21;
+506: pfVar2[0x20] = fVar21 - fVar23;
+507: fVar21 = ((fVar16 - fVar22) + fVar19) * 0.7071068;
+508: fVar16 = (fVar18 + fVar20) * 0.7071068;
+509: pfVar2[0x10] = fVar19 + fVar21;
+510: fVar22 = fVar16 + fVar17;
+511: fVar17 = fVar17 - fVar16;
+512: fVar16 = (fVar15 - fVar24) * 0.3826834;
+513: pfVar2[0x30] = fVar19 - fVar21;
+514: fVar19 = fVar15 * 0.5411961 + fVar16;
+515: fVar16 = fVar24 * 1.306563 + fVar16;
+516: pfVar2[0x28] = fVar19 + fVar17;
+517: pfVar2[0x18] = fVar17 - fVar19;
+518: pfVar2[8] = fVar16 + fVar22;
+519: pfVar2[0x38] = fVar22 - fVar16;
+520: if (iVar12 - uVar10 != 1) {
+521: fVar21 = pfVar2[1] - pfVar2[0x39];
+522: fVar22 = pfVar2[1] + pfVar2[0x39];
+523: fVar19 = pfVar2[9] + pfVar2[0x31];
+524: fVar16 = pfVar2[9] - pfVar2[0x31];
+525: fVar17 = pfVar2[0x11] - pfVar2[0x29];
+526: fVar20 = pfVar2[0x11] + pfVar2[0x29];
+527: fVar23 = pfVar2[0x19] + pfVar2[0x21];
+528: fVar15 = (pfVar2[0x19] - pfVar2[0x21]) + fVar17;
+529: fVar18 = fVar22 - fVar23;
+530: fVar22 = fVar22 + fVar23;
+531: fVar23 = fVar19 + fVar20;
+532: fVar19 = ((fVar19 - fVar20) + fVar18) * 0.7071068;
+533: pfVar2[0x21] = fVar22 - fVar23;
+534: pfVar2[1] = fVar22 + fVar23;
+535: pfVar2[0x11] = fVar19 + fVar18;
+536: pfVar2[0x31] = fVar18 - fVar19;
+537: fVar22 = fVar21 + fVar16;
+538: fVar19 = (fVar16 + fVar17) * 0.7071068;
+539: fVar16 = (fVar15 - fVar22) * 0.3826834;
+540: fVar17 = fVar19 + fVar21;
+541: fVar21 = fVar21 - fVar19;
+542: fVar19 = fVar15 * 0.5411961 + fVar16;
+543: fVar16 = fVar22 * 1.306563 + fVar16;
+544: pfVar2[0x19] = fVar21 - fVar19;
+545: pfVar2[0x29] = fVar21 + fVar19;
+546: pfVar2[9] = fVar16 + fVar17;
+547: pfVar2[0x39] = fVar17 - fVar16;
+548: if (iVar12 - uVar10 != 2) {
+549: fVar21 = pfVar2[2] - pfVar2[0x3a];
+550: fVar18 = pfVar2[0x3a] + pfVar2[2];
+551: fVar15 = pfVar2[0x32] + pfVar2[10];
+552: fVar16 = pfVar2[10] - pfVar2[0x32];
+553: fVar20 = pfVar2[0x2a] + pfVar2[0x12];
+554: fVar17 = pfVar2[0x12] - pfVar2[0x2a];
+555: fVar23 = pfVar2[0x22] + pfVar2[0x1a];
+556: fVar19 = (pfVar2[0x1a] - pfVar2[0x22]) + fVar17;
+557: fVar22 = fVar23 + fVar18;
+558: fVar18 = fVar18 - fVar23;
+559: fVar23 = fVar20 + fVar15;
+560: fVar15 = ((fVar15 - fVar20) + fVar18) * 0.7071068;
+561: fVar17 = (fVar17 + fVar16) * 0.7071068;
+562: pfVar2[2] = fVar23 + fVar22;
+563: pfVar2[0x22] = fVar22 - fVar23;
+564: fVar16 = fVar16 + fVar21;
+565: pfVar2[0x12] = fVar15 + fVar18;
+566: pfVar2[0x32] = fVar18 - fVar15;
+567: fVar22 = fVar17 + fVar21;
+568: fVar21 = fVar21 - fVar17;
+569: fVar15 = (fVar19 - fVar16) * 0.3826834;
+570: fVar19 = fVar19 * 0.5411961 + fVar15;
+571: fVar15 = fVar16 * 1.306563 + fVar15;
+572: pfVar2[0x2a] = fVar21 + fVar19;
+573: pfVar2[0x1a] = fVar21 - fVar19;
+574: pfVar2[0x3a] = fVar22 - fVar15;
+575: pfVar2[10] = fVar22 + fVar15;
+576: }
+577: }
+578: }
+579: return;
+580: }
+581: 

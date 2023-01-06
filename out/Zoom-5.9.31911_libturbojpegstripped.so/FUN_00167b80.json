@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["JSIMD_FORCEAVX2","JSIMD_FORCENONE","JSIMD_FORCESSE2","JSIMD_NOHUFFENC","getenv_thunk"],"numargs":0,"calleesideeffect":{},"calls":[["f()","f(getenv_thunk@1058720)"],["f()","f(getenv_thunk@1058720)"],["f()","f(getenv_thunk@1058720)"],["f()","f(getenv_thunk@1058720)"],["f(FUN_001550a0@1396896)"]],"loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

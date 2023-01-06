@@ -1,0 +1,1 @@
+{"arg3":"uint","stringsAndLibcalls":["memcpy_thunk"],"arg2":"void *","numargs":3,"calleesideeffect":{},"calls":[["f(ARG2)","f(ARG1)","f(ARG3)","f(memcpy_thunk@1059200)"]],"arg1":"void *","loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

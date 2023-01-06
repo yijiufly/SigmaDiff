@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["tjDecompressHeader2_thunk","__stack_chk_fail_thunk"],"numargs":0,"calleesideeffect":{},"calls":[["f(__stack_chk_fail_thunk@1058736)"],["f(tjDecompressHeader2_thunk@1058768)"]],"loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

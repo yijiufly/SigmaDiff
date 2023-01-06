@@ -1,0 +1,1 @@
+{"stringsAndLibcalls":["fwrite_thunk"],"arg2":{"offsets":["32 load","72 load","56 load"],"isArray":false},"numargs":2,"calleesideeffect":{},"calls":[["f(ARG2)","f()","f(ARG2)","f(ARG2)","f(fwrite_thunk@1059456)"]],"arg1":"undefined8","loads":["f(ARG2): (ARG2 + 72)","f(ARG2): (ARG2 + 56)","f(ARG2): (ARG2 + 32)"],"calleeloads":{},"sideeffect":[],"return":[]}

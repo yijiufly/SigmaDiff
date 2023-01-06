@@ -1,0 +1,5170 @@
+f(ARG1 , ARG2 , ): f(ARG1 , ARG2 , ): f()
+ec_GFp_simple_field_sqr 3328822 3228144
+f(ARG4 , ): f(ARG4 , ): f(ARG5)
+ec_GFp_simple_field_mul 3328757 3228176
+f(ARG2): ((f(ARG2) * 8) + f()): f()
+ec_GFp_simple_points_make_affine 3326577 3236640
+ec_GFp_simple_invert 3324107 3235216
+f(ARG2): ((ARG2 + 56) + 12): f(ARG2)
+ec_GFp_simple_dbl 3322518 3229872
+f(ARG2 , ARG5): f(ARG2 , ARG5): f()
+ec_GFp_simple_add 3320474 3233616
+f(ARG5 , Symbol): f(ARG5 , Symbol): f(ARG5)
+ec_GFp_simple_point_get_affine_coordinates 3319389 3228896
+f(ARG4): (f(ARG4) + 16): f(ARG4)
+ec_GFp_simple_get_Jprojective_coordinates_GFp 3318831 3227792
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , ARG4 , Symbol)
+ec_GFp_simple_set_Jprojective_coordinates_GFp 3318185 3227344
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ec_GFp_simple_point_set_to_infinity 3318130 3228864
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+ec_GFp_simple_point_copy 3317976 3231440
+f(ARG1): ((ARG1 + 32) + 16): f()
+ec_GFp_simple_point_init 3317761 3227104
+f(ARG1 , ARG2 , ): f(ARG1 , ARG2 , ): f()
+ec_GFp_simple_group_check_discriminant 3317027 3228208
+f(ARG4): (f(ARG4) + 16): f(ARG4)
+ec_GFp_simple_group_get_curve 3316593 3232176
+f(ARG1): ([(ARG1 + 48)] + 52): f(ARG4)
+asn1_bio_ctrl 3313368 3223312
+asn1_bio_puts 3313184 3224000
+asn1_bio_read 3313117 3223280
+asn1_bio_write 3311964 3224736
+returns
+dlfcn_bind_var 3307786 3220672
+f(ARG2): f(ARG2): f(ARG1 , ARG2 , Symbol)
+RSA_padding_add_PKCS1_PSS 3306154 3216144
+f(ARG1 , ARG3 , ): f(ARG1 , ARG3 , ): f()
+RSA_verify_PKCS1_PSS 3304636 3212544
+f(ARG2): (f(ARG2) + 16): f(ARG2)
+ec_GFp_mont_field_set_to_one 3304515 3212432
+f(ARG2): ([ARG2] + ((f() + 2) * 8)): f(ARG1 , ARG2 , ARG4)
+ec_GFp_mont_field_decode 3304402 3212352
+f(ARG1 , ARG4 , Symbol): f(ARG1 , ARG4 , Symbol): f(ARG1 , ARG3)
+ec_GFp_mont_field_encode 3304265 3212256
+f(ARG3 , ARG4 , Symbol): f(ARG3 , ARG4 , Symbol): f(ARG3)
+ec_GFp_mont_field_sqr 3304145 3212176
+f(ARG2): ([ARG2] + (f() * 8)): f(ARG1 , ARG2 , ARG5)
+ec_GFp_mont_field_mul 3304021 3212096
+f(ARG2 , ): f(ARG2 , ): f(ARG3)
+ec_GFp_mont_group_set_curve 3303448 3211440
+f(ARG2 , ): f(ARG2 , ): f(ARG3)
+ec_GFp_simple_group_set_curve 3315954 3231552
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ec_GFp_mont_group_copy 3303067 3211872
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+ec_GFp_simple_group_copy 3315784 3231312
+f(ARG1): ((ARG1 + 152) + 16): f()
+ec_GFp_mont_group_init 3302751 3211232
+f(ARG1): ((ARG1 + 152) + 16): f()
+ec_GFp_simple_group_init 3315565 3227040
+f(ARG1 , ARG4): (f(ARG1 , ARG4) + 8): f(ARG4)
+BN_GF2m_mod_solve_quad 3302125 3210624
+f(ARG1): f(ARG1): f(ARG1)
+BN_GF2m_mod_sqrt 3300839 3208976
+f(ARG1 , ARG5): (f(ARG1 , ARG5) + 16): f(ARG5)
+BN_GF2m_mod_exp 3300423 3208464
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+BN_GF2m_mod_div_arr 3299888 3207280
+f(ARG1 , ARG4): (f(ARG1 , ARG4) + 8): f(ARG4)
+BN_GF2m_mod_inv_arr 3299575 3206704
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+BN_GF2m_arr2poly 3302611 3211136
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+BN_GF2m_mod_sqr 3297420 3204336
+f(ARG1): (ARG1 + 8): f(ARG1)
+SHA_Transform 3272366 3192976
+f(ARG1): ([(ARG1 + 24)] + 4152): f()
+gost_imit_cleanup 3267385 3177904
+f(ARG1): [(ARG1 + 24)]: f(ARG2)
+gost_imit_copy 3267330 3177264
+returns
+gost_imit_final 3266866 3180672
+returns
+gost_imit_update 3266521 3179872
+f(ARG1): ([(ARG1 + 24)] + 4148): f()
+gost_imit_init_cpa 3266211 3177968
+f(ARG1): ([(ARG1 + 120)] + 8): f()
+gost89_get_asn1_parameters 3265875 3181008
+f(ARG1): (ARG1 + 88): f(ARG4)
+gost_cipher_do_cnt 3264608 3181520
+f(ARG1 , ARG2): f(ARG1 , ARG2): f()
+gost_cipher_do_cfb 3263851 3178320
+f(ARG1): ([(ARG1 + 120)] + 8): f()
+gost_cipher_init 3263248 3183328
+f(ARG1): ([(ARG1 + 120)] + 8): f()
+gost_cipher_init_cpa 3263045 3177760
+f(ARG2): ARG2: f(ARG2)
+d2i_GOST_CLIENT_KEY_EXCHANGE_PARAMS 3262311 3177200
+f(ARG2): ARG2: f(ARG2)
+d2i_GOST_CIPHER_PARAMS 3262166 3177136
+f(ARG2): ARG2: f(ARG2)
+d2i_GOST_KEY_AGREEMENT_INFO 3261876 3177008
+f(ARG2): ARG2: f(ARG2)
+d2i_GOST_KEY_INFO 3261731 3176944
+f(ARG1): (ARG1 + 16): f(ARG1)
+CMAC_resume 3236057 3154048
+CMS_unsigned_add1_attr_by_txt 3233697 3146912
+CMS_unsigned_add1_attr 3233484 3146816
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+CMS_unsigned_delete_attr 3233446 3146800
+returns
+CMS_unsigned_get_attr_count 3233287 3146736
+CMS_signed_add1_attr_by_txt 3233158 3146688
+CMS_signed_add1_attr 3232945 3146592
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+CMS_signed_delete_attr 3232907 3146576
+f(ARG2): ARG2: f(ARG2)
+d2i_EXTENDED_KEY_USAGE 3230757 3145456
+f(ARG2): ARG2: f(ARG2)
+d2i_BASIC_CONSTRAINTS 3229556 3144432
+d2i_ASN1_SET 3310702 3222400
+f(ARG1): (f(ARG1) + 4): f(ARG4)
+d2i_ASN1_bytes 3225928 3141056
+f(ARG2): f(ARG2): f(ARG2 , RSP)
+d2i_ASN1_type_bytes 3225058 3140288
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_VAL 3207719 3121568
+ASN1_verify 3203420 3117296
+f(ARG5): ARG5: f(RSP)
+ASN1_digest 3202984 3116912
+f(ARG2 , ARG3): f(ARG2 , ARG3): f(ARG7)
+ASN1_sign 3200682 3113760
+f(ARG1): ([(ARG1 + 24)] + 24): f(ARG1)
+update 3198190 3112368
+f(ARG1): ([(ARG1 + 24)] + 20): f()
+init 3198160 3112384
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG2): (ARG2 + 60): f()
+SHA_Final 3272409 3192992
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): (ARG1 + 24): f(ARG1)
+SHA_Update 3271870 3192496
+f(ARG1): ARG1: f(ARG1)
+sha_block_data_order 3273022 3187952
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): (ARG1 + 88): f()
+SHA_Init 3272927 3193376
+f(ARG1): ([(ARG1 + 120)] + (f() * 8)): f(RSP)
+cast_init_key 3197824 3111536
+f(ARG2 , ARG4): (f(ARG2 , ARG4) + f()): f()
+cast5_ofb_cipher 3197556 3111760
+CAST_ofb64_encrypt 3288388 3196464
+cast5_ecb_cipher 3197404 3112048
+CAST_ecb_encrypt 3286729 3195840
+f(ARG1): (ARG1 + 40): f(ARG1)
+cast5_cfb64_cipher 3197204 3111584
+f(ARG5): ARG5: f(ARG5)
+CAST_cfb64_encrypt 3287247 3195984
+f(ARG1): ((ARG1 + 40) + 3): f(ARG1 , ARG3)
+cast5_cbc_cipher 3196990 3111280
+f(ARG1): (ARG1 + 40): f(ARG1)
+desx_cbc_cipher 3196703 3110880
+f(ARG5): (ARG5 + 2): f(ARG1)
+DES_xcbc_encrypt 3281680 3193456
+f(ARG1): f(ARG1): f(ARG1)
+bf_init_key 3196498 3110192
+f(ARG2 , ARG4): (f(ARG2 , ARG4) + f()): f()
+bf_ofb_cipher 3196230 3110416
+BF_ofb64_encrypt 3285825 3195392
+bf_ecb_cipher 3196078 3110704
+f(ARG1): (ARG1 + 40): f(ARG1)
+bf_cfb64_cipher 3195878 3110240
+f(ARG5): ARG5: f(ARG5)
+BF_cfb64_encrypt 3284684 3194912
+f(ARG1): ((ARG1 + 40) + 4): f(ARG3)
+bf_cbc_cipher 3195664 3109936
+f(ARG1): f(ARG1): f(RSP)
+ssleay_rand_pseudo_bytes 3191016 3106032
+f(ARG1): f(ARG1): f(RSP)
+ssleay_rand_nopseudo_bytes 3190977 3106048
+f(ARG1): f(ARG1): f(RSP)
+ssleay_rand_bytes 3189560 3103152
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201976.json'
+
+returns
+DSO_get_loaded_filename 3184021 3097856
+returns
+DSO_get_filename 3183081 3096480
+returns
+ecdh_compute_key 3179622 3093712
+returns
+ECDH_get_ex_data 3179541 3093504
+f(ARG1): [(f(ARG1) + 32)]: f(ARG1)
+ECDH_set_ex_data 3179465 3093296
+f(ARG1): (f(ARG1) + 24): f(ARG2)
+ECDH_set_method 3178638 3092880
+f(ARG2): ARG2: f(ARG2)
+pkey_dh_keygen 3178243 3091920
+f(ARG2): ARG2: f(ARG2)
+pkey_dh_paramgen 3178021 3091344
+pkey_dh_ctrl_str 3177836 3091648
+f(ARG1): ([(ARG1 + 40)] + 8): f(ARG2)
+pkey_dh_copy 3177563 3092064
+f(ARG2 , ): f(ARG2 , ): f(ARG1)
+ecdsa_do_verify 3175881 3087328
+f(ARG3 , Symbol): f(ARG3 , Symbol): f(ARG3)
+ecdsa_do_sign 3174605 3089520
+f(ARG2 , ): f(ARG2 , ): f(ARG2 , RSP , Symbol)
+ecdsa_sign_setup 3173367 3088528
+returns
+ECDSA_get_ex_data 3173141 3087056
+f(ARG1): [(f(ARG1) + 32)]: f(ARG1)
+ECDSA_set_ex_data 3173065 3086848
+f(ARG1): (f(ARG1) + 24): f(ARG2)
+ECDSA_set_method 3171943 3086208
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(ARG2)
+pkey_dsa_keygen 3171711 3085232
+f(ARG1): f(ARG1): f(Symbol)
+pkey_dsa_paramgen 3171454 3084912
+pkey_dsa_ctrl_str 3171190 3083984
+f(ARG1): ([(ARG1 + 40)] + 24): f(ARG2)
+pkey_dsa_copy 3170059 3085376
+dsa_sig_print 3168929 3082752
+f(ARG2): ARG2: f(ARG2)
+old_dsa_priv_decode 3168767 3081904
+dsa_priv_print 3168714 3082208
+dsa_pub_print 3168661 3083568
+dsa_param_print 3168608 3083184
+f(ARG1): (ARG1 + 16): f(Symbol)
+dsa_param_decode 3168446 3082112
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+dsa_copy_parameters 3167084 3079472
+f(ARG1): [[(ARG1 + 16)]]: f(ARG1)
+dsa_priv_encode 3166475 3079680
+f(ARG1): (ARG1 + 16): f(Symbol)
+dsa_priv_decode 3165418 3080112
+f(ARG1): [ARG1]: f(Symbol)
+dsa_pub_encode 3164982 3080992
+f(ARG1): (ARG1 + 16): f(Symbol)
+dsa_pub_decode 3164393 3081392
+f(ARG2): ARG2: f(ARG2)
+pkey_rsa_keygen 3164032 3075712
+pkey_rsa_ctrl_str 3163279 3074608
+f(ARG1 , ): (f(ARG1 , Symbol) + f()): f()
+pkey_rsa_verify 3161166 3076720
+f(ARG1 , ARG3 , ): f(ARG1 , ARG3 , ): f()
+RSA_verify_PKCS1_PSS_mgf1 3304704 3214336
+f(ARG2): (ARG2 + 4): f()
+pkey_rsa_verifyrecover 3160556 3076208
+pkey_rsa_sign 3159735 3077200
+f(ARG1): ([(ARG1 + 40)] + 24): f(ARG2)
+pkey_rsa_copy 3159347 3076016
+f(ARG4): [ARG4]: f(ARG4)
+rsa_item_sign 3158115 3069232
+rsa_item_verify 3157190 3073536
+rsa_sig_print 3156574 3070576
+rsa_priv_print 3155350 3072736
+rsa_pub_print 3155297 3072416
+f(ARG1): (ARG1 + 16): f(Symbol)
+rsa_priv_decode 3154024 3072240
+f(ARG1): [[(ARG1 + 16)]]: f(ARG1)
+rsa_priv_encode 3153777 3071744
+f(ARG2): ARG2: f(ARG2)
+old_rsa_priv_decode 3153615 3071648
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): (ARG1 + 16): f(Symbol)
+rsa_pub_decode 3153302 3072064
+f(ARG1): [ARG1]: f(Symbol)
+rsa_pub_encode 3153120 3070400
+f(ARG2 , ): f(ARG2 , ): f()
+pkey_ec_keygen 3145367 3061504
+f(ARG2): ARG2: f(ARG2)
+pkey_ec_paramgen 3145178 3061648
+pkey_ec_ctrl_str 3145005 3060896
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): f(ARG1): f(ARG1)
+pkey_ec_sign 3143853 3061248
+f(ARG1): [(ARG1 + 40)]: f()
+pkey_ec_copy 3143638 3060768
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+old_ec_priv_encode 3143007 3054912
+f(ARG2): ARG2: f(ARG2)
+old_ec_priv_decode 3142886 3057184
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(Symbol)
+eckey_priv_print 3142833 3055280
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(Symbol)
+eckey_pub_print 3142780 3059632
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(Symbol)
+eckey_param_print 3142727 3059248
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+eckey_param_encode 3142686 3056144
+f(ARG2): ARG2: f(ARG2)
+eckey_param_decode 3142565 3057280
+f(ARG1): f(ARG1): f(ARG1)
+ec_cmp_parameters 3141573 3055984
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ec_copy_parameters 3141462 3056048
+f(ARG1): f(ARG1): f(ARG1)
+ec_bits 3141283 3056160
+f(ARG1): f(ARG1): f(ARG1)
+int_ec_size 3141253 3056256
+f(ARG1): f(ARG1): f(ARG1)
+ECDSA_size 3172701 3086592
+f(ARG1): [[(ARG1 + 16)]]: f(ARG1)
+eckey_priv_encode 3140701 3057376
+f(ARG1): (ARG1 + 16): f(Symbol)
+eckey_priv_decode 3140003 3056272
+f(ARG1): (ARG1 + 16): f(Symbol)
+eckey_pub_decode 3139536 3058672
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(Symbol)
+eckey_pub_encode 3138743 3058048
+f(ARG4): ((f(ARG4) * 8) + f()): f(ARG1)
+ec_GF2m_simple_mul 3137602 3053872
+f(ARG4 , ARG5): f(ARG4 , ARG5): f(ARG4)
+ec_GF2m_montgomery_point_multiply 3136360 3051744
+f(ARG3): f(ARG3): f(ARG3 , Symbol)
+ec_GF2m_simple_field_div 3134391 3046672
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+BN_GF2m_mod_div 3299714 3206848
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+BN_GF2m_mod_mul 3295911 3203984
+f(ARG2 , ARG4): f(ARG2 , ARG4): f(ARG2)
+BN_GF2m_mod_inv 3297641 3204672
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+BN_GF2m_mod 3294871 3201536
+f(ARG3): f(ARG3): f(ARG3 , Symbol)
+ec_GF2m_simple_field_sqr 3134328 3046640
+f(ARG3): f(ARG3): f(ARG3 , Symbol)
+ec_GF2m_simple_field_mul 3134260 3046608
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ec_GF2m_simple_make_affine 3133792 3048368
+f(ARG1 , ARG2 , ARG3): f(ARG1 , ARG2 , ARG3): f(ARG1 , ARG2)
+ec_GF2m_simple_is_on_curve 3132694 3048688
+f(ARG1 , ARG4): f(ARG1 , ARG4): f()
+ec_GF2m_simple_dbl 3132476 3050512
+f(ARG1 , ARG5): f(ARG1 , ARG5): f(ARG1 , ARG5)
+ec_GF2m_simple_add 3131067 3049168
+f(ARG4): (f(ARG4) + 16): f(ARG4)
+ec_GF2m_simple_point_get_affine_coordinates 3130773 3047536
+f(ARG4): (f(ARG4) + 16): f(ARG4)
+ec_GF2m_simple_point_set_affine_coordinates 3130494 3047328
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ec_GF2m_simple_point_set_to_infinity 3130439 3046576
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+ec_GF2m_simple_point_copy 3130285 3046816
+f(ARG1): ((ARG1 + 32) + 16): f()
+ec_GF2m_simple_point_init 3130081 3045536
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1)
+ec_GF2m_simple_group_check_discriminant 3129838 3046240
+f(ARG4): (f(ARG4) + 16): f(ARG4)
+ec_GF2m_simple_group_get_curve 3129634 3046704
+f(ARG1 , ARG4): f(ARG1 , ARG4): f(ARG4)
+ec_GF2m_simple_group_set_curve 3128997 3045792
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+ec_GF2m_simple_group_copy 3128340 3046928
+f(ARG1): ((ARG1 + 152) + 16): f()
+ec_GF2m_simple_group_init 3128051 3045488
+f(ARG1 , ARG2 , ARG3 , Symbol): f(ARG1 , ARG2 , ARG3 , Symbol): f(ARG1 , ARG2)
+BN_BLINDING_invert 3113743 3031856
+f(ARG1 , ARG2 , ): f(ARG1 , ARG2 , ): f(ARG3)
+BN_BLINDING_convert 3113446 3033120
+f(ARG1): (([(ARG1 + 40)] + 32) + 8): f(ARG1)
+pkey_hmac_ctrl_str 3028493 2954496
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+hmac_signctx 3028073 2953952
+hmac_signctx_init 3027973 2954112
+f(ARG2): ARG2: f(ARG2)
+pkey_hmac_keygen 3027774 2954224
+f(ARG1): [(ARG1 + 40)]: f(ARG2)
+pkey_hmac_copy 3027439 2954736
+f(ARG2): ARG2: f(ARG1 , ARG2)
+old_hmac_encode 3027108 2953520
+f(ARG1): (ARG1 + 16): f(Symbol)
+old_hmac_decode 3027009 2953632
+MD4_Transform 3022211 2944848
+f(ARG1): ([(ARG1 + 24)] + 4240): f()
+gost_digest_cleanup 3012495 2936320
+f(ARG1): [(ARG1 + 24)]: f(ARG2)
+gost_digest_copy 3012386 2936384
+f(ARG1): ([(ARG1 + 24)] + 112): f()
+gost_digest_init 3012204 2936512
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , Symbol)
+ubsec_dh_generate_key 3009621 2932816
+f(ARG5 , ): f(ARG5 , ): f(ARG6)
+ubsec_mod_exp_dh 3007201 2928448
+f(ARG1 , ARG5 , Symbol): f(ARG1 , ARG5 , Symbol): f(ARG1)
+ubsec_mod_exp_mont 3007051 2930592
+f(ARG1): (ARG1 + 8): f(ARG3 , Symbol)
+ubsec_rsa_mod_exp 3006048 2931328
+f(ARG7 , ): f(ARG7 , ): f(ARG8)
+surewarehk_dsa_mod_exp 2993148 2915216
+nuron_mod_exp_dh 2992090 2914096
+f(ARG7 , ): f(ARG7 , ): f(ARG8)
+nuron_dsa_mod_exp 2991712 2912688
+hwcrhk_log_message 2990407 2904816
+f(ARG2): (ARG2 + 12): f(ARG5)
+hwcrhk_mod_exp_dh 2988509 2905840
+f(ARG1): (ARG1 + 12): f(ARG4)
+hwcrhk_mod_exp_mont 2988333 2905872
+f(ARG1): (ARG1 + 12): f(ARG4)
+hwcrhk_mod_exp 2986108 2905296
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+cswift_rand_bytes 2980255 2896128
+f(ARG2): ([f(ARG2)] + -8): f(ARG6)
+cswift_mod_exp_dh 2980190 2896800
+f(ARG1): ([f(ARG1)] + -8): f(ARG5)
+cswift_mod_exp_mont 2976585 2899232
+returns
+cswift_rsa_mod_exp 2976211 2902416
+f(ARG1): f(ARG1): f(ARG2 , Symbol)
+cswift_bn_32copy 2974443 2895232
+f(ARG2): ([f(ARG2)] + -8): f(ARG6)
+atalla_mod_exp_dh 2971043 2892592
+f(ARG1): ([f(ARG1)] + -8): f(ARG5)
+atalla_mod_exp_mont 2970978 2890640
+f(ARG2): ([f(ARG2)] + -8): f(ARG6)
+atalla_mod_exp_dsa 2970913 2891616
+f(ARG7 , ): f(ARG7 , ): f(ARG8)
+atalla_dsa_mod_exp 2970665 2893568
+f(ARG1): ([f(ARG1)] + -8): f(ARG4)
+atalla_rsa_mod_exp 2970491 2890448
+f(ARG1): ([f(ARG1)] + -8): f(ARG5)
+atalla_mod_exp 2969204 2889472
+f(ARG5 , ): f(ARG5 , ): f(ARG6)
+aep_mod_exp_dh 2965537 2886272
+f(ARG1 , ARG5 , Symbol): f(ARG1 , ARG5 , Symbol): f(ARG1)
+aep_mod_exp_mont 2965472 2885632
+f(ARG4 , Symbol): f(ARG4 , Symbol): f(ARG4)
+aep_rsa_mod_exp 2964768 2886912
+f(ARG1): (f(ARG1) + f()): f(RSP)
+cca_get_random_bytes 2961367 2875056
+f(ARG2): f(ARG2): f()
+cca_rsa_sign 2959811 2880080
+f(ARG2): f(ARG2): f()
+cca_rsa_verify 2958811 2879008
+f(ARG1): ([(ARG1 + 40)] + 104): f(A_Stack[-0x30]:8)
+pkey_cmac_ctrl_str 2954081 2874656
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+CMAC_Init 3234576 3147408
+f(ARG1 , ARG2): (ARG2 + f(ARG1)): f()
+cmac_signctx 2953722 2874320
+f(ARG1 , ARG2): f(ARG1 , ARG2): f()
+CMAC_Final 3235652 3152208
+f(ARG1): ([([(ARG1 + 32)] + 40)] + 296): f(ARG1)
+int_update#2 2953598 2874384
+f(ARG1): (ARG1 + 296): f(ARG1)
+CMAC_Update 3235219 3151872
+f(ARG2): ARG2: f(ARG2)
+pkey_cmac_keygen 2953477 2874544
+f(ARG1): ([(ARG1 + 40)] + 296): f(ARG2)
+pkey_cmac_copy 2953362 2874464
+f(ARG1): (ARG1 + 88): f(ARG2)
+CMAC_CTX_copy 3234308 3147232
+f(ARG2): ARG2: f(ARG2)
+d2i_ESS_CERT_ID 2942874 2865120
+f(ARG2): ARG2: f(ARG2)
+d2i_ESS_ISSUER_SERIAL 2942696 2865040
+ts_resp_cb 2942207 2865584
+f(ARG2): ARG2: f(ARG2)
+d2i_TS_STATUS_INFO 2941751 2864800
+d2i_TS_TST_INFO_bio 2941567 2864672
+f(ARG2): ARG2: f(ARG2)
+d2i_TS_ACCURACY 2941211 2864560
+i2d_TS_MSG_IMPRINT_bio 2940716 2864304
+d2i_TS_MSG_IMPRINT_bio 2940665 2864272
+f(ARG2): ARG2: f(ARG2)
+d2i_TS_MSG_IMPRINT 2940487 2864048
+f(ARG4): ARG4: f()
+TS_TST_INFO_get_ext_d2i 2918713 2844848
+TS_TST_INFO_add_ext 2918657 2844816
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+TS_TST_INFO_delete_ext 2918619 2844800
+f(ARG4): ARG4: f()
+TS_REQ_get_ext_d2i 2915918 2842720
+TS_REQ_add_ext 2915862 2842688
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+TS_REQ_delete_ext 2915824 2842672
+f(ARG2): ARG2: f(ARG2)
+d2i_CMS_ReceiptRequest 2906684 2835808
+f(ARG5): ARG5: f()
+CMS_RecipientInfo_kekri_get0_id 2902483 2829856
+PEM_write_bio_CMS 2882838 2809984
+i2d_CMS_bio 2882645 2809888
+f(ARG2): [([([([ARG2] + 8)] + 24)] + 8)]: f(Symbol)
+cms_cb 2882163 2809344
+cms_ri_cb 2881863 2809568
+cms_si_cb 2881758 2809504
+CMS_add1_crl 2881132 2808448
+CMS_add0_crl 2881057 2808192
+f(ARG2): f(ARG2): f(RSP)
+read_string 2875175 2802720
+f(ARG2): f(ARG2): f(RSP)
+read_string_inner 2875768 2801888
+returns
+UI_get_result_maxsize 2874237 2801104
+returns
+UI_get_result_minsize 2874185 2801072
+returns
+UI_get0_test_string 2874135 2801040
+returns
+UI_get0_action_string 2874027 2800960
+returns
+UI_get0_output_string 2873995 2800928
+returns
+UI_method_get_prompt_constructor 2873902 2800864
+returns
+UI_method_get_flusher 2873806 2800768
+returns
+UI_set_method 2873292 2800368
+UI_set_ex_data 2873132 2800256
+returns
+UI_get0_result 2872038 2799600
+returns
+UI_get0_result_string 2874082 2801008
+returns
+UI_dup_error_string 2871413 2798896
+returns
+UI_add_error_string 2871343 2798656
+returns
+UI_dup_info_string 2871195 2798352
+returns
+UI_add_info_string 2871125 2798112
+returns
+UI_dup_input_boolean 2870659 2797632
+returns
+UI_dup_verify_string 2870405 2797232
+returns
+UI_dup_input_string 2870146 2796544
+returns
+general_allocate_boolean 2869686 2795232
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+OCSP_request_verify 2867576 2794160
+returns
+OCSP_resp_count 2859196 2786192
+OCSP_SINGLERESP_add_ext 2851209 2779360
+f(ARG4): ARG4: f()
+OCSP_SINGLERESP_get1_ext_d2i 2851097 2779328
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+OCSP_SINGLERESP_delete_ext 2851059 2779312
+f(ARG4): ARG4: f()
+OCSP_BASICRESP_get1_ext_d2i 2850679 2779168
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+OCSP_BASICRESP_delete_ext 2850638 2779152
+OCSP_ONEREQ_add_ext 2850364 2779040
+f(ARG4): ARG4: f()
+OCSP_ONEREQ_get1_ext_d2i 2850252 2779008
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+OCSP_ONEREQ_delete_ext 2850214 2778992
+f(ARG4): ARG4: f()
+OCSP_REQUEST_get1_ext_d2i 2849834 2778848
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+OCSP_REQUEST_delete_ext 2849793 2778832
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_SERVICELOC 2849430 2778688
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_CRLID 2849285 2778624
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_BASICRESP 2849140 2778560
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_RESPDATA 2848995 2778496
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_SINGLERESP 2848850 2778432
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_CERTSTATUS 2848705 2778368
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_REVOKEDINFO 2848560 2778304
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_RESPBYTES 2848125 2778112
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_REQINFO 2847835 2777984
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_ONEREQ 2847690 2777920
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_CERTID 2847545 2777856
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_SIGNATURE 2847400 2777792
+f(ARG1): (ARG1 + 16): f(ARG1 , ARG7)
+PKCS12_PBE_keyivgen 2834615 2763184
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS12_SAFEBAG 2833796 2762528
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS12_BAGS 2833651 2762464
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS12_MAC_DATA 2833506 2762400
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS12 2833361 2762336
+PKCS7_add_attribute 2824260 2754016
+returns
+PKCS7_get_attribute 2823522 2753104
+returns
+PKCS7_get_issuer_and_serial 2823311 2752832
+f(ARG2): ([(ARG2 + 40)] + 8): f(ARG1)
+PKCS7_dataVerify 2821657 2752432
+returns
+PKCS7_cert_from_signer_info 2812167 2743120
+f(ARG1): [([(ARG1 + 32)] + 8)]: f(ARG2)
+PKCS7_set_digest 2810953 2741776
+f(ARG1): (f(ARG1) + 20): f(ARG1)
+PKCS7_add_crl 2809930 2740672
+f(ARG1): (ARG1 + 24): f(ARG2)
+PKCS7_set0_type_other 2809082 2740016
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_DIGEST 2807398 2738336
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_ENCRYPT 2807253 2738272
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_SIGN_ENVELOPE 2807108 2738208
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_ENC_CONTENT 2806963 2738144
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_RECIP_INFO 2806818 2738080
+ri_cb 2806755 2737680
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_ENVELOPE 2806610 2738016
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_ISSUER_AND_SERIAL 2806465 2737952
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_SIGNER_INFO 2806320 2737888
+si_cb 2806257 2737632
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7_SIGNED 2806112 2737824
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+pk7_cb 2805672 2737472
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+def_load 2792412 2731296
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+def_load_bio 2792605 2728384
+str_copy 2795862 2726928
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+_CONF_new_section 2791713 2726352
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+_CONF_add_string 2790440 2725792
+returns
+NCONF_dump_fp 2789952 2725024
+returns
+NCONF_load_fp 2789150 2724176
+CONF_get_number 2788405 2723136
+returns
+CONF_load_fp 2787919 2722272
+returns
+X509_policy_node_get0_parent 2787582 2721872
+returns
+X509_policy_node_get0_qualifiers 2787547 2721840
+returns
+X509_policy_node_get0_policy 2787512 2721808
+returns
+X509_policy_level_get0_node 2787427 2721760
+returns
+X509_policy_tree_get0_level 2787182 2721600
+process_pci_value 2775790 2713712
+i2r_pci 2775477 2716016
+f(ARG2): ARG2: f(ARG2)
+d2i_PROXY_CERT_INFO_EXTENSION 2775332 2713648
+f(ARG2): ARG2: f(ARG2)
+d2i_PROXY_POLICY 2775187 2713584
+i2r_NAME_CONSTRAINTS 2772382 2712112
+f(ARG3): (ARG3 + 88): f(ARG3)
+do_i2r_name_constraints 2772487 2711648
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG2): ARG2: f(ARG2)
+d2i_AUTHORITY_KEYID 2770022 2709792
+i2r_ocsp_serviceloc 2769699 2709536
+i2r_ocsp_nonce 2769536 2709216
+f(ARG3): ([(f() + 8)] + f(ARG3)): f()
+d2i_ocsp_nonce 2769283 2709296
+i2r_object 2769068 2709136
+i2r_ocsp_acutoff 2768963 2709056
+i2r_ocsp_crlid 2768553 2708752
+i2a_ACCESS_DESCRIPTION 2768508 2708592
+f(ARG2): ARG2: f(ARG2)
+d2i_AUTHORITY_INFO_ACCESS 2767138 2708528
+f(ARG2): ARG2: f(ARG2)
+d2i_ACCESS_DESCRIPTION 2766993 2708480
+returns
+check_purpose_timestamp_sign 2766171 2704016
+returns
+ocsp_helper 2766125 2703760
+returns
+check_purpose_crl_sign 2766021 2703888
+returns
+check_purpose_smime_encrypt 2765921 2704432
+returns
+check_purpose_smime_sign 2765819 2704240
+returns
+check_purpose_ns_ssl_server 2765511 2704624
+returns
+check_purpose_ssl_server 2765346 2704816
+returns
+check_purpose_ssl_client 2765179 2702032
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+i2r_crldp 2760134 2699120
+i2r_idp 2759733 2697168
+f(ARG2): ARG2: f(ARG2)
+d2i_ISSUING_DIST_POINT 2758562 2701616
+f(ARG2): ARG2: f(ARG2)
+d2i_CRL_DIST_POINTS 2758417 2701552
+f(ARG2): ARG2: f(ARG2)
+d2i_DIST_POINT 2758272 2701504
+f(ARG2): ARG2: f(ARG2)
+d2i_DIST_POINT_NAME 2758127 2701440
+dpn_cb 2758027 2696848
+set_reasons 2756505 2696912
+i2r_certpol 2754492 2693760
+f(ARG2): ARG2: f(ARG2)
+d2i_NOTICEREF 2751045 2696608
+f(ARG2): ARG2: f(ARG2)
+d2i_USERNOTICE 2750900 2696544
+f(ARG2): ARG2: f(ARG2)
+d2i_POLICYQUALINFO 2750755 2696480
+f(ARG2): ARG2: f(ARG2)
+d2i_POLICYINFO 2750610 2696432
+f(ARG2): ARG2: f(ARG2)
+d2i_CERTIFICATEPOLICIES 2750465 2696368
+returns
+SXNET_get_id_ulong 2750186 2692896
+SXNET_add_id_ulong 2749377 2691456
+SXNET_add_id_asc 2749253 2690784
+SXNET_add_id_INTEGER 2749529 2692112
+returns
+SXNET_get_id_INTEGER 2750347 2693104
+sxnet_i2r 2748822 2689840
+f(ARG2): ARG2: f(ARG2)
+d2i_SXNET 2748677 2690720
+f(ARG2): ARG2: f(ARG2)
+d2i_SXNETID 2748532 2690656
+returns
+s2i_asn1_int 2748374 2689712
+i2r_PKEY_USAGE_PERIOD 2748155 2689488
+f(ARG2): ARG2: f(ARG2)
+d2i_PKEY_USAGE_PERIOD 2748010 2689648
+f(ARG2): (f(ARG2) + -1): f()
+i2v_AUTHORITY_KEYID 2746815 2689328
+s2i_skey_id 2746289 2687760
+f(ARG2): (f(ARG2) + -1): f()
+i2s_ASN1_OCTET_STRING 2746047 2687744
+f(ARG1): ([(f(ARG1) + 8)] + 8): f(ARG1)
+v2i_GENERAL_NAME_ex 2745018 2686320
+returns
+i2v_GENERAL_NAMES 2740552 2681952
+returns
+GENERAL_NAME_get0_value 2740223 2676944
+f(ARG2): ARG2: f(ARG2)
+d2i_GENERAL_NAMES 2739456 2676480
+f(ARG2): ARG2: f(ARG2)
+d2i_EDIPARTYNAME 2739166 2676384
+f(ARG2): ARG2: f(ARG2)
+d2i_OTHERNAME 2739021 2676320
+f(ARG2): (f(ARG2) + -1): f()
+hex_to_string 2734660 2672656
+X509V3_EXT_print_fp 2731442 2665680
+CONF_get_string 2788276 2722848
+X509V3_EXT_nconf_nid 2723334 2658000
+X509_VERIFY_PARAM_clear_flags 2721882 2655200
+X509_VERIFY_PARAM_set1_name 2721714 2655088
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+get_cert_by_subject 2719050 2650912
+dir_ctrl 2717707 2653408
+f(ARG1): [(ARG1 + 8)]: f(ARG1)
+add_cert_dir 2718370 2652784
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+X509_load_crl_file 2716763 2649920
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+by_file_ctrl 2715937 2648752
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+X509_load_cert_crl_file 2717305 2650416
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+X509_load_cert_file 2716221 2649424
+f(ARG2): (ARG2 + 96): f()
+trust_1oidany 2715415 2646800
+f(ARG2): (ARG2 + 96): f()
+trust_compat 2715607 2646512
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+i2d_PKCS8PrivateKeyInfo_bio 2713114 2645168
+f(ARG4): ARG4: f(RSP)
+PKCS7_ISSUER_AND_SERIAL_digest 2712363 2644672
+f(ARG4): ARG4: f(RSP)
+X509_REQ_digest 2712243 2644608
+d2i_DSA_PUBKEY_bio 2711516 2644160
+d2i_DSAPrivateKey_bio 2711415 2644096
+d2i_RSA_PUBKEY_bio 2711071 2643872
+f(ARG1): [[([ARG1] + 8)]]: f(ARG1)
+X509_CRL_sign 2709741 2642912
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+X509_STORE_add_crl 2705862 2641392
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+X509_STORE_add_cert 2705536 2640944
+f(ARG2): ([(f(ARG2) + 8)] + 80): f(ARG2 , RSP)
+X509_OBJECT_retrieve_match 2708060 2640704
+returns
+X509_ATTRIBUTE_get0_object 2702591 2636352
+X509_REVOKED_add_ext 2700057 2632240
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+X509_REVOKED_delete_ext 2700019 2632224
+X509_CRL_add_ext 2699321 2631952
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+X509_CRL_delete_ext 2699162 2631904
+returns
+X509v3_get_ext_by_critical 2697592 2630464
+X509_NAME_add_entry_by_OBJ 2695543 2629328
+returns
+X509_NAME_get_text_by_NID 2694686 2626144
+returns
+X509_NAME_get_text_by_OBJ 2694761 2626400
+X509_STORE_CTX_set_time 2692624 2624112
+f(ARG1): ([(ARG1 + 40)] + 32): f()
+X509_STORE_CTX_set_trust 2690446 2620352
+X509_REQ_add1_attr 2674966 2608368
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+X509_REQ_delete_attr 2674925 2608352
+returns
+X509_REQ_get_attr_count 2674754 2608288
+returns
+X509_issuer_name_cmp 2669645 2603328
+f(ARG1): f(ARG1): f()
+b2i_PublicKey 2662615 2595216
+PEM_write_PrivateKey 2659388 2585456
+d2i_PKCS8PrivateKey_fp 2656484 2583440
+d2i_PKCS8PrivateKey_bio 2655456 2582528
+i2d_PKCS8PrivateKey_nid_bio 2654671 2582480
+i2d_PKCS8PrivateKey_bio 2654579 2582432
+PEM_write_bio_PKCS8PrivateKey_nid 2654397 2582352
+PEM_write_bio_X509_CERT_PAIR 2653991 2581424
+PEM_read_ECPrivateKey 2652456 2580560
+PEM_write_ECPrivateKey 2652042 2580352
+PEM_write_DSAPrivateKey 2650643 2579584
+PEM_read_bio_DSAPrivateKey 2650467 2579440
+PEM_write_RSAPrivateKey 2649630 2579072
+PEM_read_RSAPrivateKey 2649454 2578928
+f(ARG5): ARG5: f()
+PEM_read 2645032 2576528
+PEM_X509_INFO_write_bio 2637350 2568640
+PEM_X509_INFO_read 2635160 2568496
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+ASN1_parse 2621775 2556576
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_EXTENSION 2615148 2548816
+d2i_Netscape_RSA 2612455 2546464
+returns
+i2d_Netscape_RSA 2610846 2546448
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_SET_ANY 2606151 2540752
+f(ARG2): ARG2: f(ARG2)
+d2i_DIRECTORYSTRING 2605913 2540656
+f(ARG2): ARG2: f(ARG2)
+d2i_DISPLAYTEXT 2605768 2540592
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_PRINTABLE 2605623 2540528
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_BMPSTRING 2605333 2540400
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_UNIVERSALSTRING 2605188 2540336
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_VISIBLESTRING 2605043 2540272
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_GENERALIZEDTIME 2604898 2540208
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_UTCTIME 2604753 2540144
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_GENERALSTRING 2604608 2540080
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_IA5STRING 2604463 2540016
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_T61STRING 2604318 2539952
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_PRINTABLESTRING 2604173 2539888
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_UTF8STRING 2604028 2539824
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_NULL 2603883 2539760
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_BIT_STRING 2603593 2539632
+f(ARG4): f(ARG4): f(ARG4)
+ASN1_template_d2i 2592124 2534592
+f(ARG2): f(ARG2): f(ARG1 , RSP)
+ASN1_template_i2d 2588986 2514320
+f(ARG2): ARG2: f(ARG2)
+d2i_NETSCAPE_X509 2571012 2470032
+f(ARG2): ARG2: f(ARG2)
+d2i_NETSCAPE_SPKAC 2570510 2469792
+def_crl_verify 2569185 2467136
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_CRL_INFO 2568391 2468896
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_REVOKED 2568246 2468832
+f(ARG2): ([ARG2] + 52): f(ARG2 , RSP)
+crl_cb 2566973 2467168
+f(ARG4): ARG4: f()
+X509_REVOKED_get_ext_d2i 2700113 2632272
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_CERT_PAIR 2566151 2466976
+X509_set_ex_data 2564395 2465744
+f(ARG2): [([[([ARG2] + 120)]] + 8)]: f(ARG2)
+x509_cb 2563693 2465264
+f(ARG1): [([ARG1] + 8)]: f(ARG1)
+policy_cache_free 2781136 2716272
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_CINF 2563548 2465568
+x509_name_ex_print 2561980 2462320
+x509_name_ex_i2d 2561261 2463728
+f(ARG8): (ARG8 + 24): f(ARG3 , ARG8 , RSP)
+x509_name_ex_d2i 2560616 2464288
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_NAME_ENTRY 2559861 2465008
+long_print 2559801 2461664
+f(ARG2): ARG2: f()
+long_i2c 2559099 2461696
+f(ARG1): ([f(ARG1)] + -8): f(ARG2)
+bn_c2i 2558904 2461488
+returns
+bn_i2c 2558733 2461296
+bn_free 2558641 2461408
+bn_new 2558584 2461456
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_ATTRIBUTE 2558164 2461008
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_REQ_INFO 2557841 2460864
+rinf_cb 2557758 2460816
+d2i_RSA_PUBKEY 2556265 2458624
+pubkey_cb 2554896 2456784
+f(ARG1): [ARG1]: f(ARG1)
+X509_ALGOR_set_md 2554803 2456576
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_ALGORS 2554323 2456240
+ASN1_STRING_print_ex_fp 2553901 2455984
+returns
+ASN1_ENUMERATED_to_BN 2549120 2442912
+returns
+BN_to_ASN1_ENUMERATED 2548771 2442640
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_item_d2i_fp 2545963 2440400
+f(ARG1): (f(ARG1) + f()): f(RSP)
+ASN1_TIME_set 2539902 2433712
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_TIME 2539757 2433648
+f(ARG1): (f(ARG1) + f()): f(RSP)
+ASN1_GENERALIZEDTIME_set 2539232 2432912
+f(ARG1): (f(ARG1) + f()): f(RSP)
+ASN1_UTCTIME_set 2536408 2430640
+f(ARG3 , ARG4): (ARG4 + (ARG3 + -1)): f(ARG3 , ARG4)
+rc4_hmac_md5_ctrl 2529549 2424048
+f(ARG1): f(ARG1): f(ARG2)
+rc4_hmac_md5_cipher 2527727 2422480
+f(ARG1): ([(ARG1 + 120)] + 1292): f(ARG1)
+rc4_hmac_md5_init_key 2527266 2423824
+f(ARG3 , ARG4): (ARG4 + (ARG3 + -1)): f(ARG3 , ARG4)
+aesni_cbc_hmac_sha1_ctrl 2526165 2417168
+f(ARG1): ([(ARG1 + 120)] + 480): f(ARG1)
+aesni_cbc_hmac_sha1_cipher 2521574 2418784
+f(ARG2): ((ARG2 * 16) + 20): f()
+aesni_cbc_hmac_sha1_init_key 2520761 2416928
+f(ARG1): (ARG1 + 92): f(ARG2)
+EVP_PKEY_meth_copy 2511658 2407920
+f(ARG1): (ARG1 + 16): f(ARG1 , ARG7)
+PKCS5_v2_PBE_keyivgen 2508707 2406832
+f(ARG2): ARG2: f(ARG2)
+d2i_PBE2PARAM 2632265 2564144
+f(ARG1): (ARG1 + 16): f(ARG1 , ARG7)
+PKCS5_v2_PBKDF2_keyivgen 2509281 2406032
+f(ARG2): ARG2: f(ARG2)
+d2i_PBKDF2PARAM 2632410 2564208
+f(ARG6 , ARG7 , Symbol): f(ARG6 , ARG7 , Symbol): f()
+PKCS5_PBKDF2_HMAC_SHA1 2508630 2405952
+f(ARG1): (ARG1 + 16): f(ARG1 , ARG7)
+PKCS5_PBE_keyivgen 2506402 2403936
+EVP_PKEY_add1_attr_by_txt 2504787 2402384
+returns
+X509at_add1_attr_by_OBJ 2700884 2634288
+EVP_PKEY_add1_attr 2504574 2402288
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+EVP_PKEY_delete_attr 2504536 2402272
+f(ARG1 , ARG2): ([(ARG1 + 8)] + (f(ARG2) * 8)): f(ARG1 , ARG2)
+X509at_delete_attr 2700530 2632672
+returns
+EVP_PKEY_get_attr_count 2504377 2402208
+returns
+PKCS8_set_broken 2504262 2402112
+EVP_CIPHER_CTX_clear_flags 2503421 2401104
+f(ARG1): (([(ARG1 + 48)] + 24) + 16): f(ARG5)
+BIO_set_cipher 2499242 2397152
+f(ARG4): (([(ARG4 + 48)] + 24) + 140): f(ARG1)
+enc_ctrl 2498236 2396432
+returns
+enc_write 2497741 2396032
+returns
+enc_read 2497065 2395456
+f(ARG1): f(ARG1): f(ARG1 , ARG2)
+b64_puts 2496706 2395184
+f(ARG1): [(ARG1 + 48)]: f(ARG1)
+b64_ctrl 2495732 2394512
+f(ARG1): f(ARG1): f(ARG1 , ARG2)
+b64_write 2494184 2393040
+f(ARG1): (([(ARG1 + 48)] + 28) + 92): f()
+b64_read 2492383 2390288
+md_gets 2491980 2389680
+f(ARG4): ([(ARG4 + 48)] + 28): f(ARG1)
+md_ctrl 2491322 2389264
+md_write 2491096 2389968
+md_read 2490899 2389776
+returns
+EVP_PKEY_get1_DH 2489680 2388400
+f(ARG1): (ARG1 + 16): f(Symbol)
+EVP_PKEY_set1_DH 2489617 2388016
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): (ARG1 + 24): f(ARG1)
+RIPEMD160_Update 3028746 2960320
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): (ARG1 + 88): f()
+RIPEMD160_Init 3029715 2954960
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): (((ARG1 + 4) + [ARG1]) + f()): f(ARG2)
+MDC2_Update 3025218 2953104
+mdc2_body 3025556 2952608
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): (ARG1 + 20): f()
+MDC2_Init 3025126 2953056
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): [(ARG1 + 24)]: f(ARG1)
+update512 2485494 2383520
+f(ARG1): ([(ARG1 + 24)] + 212): f()
+init512 2485464 2383552
+f(ARG1): ([(ARG1 + 24)] + 212): f()
+init384 2485434 2383536
+f(ARG1): ([(ARG1 + 24)] + 36): f(ARG1)
+update256 2485318 2383456
+f(ARG1): ([(ARG1 + 24)] + 32): f()
+init256 2485288 2383488
+f(ARG1): ([(ARG1 + 24)] + 32): f()
+init224 2485258 2383472
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): ([(ARG1 + 24)] + 80): f(ARG1)
+final#2 2484938 2383264
+f(ARG2): (ARG2 + 80): f(ARG2)
+MD4_Final 3022254 2946304
+f(ARG1): ([(ARG1 + 24)] + 20): f(ARG1)
+update#2 2484889 2383280
+f(ARG1): (ARG1 + 20): f(ARG1)
+MD4_Update 3021715 2950880
+md4_block_data_order 3022738 2949360
+f(ARG1): ([(ARG1 + 24)] + 16): f()
+init#2 2484859 2383296
+f(ARG1): (ARG1 + 84): f()
+MD4_Init 3022654 2949296
+returns
+rc2_get_asn1_type_and_iv 2484310 2381600
+f(ARG1): ([(ARG1 + 120)] + 4): f()
+rc2_init_key 2484001 2382240
+f(ARG2 , ARG4): (f(ARG2 , ARG4) + f()): f()
+rc2_ofb_cipher 2483708 2382480
+RC2_ofb64_encrypt 3091730 3006512
+rc2_ecb_cipher 2483560 2382768
+f(ARG1): (ARG1 + 40): f(ARG1)
+rc2_cfb64_cipher 2483369 2382304
+f(ARG5): ARG5: f(ARG5)
+RC2_cfb64_encrypt 3090545 3005952
+f(ARG1): (ARG1 + 40): f(ARG1)
+rc2_cbc_cipher 2483159 2381968
+f(ARG1): ([(ARG1 + 120)] + 4): f()
+seed_init_key 2483106 2380928
+f(ARG1 , ARG2 , ARG4): (f(ARG2 , ARG4) + f(ARG1)): f()
+seed_ofb_cipher 2482838 2381136
+f(ARG6): ARG6: f(ARG6)
+SEED_ofb128_encrypt 3099486 3012480
+seed_ecb_cipher 2482686 2381424
+SEED_ecb_encrypt 3099323 3012416
+f(ARG1): (ARG1 + 88): f(ARG1)
+seed_cfb128_cipher 2482486 2380960
+f(ARG6): ARG6: f(ARG6)
+SEED_cfb128_encrypt 3099403 3012448
+f(ARG1): (ARG1 + 40): f(ARG2)
+seed_cbc_cipher 2482272 2380672
+aes_ccm_cipher 2480152 2377824
+f(ARG3 , ARG4): (f(ARG3 , ARG4) + 7): f()
+CRYPTO_ccm128_encrypt 3103967 3018768
+CRYPTO_ccm128_decrypt_ccm64 3106406 3023568
+f(ARG1): (ARG1 + 1): f(ARG2)
+CRYPTO_ccm128_setiv 3102898 3018064
+f(ARG1): ([(ARG1 + 120)] + 240): f(ARG1)
+aes_ccm_init_key 2479748 2378432
+f(ARG1 , ARG3): ((ARG1 + 40) + (ARG3 + 8)): f(ARG3 , ARG4)
+aes_ccm_ctrl 2479235 2377408
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1)
+CRYPTO_ccm128_tag 3107049 3025168
+f(ARG2): (f(ARG2) + f()): f(ARG3 , RSP)
+aes_xts_cipher 2478905 2377232
+f(ARG4): (f(ARG4) + (f() + 16)): f(ARG3 , RSP)
+CRYPTO_xts128_encrypt 3107142 3025328
+f(ARG1): ([(ARG1 + 120)] + 240): f(ARG1)
+aes_xts_init_key 2478271 2373856
+f(ARG1 , ARG2 , ARG4): (f(ARG2 , ARG4) + f(ARG1)): f()
+aes_gcm_cipher 2477437 2375808
+f(ARG1): ([(ARG1 + 120)] + 240): f(ARG1)
+aes_gcm_init_key 2476226 2376608
+f(ARG1): (([(ARG1 + 120)] + 256) + 372): f()
+aes_gcm_ctrl 2474851 2374384
+f(ARG1): ((ARG1 + 40) + 12): f()
+aes_ctr_cipher 2473659 2373712
+f(ARG7): ARG7: f(ARG7)
+CRYPTO_ctr128_encrypt 3099787 3012512
+f(ARG7): ARG7: f(ARG7)
+CRYPTO_ctr128_encrypt_ctr32 3100221 3013696
+f(ARG1): (ARG1 + 40): f(RSP)
+aes_cfb1_cipher 2473328 2373312
+f(ARG2): ((ARG2 + f()) + f()): f(ARG3)
+aes_cfb8_cipher 2473217 2373648
+f(ARG1): (ARG1 + 88): f(ARG1)
+aes_cfb_cipher 2473106 2373248
+f(ARG1): (ARG1 + 88): f(ARG1)
+aes_ofb_cipher 2473003 2373200
+f(ARG1): (ARG1 + 40): f(ARG2)
+aes_cbc_cipher 2472632 2372416
+f(ARG1): f(ARG1): f(ARG1)
+aes_init_key 2471915 2372496
+f(ARG1): ([(ARG1 + 120)] + 328): f()
+aesni_ccm_init_key 2471626 2378656
+f(ARG1): ARG1: f()
+CRYPTO_ccm128_init 3102773 3018016
+f(ARG1): (ARG1 + 52): f(ARG3)
+aesni_xts_init_key 2471256 2374128
+f(ARG1): (([(ARG1 + 120)] + 256) + 8): f(ARG1 , ARG3)
+aesni_gcm_init_key 2470862 2376944
+f(ARG1): [(ARG1 + 120)]: f(ARG2)
+aesni_init_key 2470341 2372960
+f(ARG1): ([(ARG1 + 120)] + 88): f()
+camellia_init_key 2470068 2369200
+f(ARG1): (ARG1 + 40): f(RSP)
+camellia_256_cfb8_cipher 2469855 2370048
+f(ARG1): (ARG1 + 40): f(RSP)
+camellia_192_cfb8_cipher 2469642 2369872
+f(ARG1): (ARG1 + 40): f(RSP)
+camellia_128_cfb8_cipher 2469429 2369024
+f(ARG5): (ARG5 + 8): f(RSP)
+Camellia_cfb8_encrypt 3099240 3012384
+f(ARG5): (ARG5 + 8): f(RSP)
+CRYPTO_cfb128_8_encrypt 3102312 3017136
+f(ARG2): (f(ARG2) + (f() / 8)): f(ARG2)
+camellia_256_cfb1_cipher 2469176 2371584
+f(ARG2): (f(ARG2) + (f() / 8)): f(ARG2)
+camellia_192_cfb1_cipher 2468923 2371312
+f(ARG2): (f(ARG2) + (f() / 8)): f(ARG2)
+camellia_128_cfb1_cipher 2468670 2368752
+f(ARG5): (ARG5 + 8): f(RSP)
+Camellia_cfb1_encrypt 3099157 3012352
+f(ARG5): (ARG5 + 8): f(RSP)
+CRYPTO_cfb128_1_encrypt 3102005 3016544
+f(ARG1 , ARG2 , ARG4): (f(ARG2 , ARG4) + f(ARG1)): f()
+camellia_256_ofb_cipher 2468402 2370512
+f(ARG1): (ARG1 + 88): f(ARG1)
+camellia_256_cfb128_cipher 2468050 2369696
+f(ARG2): f(ARG2): f(ARG1 , ARG3 , ARG4 , RSP)
+camellia_256_cbc_cipher 2467836 2371056
+f(ARG1 , ARG2 , ARG4): (f(ARG2 , ARG4) + f(ARG1)): f()
+camellia_192_ofb_cipher 2467568 2370224
+f(ARG1): (ARG1 + 88): f(ARG1)
+camellia_192_cfb128_cipher 2467216 2369520
+f(ARG2): f(ARG2): f(ARG1 , ARG3 , ARG4 , RSP)
+camellia_192_cbc_cipher 2467002 2370800
+f(ARG1 , ARG2 , ARG4): (f(ARG2 , ARG4) + f(ARG1)): f()
+camellia_128_ofb_cipher 2466734 2368352
+f(ARG6): ARG6: f(ARG6)
+Camellia_ofb128_encrypt 3098984 3012288
+f(ARG6): ARG6: f(ARG6)
+CRYPTO_ofb128_encrypt 3102435 3017360
+f(ARG1): (ARG1 + 88): f(ARG1)
+camellia_128_cfb128_cipher 2466382 2368176
+f(ARG2 , ARG6): (f(ARG2) + f(ARG6)): f(ARG5)
+Camellia_cfb128_encrypt 3099074 3012320
+f(ARG5): (ARG5 + f()): f()
+CRYPTO_cfb128_encrypt 3100732 3014880
+f(ARG2): f(ARG2): f(ARG1 , ARG3 , ARG4 , RSP)
+camellia_128_cbc_cipher 2466168 2367920
+f(ARG1): ([(ARG1 + 120)] + 268): f(ARG1)
+des_ede_init_key 2465719 2366096
+f(ARG1): ((ARG1 + 40) + 6): f(ARG1 , ARG3)
+des_ede3_cfb8_cipher 2465281 2367296
+f(ARG2 , ARG3): (f(ARG2 , ARG3) + -1): f()
+DES_ede3_cfb_encrypt 3042258 2962352
+f(ARG1): (ARG1 + 40): f(ARG1)
+des_ede_cfb64_cipher 2464628 2366256
+f(ARG7): ARG7: f(ARG7)
+DES_ede3_cfb64_encrypt 3041082 2961808
+f(ARG1): ((ARG1 + 40) + 5): f(ARG1 , ARG3)
+des_ede_cbc_cipher 2464341 2365712
+f(ARG2 , ARG4): (f(ARG2 , ARG4) + f()): f()
+des_ede_ofb_cipher 2464052 2366592
+DES_ede3_ofb64_encrypt 3047366 2966912
+des_ede_ecb_cipher 2463862 2366896
+f(ARG1): ([(ARG1 + 120)] + 4): f(ARG1 , ARG2)
+idea_init_key 2463585 2365456
+f(ARG1): (ARG1 + 40): f(ARG1)
+idea_cfb64_cipher 2463333 2364880
+f(ARG5): ARG5: f(ARG5)
+idea_cfb64_encrypt 3096780 3011136
+f(ARG2 , ARG4): (f(ARG2 , ARG4) + f()): f()
+idea_ofb_cipher 2463117 2365056
+idea_ofb64_encrypt 3097977 3011728
+f(ARG1): ((ARG1 + 40) + 4): f(ARG3)
+idea_cbc_cipher 2462903 2364624
+idea_ecb_cipher 2462761 2365344
+f(ARG1): ((ARG1 + 40) + 4): f(ARG1 , ARG3 , ARG4 , RSP)
+des_cfb8_cipher 2462305 2364240
+DES_cfb_encrypt 3045320 2964688
+f(ARG1): (ARG1 + 40): f(ARG1)
+des_cfb64_cipher 2461653 2363168
+f(ARG5): ARG5: f(ARG5)
+DES_cfb64_encrypt 3039947 2961328
+f(ARG1): (ARG1 + 40): f(ARG1)
+des_cbc_cipher 2461451 2362880
+f(ARG2 , ARG4): (f(ARG2 , ARG4) + f()): f()
+des_ofb_cipher 2461244 2363472
+DES_ofb64_encrypt 3048288 2967376
+des_ecb_cipher 2461097 2363760
+f(ARG1): (ARG1 + 24): f(ARG2)
+EVP_CIPHER_CTX_copy 2459236 2361024
+f(ARG1): (ARG1 + 16): f(ARG1)
+EVP_DecryptInit 2456020 2353360
+f(ARG1): (ARG1 + 16): f(ARG1)
+EVP_EncryptInit 2455897 2351088
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1)
+EVP_CipherFinal 2455816 2349696
+f(ARG1): (ARG1 + 16): f(ARG1 , ARG5)
+EVP_CipherInit 2454339 2345984
+f(ARG2 , ): f(ARG2 , ): f()
+ERR_error_string 2448440 2331904
+f(ARG1): ARG1: f(Symbol)
+ERR_peek_last_error_line_data 2446953 2338240
+f(ARG1): ARG1: f(Symbol)
+ERR_peek_last_error_line 2446894 2337728
+f(ARG1): ARG1: f(Symbol)
+ERR_peek_error_line_data 2446782 2338448
+f(ARG1): ARG1: f(Symbol)
+ERR_peek_error_line 2446723 2337856
+f(ARG1): ARG1: f(Symbol)
+ERR_get_error_line 2446552 2338000
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+sk_unshift 2433866 2318832
+dgram_puts 2432108 2316656
+f(ARG1): [(ARG1 + 48)]: f()
+dgram_ctrl 2429773 2313984
+dgram_write 2429519 2316448
+dgram_read 2429136 2315456
+nbiof_puts 2428075 2313296
+nbiof_ctrl 2427759 2313328
+nbiof_write 2427451 2313632
+nbiof_read 2427205 2313440
+f(ARG1): (f(ARG1) + f()): f(RSP)
+acpt_puts 2426819 2311056
+f(ARG1): ([(ARG1 + 48)] + 16): f(ARG1)
+acpt_ctrl 2426160 2309712
+f(ARG1): (f(ARG1) + f()): f(RSP)
+acpt_write 2426018 2312352
+f(ARG1): (f(ARG1) + f()): f(RSP)
+acpt_read 2425869 2311712
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+BIO_accept 2423317 2308544
+returns
+buffer_puts 2409980 2284912
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): ([(ARG1 + 48)] + 36): f()
+buffer_ctrl 2407813 2282208
+returns
+buffer_write 2407166 2285328
+returns
+buffer_read 2406649 2284624
+f(ARG1): ([(ARG1 + 48)] + 38): f(ARG1)
+conn_puts 2406010 2276240
+f(ARG4): ARG4: f(ARG1)
+conn_ctrl 2404739 2273568
+f(ARG1): ([(ARG1 + 48)] + 40): f(ARG1)
+conn_write 2404564 2278048
+f(ARG1): ([(ARG1 + 48)] + 40): f(ARG1)
+conn_read 2404375 2279840
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+BIO_get_port 2420317 2306064
+sock_puts 2401785 2272976
+returns
+sock_ctrl 2401529 2272464
+sock_write 2401410 2273152
+sock_read 2401277 2272704
+returns
+file_ctrl 2399915 2271104
+returns
+file_write 2399817 2270864
+fd_gets 2398750 2269776
+fd_puts 2398689 2270048
+returns
+fd_ctrl 2398281 2269168
+fd_write 2398162 2270224
+fd_read 2398029 2269520
+null_gets 2397722 2269088
+mem_puts 2397434 2267904
+returns
+mem_gets 2397212 2268496
+f(ARG1): (ARG1 + 48): f()
+mem_ctrl 2396660 2268080
+mem_write 2396408 2267712
+returns
+mem_read 2396106 2267408
+f(ARG1): (ARG1 + 28): f()
+mem_new 2395887 2267344
+BIO_set_ex_data 2394137 2266352
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): (f(ARG1) + f()): f(RSP)
+get_random_bytes 2387511 2258976
+f(ARG4 , ): f(ARG4 , ): f(RSP)
+e_rsax_rsa_mod_exp 2384208 2256848
+f(ARG1): ([ARG1] + (f() * 8)): f(ARG1 , ARG5 , ARG6)
+e_rsax_bn_mod_exp 2381974 2255696
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2 , RSP)
+e_rsax_get_ctx 2381295 2253376
+f(ARG2 , ARG3): (ARG3 + ((f(ARG2) + 1) * 8)): f()
+bn_extract_to_array_512 2382308 2251872
+f(ARG1): ARG1: f()
+engine_table_unregister 3185468 3098992
+dh_private_print 2360189 2229952
+dh_public_print 2360131 2231120
+dh_param_print 2360073 2230576
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+dh_copy_parameters 2359710 2227920
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG2): ARG2: f(ARG2)
+dh_param_decode 2358614 2229744
+f(ARG1): [[(ARG1 + 16)]]: f(ARG1)
+dh_priv_encode 2358052 2228080
+f(ARG1): (ARG1 + 16): f(Symbol)
+dh_priv_decode 2357603 2228512
+f(ARG1): [ARG1]: f(Symbol)
+dh_pub_encode 2357186 2228864
+f(ARG1): (ARG1 + 16): f(Symbol)
+dh_pub_decode 2356671 2229216
+DH_set_ex_data 2355763 2227312
+DH_set_method 2354310 2225824
+f(ARG5 , ): f(ARG5 , ): f(ARG6)
+dh_bn_mod_exp 2354023 2225648
+f(ARG1): f(ARG1): f(ARG1)
+DH_check_pub_key 2356404 2227696
+f(ARG4 , Symbol): f(ARG4 , Symbol): f(ARG4)
+dsa_do_verify 2348953 2219440
+f(ARG1): ([ARG1] + ((f() + 3) * 8)): f(ARG1 , ARG7 , ARG8)
+BN_mod_exp2_mont 3124808 3042704
+f(ARG2 , ): f(ARG2 , ): f(ARG2 , RSP , Symbol)
+dsa_sign_setup 2347841 2221216
+f(ARG3 , Symbol): f(ARG3 , Symbol): f(ARG3)
+dsa_do_sign 2346931 2220384
+f(ARG2): ARG2: f(ARG2)
+d2i_DSAPublicKey 2346153 2218832
+f(ARG3): f(ARG3): f(ARG3)
+_INIT_0 2344256 2348928
+f(ARG3): f(ARG3): f(ARG3)
+_FINI_0 2344192 2348864
+DSA_set_method 2343611 2217200
+f(ARG2 , ): f(ARG2 , ): f(RSP)
+RSA_blinding_on 2338390 2211536
+f(ARG2): ARG2: f(ARG2)
+d2i_RSA_PSS_PARAMS 2337301 2210896
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+RSA_set_method 2325699 2199216
+f(ARG2 , ARG3 , ): f(ARG2 , ARG3 , ): f(ARG2 , ARG3 , Symbol)
+RSA_eay_mod_exp 2319625 2190176
+returns
+RSA_eay_public_decrypt 2318526 2192192
+returns
+RSA_padding_check_PKCS1_type_1 2330517 2203968
+returns
+RSA_padding_check_X931 2336710 2210432
+RSA_eay_private_decrypt 2316968 2195552
+returns
+RSA_padding_check_SSLv23 2331840 2205120
+returns
+RSA_padding_check_PKCS1_type_2 2331191 2204592
+RSA_padding_check_PKCS1_OAEP 2333307 2207376
+f(ARG1 , ): (f(ARG1 , Symbol) + ARG1): f()
+RSA_eay_private_encrypt 2315371 2194144
+f(ARG4): (ARG4 + f()): f()
+RSA_padding_add_X931 2336474 2210256
+f(ARG1): (ARG1 + 1): f()
+RSA_padding_add_PKCS1_type_1 2330316 2203840
+f(ARG1 , ARG2 , ARG4 , Symbol): f(ARG1 , ARG2 , ARG4 , Symbol): f(ARG1 , ARG2)
+BN_BLINDING_invert_ex 3113790 3031936
+f(ARG1 , ARG3 , ARG4 , Symbol): f(ARG1 , ARG3 , ARG4 , Symbol): f(ARG1 , ARG3)
+BN_BLINDING_convert_ex 3113493 3033440
+f(ARG1 , ARG2 , Symbol): f(ARG1 , ARG2 , Symbol): f(ARG1)
+BN_BLINDING_update 3113072 3032816
+f(ARG3): f(ARG3): f(ARG1 , Symbol)
+rsa_get_blinding 2314647 2191712
+f(ARG2 , ): f(ARG2 , ): f(RSP)
+RSA_setup_blinding 2338821 2212432
+f(ARG4 , Symbol): f(ARG4 , Symbol): f(ARG4)
+BN_BLINDING_create_param 3114069 3032112
+f(ARG1): f(ARG1): f(ARG1)
+BN_BLINDING_new 3112563 3031424
+f(ARG1 , ): (f(ARG1 , Symbol) + 8): f()
+RSA_eay_public_encrypt 2313567 2193184
+f(ARG1): (ARG1 + 1): f()
+RSA_padding_add_SSLv23 2331534 2204880
+f(ARG1 , ARG2): (ARG1 + (f(ARG1 , ARG2) + 21)): f()
+RSA_padding_add_PKCS1_OAEP 2332576 2206176
+f(ARG1): (ARG1 + 1): f()
+RSA_padding_add_PKCS1_type_2 2330915 2204368
+ECParameters_print 2309445 2186880
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ECPKParameters_print_fp 2308880 2183952
+EC_KEY_clear_flags 2308845 2183936
+EC_KEY_set_flags 2308812 2183920
+f(ARG1 , ARG2 , Symbol): f(ARG1 , ARG2 , Symbol): f(ARG1)
+i2o_ECPublicKey 2304225 2179856
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1 , Symbol)
+o2i_ECPublicKey 2303875 2179600
+f(ARG2): ARG2: f(ARG2)
+d2i_ECParameters 2303609 2178912
+f(ARG1): f(ARG1): f(ARG1)
+i2d_ECParameters 2303521 2178496
+f(ARG3): f(ARG3): f()
+EC_POINT_hex2point 2292899 2169552
+f(ARG4 , ): (f() + f(ARG4 , Symbol)): f()
+EC_POINT_point2hex 2292484 2169280
+f(ARG4 , Symbol): f(ARG4 , Symbol): f(ARG4)
+EC_POINT_bn2point 2292166 2169040
+f(ARG2 , ARG3): f(ARG2 , ARG3): f(ARG2)
+EC_GROUP_cmp 2275201 2155568
+f(ARG2): f(ARG2): f(ARG2)
+BN_MONT_CTX_set_locked 2271593 2151600
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+BN_MONT_CTX_copy 2271391 2151488
+f(ARG4 , ): f(ARG4 , ): f(ARG2)
+BN_mod_lshift 2229527 2105664
+f(ARG1 , ARG2): (f(ARG1 , ARG2) + 8): f(ARG2)
+BN_mod_lshift_quick 2229712 2105408
+f(ARG3 , ): f(ARG3 , ): f(ARG1 , ARG3 , ARG4 , Symbol)
+BN_mod_lshift1 2229342 2105184
+f(ARG5): (f(ARG5) + 24): f(ARG1 , ARG5 , ARG6)
+bn_mul_high 2224346 2100992
+f(ARG4 , ARG5): f(ARG4 , ARG5): f(ARG5)
+bn_mul_low_recursive 2223754 2102656
+returns
+bn_add_part_words 2217932 2095200
+f(ARG3 , ARG4): f(ARG3 , ARG4): f()
+BN_consttime_swap 2213606 2092880
+BN_clear_bit 2212502 2092144
+returns
+BN_get_word 2210932 2090592
+f(ARG1): (f(ARG1) + 16): f(ARG1)
+bn_dup_expand 2209870 2088752
+f(ARG4 , ): f(ARG4 , ): f(ARG2)
+BN_mod_exp_simple 2206809 2086080
+f(ARG1 , ARG4 , ): f(ARG1 , ARG4 , ): f(ARG4)
+BN_exp 2197312 2076736
+f(ARG1): (ARG1 + 68): f()
+CRYPTO_gcm128_tag 2192683 2071264
+f(ARG1): (ARG1 + 76): f()
+CRYPTO_gcm128_finish 2192312 2071040
+f(ARG1 , ARG3 , ARG4): (f(ARG3 , ARG4) + f(ARG1)): f()
+CRYPTO_gcm128_decrypt_ctr32 2191335 2070128
+f(ARG1): (ARG1 + 368): f(ARG1)
+CRYPTO_gcm128_encrypt_ctr32 2190374 2069216
+f(ARG1 , ARG3): (f(ARG3) + f(ARG1)): f()
+CRYPTO_gcm128_decrypt 2188974 2068016
+f(ARG1 , ARG3): (f(ARG3) + f(ARG1)): f()
+CRYPTO_gcm128_encrypt 2187543 2066816
+BF_ecb_encrypt 2129862 2033920
+idea_ecb_encrypt 2127500 2031696
+DES_key_sched 2071835 1981616
+DES_set_key 2070725 1981264
+DES_set_key_checked 2070798 1980960
+HMAC_CTX_set_flags 2062014 1970032
+f(ARG1): (ARG1 + 168): f(ARG2)
+HMAC_CTX_copy 2061438 1968480
+f(ARG3 , ): (f(ARG3 , Symbol) + 3): f(RSP)
+SHA384 2037375 1940096
+f(ARG1): (ARG1 + 72): f(ARG1)
+SHA384_Update 2037287 1939552
+f(ARG2): (ARG2 + ([(ARG2 + 208)] + 80)): f()
+SHA384_Final 2036760 1937344
+f(ARG1): (ARG1 + 36): f(ARG1)
+SHA224_Update 2034005 1933056
+f(ARG3 , Symbol): f(ARG3 , Symbol): f(RSP)
+SHA224 2033645 1931392
+f(ARG1): (ARG1 + 20): f(ARG1)
+MD5_Update 2028709 1926432
+returns
+CRYPTO_get_lock_name 2002987 1900288
+f(ARG1): ([(ARG1 + 304)] + 48): f(ARG2 , RSP)
+SSL_CTX_set_srp_password 1998784 1896800
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+BIO_ssl_copy_session_id 1993131 1892784
+ssl_puts 1992579 1889888
+returns
+ssl_ctrl 1990754 1890816
+ssl_write 1990239 1890448
+ssl_read 1989689 1890064
+returns
+SSL_CTX_use_certificate_chain_file 1975110 1876528
+SSL_CTX_use_PrivateKey_ASN1 1974931 1876304
+SSL_CTX_use_RSAPrivateKey_ASN1 1974207 1875072
+SSL_CTX_use_RSAPrivateKey_file 1973810 1874528
+SSL_CTX_use_RSAPrivateKey 1973544 1874256
+SSL_CTX_use_certificate_ASN1 1973412 1874064
+SSL_use_PrivateKey_ASN1 1971963 1872832
+SSL_use_PrivateKey_file 1971552 1872384
+SSL_use_RSAPrivateKey_ASN1 1971219 1871600
+SSL_use_RSAPrivateKey_file 1970808 1871056
+d2i_RSAPrivateKey_bio 2710948 2643776
+SSL_use_RSAPrivateKey 1969946 1870784
+SSL_use_certificate_ASN1 1969814 1870592
+SSL_use_certificate_file 1969396 1870144
+returns
+SSL_rstate_string 1969150 1868784
+returns
+SSL_alert_desc_string 1968094 1867728
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+PEM_ASN1_write 2640514 2574432
+PEM_ASN1_read 2639015 2569856
+f(ARG1): [(ARG1 + 584)]: f()
+SSL_set_session_ticket_ext 1946126 1850880
+SSL_SESSION_set_ex_data 1939579 1844624
+SSL_add_dir_cert_subjects_to_stack 1938798 1843312
+returns
+OPENSSL_DIR_read 2015771 1915456
+SSL_add_file_cert_subjects_to_stack 1938377 1842944
+SSL_CTX_add_client_CA 1937747 1842304
+SSL_add_client_CA 1937703 1842144
+SSL_set_client_CA_list 1937295 1841904
+SSL_CTX_set_msg_callback 1933132 1838848
+returns
+SSL_get_psk_identity 1932954 1838736
+returns
+SSL_get_psk_identity_hint 1932896 1838688
+f(ARG1): (ARG1 + 152): f(ARG2)
+SSL_set_tmp_ecdh_callback 1932380 1838240
+f(ARG1): (ARG1 + 320): f(ARG2)
+SSL_CTX_set_tmp_ecdh_callback 1932340 1838208
+f(ARG1): (ARG1 + 152): f(ARG2)
+SSL_set_tmp_dh_callback 1932300 1838176
+f(ARG1): (ARG1 + 320): f(ARG2)
+SSL_CTX_set_tmp_dh_callback 1932260 1838144
+f(ARG1): (ARG1 + 152): f(ARG2)
+SSL_set_tmp_rsa_callback 1932220 1838112
+f(ARG1): ([([(ARG1 + 24)] + 24)] + 36): f()
+SSL_CTX_set_cert_store 1932103 1838016
+SSL_CTX_set_ex_data 1931980 1837952
+SSL_set_ex_data 1931821 1837888
+returns
+SSL_get_privatekey 1930461 1836896
+f(ARG1): (ARG1 + 456): f()
+SSL_dup 1928735 1835680
+SSL_set_cipher_list 1918287 1824128
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+SSL_copy_session_id 1914428 1820960
+SSL_set_wfd 1913044 1819776
+SSL_set_fd 1912893 1819568
+f(ARG1): ([(ARG1 + 176)] + 24): f(ARG2)
+SSL_set1_param 1911258 1818192
+SSL_CTX_set_ssl_version 1908883 1816016
+returns
+dtls1_enc 1904857 1812160
+dtls1_get_message 1892324 1805104
+dtls1_get_message_fragment 1896850 1801712
+dtls1_reassemble_fragment 1894035 1800448
+returns
+dtls1_write_app_data_bytes 1886914 1797488
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_read_bytes 1881796 1793408
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_read_failed 1900084 1807600
+f(ARG2): ARG2: f()
+dtls1_get_ccs_header 1903409 1811264
+returns
+dtls1_process_heartbeat 1903503 1811296
+f(ARG2): (ARG2 + 80): f()
+dtls1_get_message_header 1903099 1811104
+returns
+dtls1_get_record 1880702 1791424
+dtls1_buffer_record 1878431 1790944
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_ctrl 1876010 1788240
+dtls1_listen 1877692 1788624
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_handle_timeout 1877447 1787552
+f(ARG2): ARG2: f(ARG2)
+dtls1_get_timeout 1876450 1786640
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_retransmit_buffered_messages 1900275 1807760
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_retransmit_message 1901248 1810176
+returns
+pqueue_find 2914163 2841568
+f(ARG1): [([(ARG1 + 136)] + 608)]: f(ARG1)
+dtls1_clear_queues 1874827 1785296
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_connect 1862638 1781856
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_client_certificate 1873586 1781312
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_client_key_exchange 1868364 1778320
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_client_hello 1866630 1777328
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_client_verify 1872747 1780688
+returns
+dtls1_get_client_method 1862582 1777264
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+dtls1_accept 1848548 1773232
+f(ARG1): (f(ARG1) + 1): f(RSP , )
+dtls1_send_server_key_exchange 1854638 1768144
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_hello_request 1853119 1767328
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_change_cipher_spec 1898636 1809248
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+dtls1_send_server_certificate 1860810 1772128
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_certificate_request 1859860 1771472
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_newsession_ticket 1861053 1772304
+f(ARG1): ([(ARG1 + 136)] + 532): f(ARG1)
+dtls1_reset_seq_numbers 1889874 1800048
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_server_done 1854485 1768032
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_server_hello 1853728 1767424
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , Symbol)
+dtls1_send_finished 1898100 1805760
+f(ARG1): ([(ARG1 + 136)] + 644): f(ARG1 , )
+dtls1_do_write 1890563 1803664
+returns
+pqueue_insert 2913869 2841344
+returns
+tls1_alert_code 1848195 1767248
+f(ARG5): ((ARG5 + f()) + 24): f(ARG1)
+tls1_export_keying_material 1847397 1766464
+tls1_enc 1842983 1760640
+f(ARG1): (f(ARG1) + 16): f(ARG1 , ARG2)
+tls1_change_cipher_state 1839047 1757888
+f(ARG14): (ARG14 + f()): f()
+tls1_PRF 1838301 1755664
+f(ARG1): (ARG1 + 8): f(Symbol)
+ssl23_connect 1809071 1735296
+returns
+ssl23_write_bytes 1815452 1739952
+returns
+ssl23_get_client_method 1808963 1735200
+f(ARG1): (ARG1 + 48): f(Symbol)
+ssl23_accept 1804823 1734512
+returns
+ssl23_get_client_hello 1805572 1732208
+returns
+ssl23_read_bytes 1815626 1740064
+returns
+ssl23_get_server_method 1804715 1732096
+f(ARG2): ARG2: f(ARG2 , ARG4)
+tls1_cbc_remove_padding 1798459 1727280
+returns
+ssl3_get_message 1794802 1723104
+returns
+ssl3_read_bytes 1785923 1714224
+returns
+tls1_process_heartbeat 1835549 1754848
+f(ARG1): (ARG1 + f()): f(ARG2 , ARG3 , ARG4 , RSP)
+ssl3_cbc_copy_mac 1799135 1727680
+returns
+ssl3_read_n 1779781 1709472
+returns
+ssl3_alert_code 1779475 1708576
+f(ARG1): (ARG1 + 84): f()
+MD5_Init 2029648 1927296
+tls1_md5_final_raw 1799878 1726160
+tls1_sha1_final_raw 1800325 1726272
+f(ARG1): (ARG1 + 32): f()
+SHA224_Init 2033367 1931232
+f(ARG1): (ARG1 + 212): f()
+SHA384_Init 2035185 1935344
+returns
+ssl3_enc 1774575 1704528
+returns
+ssl3_setup_key_block 1773770 1703072
+f(ARG1): (f(ARG1) + 16): f(ARG1 , ARG2)
+ssl3_change_cipher_state 1771347 1701488
+ssl3_peek 1770144 1700992
+ssl3_read 1770099 1700720
+returns
+ssl3_write 1769454 1700416
+ssl3_callback_ctrl 1763522 1696304
+f(ARG4): (f(ARG4) + 12): f(Symbol)
+ssl3_ctrl 1761477 1694832
+returns
+dtls1_write_bytes 1887392 1797808
+returns
+do_dtls1_write 1887494 1798720
+returns
+ssl3_pending 1759857 1693904
+returns
+ssl3_get_cipher 1759791 1693840
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+ssl3_connect 1729091 1689472
+f(ARG1): [([(ARG1 + 304)] + 296)]: f(RSP)
+ssl3_get_server_hello 1733966 1672064
+returns
+ssl_check_serverhello_tlsext 1831832 1749392
+returns
+ssl3_comp_find 1960549 1861856
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+ssl_parse_serverhello_tlsext 1828086 1746080
+ssl_parse_serverhello_use_srtp_ext 1907806 1814576
+returns
+ssl_get_ciphers_by_id 1917924 1823856
+f(ARG1): f(ARG1): f(Symbol)
+ssl3_send_client_verify 1755057 1686464
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+ssl3_check_cert_and_algorithm 1757787 1688416
+f(ARG1): (ARG1 + 80): f(ARG1 , RSP)
+ssl_check_srvr_ecc_cert_and_alg 1925337 1829424
+f(ARG1): ([(ARG1 + 304)] + 68): f(RSP)
+ssl3_get_new_session_ticket 1747026 1681824
+ssl_add_clienthello_tlsext 1816863 1741840
+f(ARG2): f(ARG2): f()
+ssl_add_clienthello_use_srtp_ext 1906512 1813424
+f(ARG2): (ARG2 + 1): f(ARG1)
+ssl_add_clienthello_renegotiate_ext 1999040 1896992
+f(ARG1): [(ARG1 + 544)]: f()
+ssl_prepare_clienthello_tlsext 1830087 1747792
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_NAME 2560039 2465072
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+ssl3_send_client_key_exchange 1748924 1683056
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+SRP_generate_client_master_secret 1997501 1895872
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , ARG3 , Symbol)
+SRP_Calc_client_key 2945839 2867664
+f(ARG4 , ): f(ARG4 , ): f(ARG1 , ARG4 , Symbol)
+BN_mod_sub 2228863 2104672
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+SRP_Calc_A_param 1998137 1896368
+f(ARG2 , ARG3 , ): f(ARG2 , ARG3 , ): f()
+SRP_Calc_A 2945678 2867520
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+ssl3_accept 1697910 1667120
+ssl3_send_finished 1792014 1720848
+ssl3_send_change_cipher_spec 1793430 1721936
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+ssl_add_serverhello_tlsext 1821177 1744848
+f(ARG2): (ARG2 + 1): f(ARG1)
+ssl_add_serverhello_renegotiate_ext 1999642 1897504
+f(ARG2): (ARG2 + 1): f()
+ssl_add_serverhello_use_srtp_ext 1907555 1814384
+f(ARG1): [(ARG1 + 544)]: f()
+ssl_prepare_serverhello_tlsext 1830744 1748752
+returns
+ssl_verify_alarm_type 1796475 1724352
+f(ARG2): (ARG2 + 28): f()
+tls12_get_req_sig_algs 1816803 1741776
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+ssl3_get_client_hello 1703441 1649536
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+ssl_parse_clienthello_tlsext 1823797 1751488
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_RESPID 2848415 2778240
+f(ARG1): f(ARG1): f(Symbol)
+tls1_process_sigalgs 1835042 1750976
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_EXTENSIONS 2615293 2548880
+returns
+SSL_get_srtp_profiles 1906381 1813344
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+ssl_check_clienthello_tlsext_late 1831442 1749200
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+ssl3_choose_cipher 1766138 1698224
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+ssl3_get_client_key_exchange 1715566 1658000
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+SRP_generate_server_master_secret 1997079 1895568
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(ARG2)
+SRP_Calc_server_key 2944516 2866528
+f(ARG2 , ): f(ARG2 , ): f(ARG1)
+SRP_Verify_A_mod_N 2946551 2868288
+f(ARG2 , ): f(ARG2 , ): f(ARG1)
+SRP_Verify_B_mod_N 2946394 2868144
+f(ARG1): (f(ARG1) + 2): f(RSP , )
+ssl3_send_server_key_exchange 1709095 1653456
+returns
+ssl_get_sign_pkey 1926505 1833856
+returns
+tls12_get_hash 1834943 1750896
+X509_certificate_type 2702843 2636688
+f(ARG3): ARG3: f()
+ssl_get_handshake_digest 1950885 1856672
+ssl3_get_finished 1792798 1721424
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+ssl3_send_server_certificate 1726033 1665120
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+ssl_get_server_send_cert 1926454 1831904
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+ssl_get_server_send_pkey 1926042 1829968
+f(ARG1): ([(ARG1 + 216)] + 80): f(ARG1 , RSP)
+ssl_set_cert_masks 1923585 1827792
+ssl3_do_write 1791717 1720624
+returns
+ssl3_write_bytes 1783405 1712320
+returns
+do_ssl3_write 1783804 1710960
+returns
+ssl3_write_pending 1785385 1710544
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+SSL_srp_server_param_with_username 1995802 1894592
+f(ARG2 , ARG3 , ): f(ARG2 , ARG3 , ): f()
+SRP_Calc_B 2944797 2866784
+ssl2_peek 1694384 1647808
+ssl2_ctx_callback_ctrl 1689732 1643504
+returns
+ssl2_ctrl 1689627 1643440
+f(ARG1): (ARG1 + 104): f(ARG1)
+ssl2_new 1689062 1642912
+f(ARG1): ([(ARG1 + 120)] + 336): f()
+ssl2_clear 1689482 1643344
+returns
+ssl2_get_cipher 1688946 1642832
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+ssl2_connect 1679055 1635440
+SSL_use_PrivateKey 1971393 1871920
+SSL_use_certificate 1969243 1869584
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+ssl2_accept 1668380 1626768
+returns
+ssl_bytes_to_cipher_list 1919142 1824896
+ssl3_send_alert 1791024 1719152
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+ssl_get_prev_session 1942052 1848464
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+tls_decrypt_ticket 1833488 1740384
+f(ARG3): ARG3: f()
+EVP_DecryptFinal 2457776 2358032
+returns
+ssl_get_new_session 1940222 1845008
+f(ARG3): ([ARG3] + f()): f()
+def_generate_session_id 1940103 1843760
+f(ARG1): ([(ARG1 + 24)] + 64): f()
+ssl_free_wbio_buffer 1931015 1837328
+ssl_init_wbio_buffer 1930680 1837024
+returns
+ssl_cipher_list_to_bytes 1918731 1824496
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+ssl_update_cache 1926818 1834032
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+SSL_CTX_add_session 1943807 1846896
+ssl2_enc_init 1691095 1644688
+returns
+ssl_replace_hash 1933212 1838880
+X509_STORE_CTX_set_ex_data 2689900 2619744
+ssl2_read 1694339 1647792
+ssl2_read_internal 1692617 1646352
+f(ARG1): (ARG1 + 112): f(ARG2)
+read_n 1694429 1645776
+returns
+ssl2_part_read 1697139 1648864
+ssl2_return_error 1690675 1644224
+f(ARG1): ([(ARG1 + 120)] + 92): f(ARG1)
+ssl2_write_error 1690746 1644432
+f(ARG1): (ARG1 + 344): f()
+ssl2_write 1695262 1647824
+returns
+write_pending 1695638 1647552
+ssl2_mac 1692139 1645488
+f(ARG1): (ARG1 + 36): f(ARG2)
+EVP_MD_CTX_copy 2453083 2345344
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+srp_main 1661940 1620624
+srp_create_user 1661503 1619776
+srp_verify_user 1661030 1619408
+SRP_create_verifier 2951663 2873344
+t_tob64 2947628 2868880
+f(ARG5 , ): f(ARG5 , ): f(ARG6)
+SRP_create_verifier_BN 2952741 2873008
+print_user 1660495 1620304
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+ts_main 1650099 1612784
+i2d_TS_REQ_bio 2941078 2864464
+TS_MSG_IMPRINT_set_algo 2914953 2842064
+TS_REQ_set_nonce 2915320 2842352
+f(ARG1): (ARG1 + 32): f()
+TS_REQ_set_cert_req 2915473 2842480
+f(ARG1): [([ARG1] + 8)]: f()
+TS_REQ_set_version 2914731 2841904
+f(ARG1): [(ARG1 + 16)]: f(ARG1)
+TS_REQ_set_policy_id 2915167 2842224
+TS_REQ_set_msg_imprint 2914800 2841936
+create_digest 1655231 1611504
+TS_REQ_print_bio 2915970 2842736
+TS_CONF_set_tsa_name 2940373 2863664
+returns
+TS_CONF_set_signer_key 2938393 2861760
+f(ARG2): (ARG2 + 8): f(ARG2)
+TS_RESP_CTX_set_signer_key 2921621 2847136
+TS_CONF_set_serial 2937532 2860592
+TS_CONF_set_ordering 2940316 2863472
+f(ARG4): ([ARG4] + 28): f(ARG4)
+TS_CONF_set_signer_cert 2938041 2861408
+f(ARG2): (ARG2 + 96): f()
+TS_RESP_CTX_set_signer_cert 2921451 2846992
+f(ARG1): [(ARG1 + 32)]: f(ARG1)
+TS_RESP_CTX_free 2921248 2846864
+TS_CONF_set_digests 2939120 2862480
+f(ARG4): [(ARG4 + 32)]: f(ARG4)
+TS_CONF_set_def_policy 2938584 2862016
+f(ARG1): [(ARG1 + 32)]: f(ARG1)
+TS_RESP_CTX_set_def_policy 2921728 2847216
+f(ARG1): f(ARG1): f(ARG1)
+serial_cb 1657708 1612592
+f(ARG1): f(ARG1): f(ARG1)
+def_extension_cb 2921026 2846352
+def_serial_cb 2920709 2848464
+f(ARG1): f(ARG1): f(ARG1)
+def_time_cb 2920836 2848592
+TS_CONF_set_certs 2938221 2861648
+TS_CONF_set_clock_precision_digits 2939968 2863296
+f(ARG1 , ARG3): (f(ARG1 , ARG3) + (f() + 1)): f()
+TS_CONF_set_crypto_device 2937656 2860704
+f(ARG1): (f(ARG1) + f()): f()
+TS_CONF_set_default_engine 2937776 2861104
+f(ARG1): ([ARG1] + 80): f(ARG1 , RSP)
+TS_RESP_create_response 2923743 2849376
+f(ARG1): (ARG1 + 48): f()
+TS_TST_INFO_set_ordering 2917962 2844352
+TS_ACCURACY_set_millis 2917626 2844064
+TS_ACCURACY_set_seconds 2917477 2843936
+TS_ACCURACY_set_micros 2917794 2844208
+TS_TST_INFO_set_time 2917171 2843680
+TS_TST_INFO_set_msg_imprint 2916865 2843424
+f(ARG1): [([ARG1] + 8)]: f()
+TS_TST_INFO_set_version 2916643 2843264
+TS_TST_INFO_set_tsa 2918183 2844528
+f(ARG2): ARG2: f(ARG2)
+d2i_GENERAL_NAME 2739311 2676288
+TS_TST_INFO_set_accuracy 2917324 2843808
+TS_TST_INFO_set_nonce 2918030 2844400
+f(ARG1): [(ARG1 + 8)]: f(ARG1)
+TS_TST_INFO_set_policy_id 2916712 2843296
+TS_TST_INFO_set_serial 2917018 2843552
+i2d_TS_TST_INFO_bio 2941618 2864704
+TS_RESP_CTX_set_status_info_cond 2923401 2848880
+TS_RESP_CTX_set_status_info 2923039 2848208
+TS_CONF_set_policies 2938787 2862224
+f(ARG2): f(ARG2): f(ARG2)
+TS_RESP_CTX_add_policy 2922122 2847520
+f(ARG3): ([(ARG3 + 56)] + 8): f()
+TS_CONF_set_accuracy 2939497 2862864
+f(ARG1): ([(ARG1 + 56)] + 4): f()
+TS_RESP_CTX_set_accuracy 2922440 2847808
+TS_CONF_set_ess_cert_id_chain 2940430 2863856
+TS_RESP_CTX_add_flags 2922877 2848144
+TS_RESP_print_bio 2918765 2846176
+TS_STATUS_INFO_print_bio 2918945 2845728
+TS_TST_INFO_print_bio 2919541 2846320
+TS_ext_print_bio 2936206 2859568
+TS_ASN1_INTEGER_print_bio 2935809 2859248
+TS_MSG_IMPRINT_print_bio 2936612 2859904
+TS_X509_ALGOR_print_bio 2936524 2859840
+TS_OBJ_print_bio 2936043 2859440
+i2d_TS_RESP_bio 2942563 2864944
+TS_RESP_set_status_info 2916379 2843056
+TS_RESP_set_tst_info 2916528 2843184
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+TS_RESP_verify_token 2931440 2857088
+f(ARG2): ARG2: f(ARG2)
+d2i_TS_TST_INFO 2941389 2864080
+d2i_TS_REQ_bio 2941027 2864432
+f(ARG2): ARG2: f(ARG2)
+d2i_TS_REQ 2940849 2864064
+returns
+TS_REQ_to_TS_VERIFY_CTX 2935273 2858480
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+TS_RESP_verify_response 2931324 2855584
+f(ARG1): f(ARG1): f(ARG1 , Symbol)
+TS_RESP_verify_signature 2929235 2854592
+f(ARG2): (ARG2 + 96): f()
+TS_find_cert 2930916 2854336
+f(ARG2): ARG2: f(ARG2)
+d2i_ESS_SIGNING_CERT 2943052 2865200
+TS_compute_imprint 2933349 2853408
+EVP_DigestFinal 2452814 2342784
+f(ARG1): ARG1: f()
+EVP_DigestInit 2451971 2341520
+f(ARG1): ([([(ARG1 + 8)] + 24)] + 36): f()
+TS_VERIFY_CTX_free 2935047 2858208
+f(ARG1): ([([(ARG1 + 8)] + 24)] + 36): f()
+TS_VERIFY_CTX_cleanup 2935095 2858352
+f(ARG1): (ARG1 + 32): f()
+TS_VERIFY_CTX_init 2934979 2858128
+d2i_TS_RESP_bio 2942512 2864912
+f(ARG2): ARG2: f(ARG2)
+d2i_TS_RESP 2942334 2864096
+f(ARG2): (f(ARG2) + [(f() + 8)]): f()
+ocsp_main 1633237 1598416
+OCSP_REQUEST_print 2862639 2789456
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+OCSP_basic_verify 2864855 2792688
+returns
+X509_find_by_subject 2671074 2605120
+ocsp_match_issuerid 2866914 2791168
+f(ARG1): [[(ARG1 + 8)]]: f(RSP)
+OCSP_request_sign 2858587 2785360
+OCSP_single_get0_status 2859453 2786352
+returns
+OCSP_resp_find 2859298 2786256
+returns
+OCSP_resp_get0 2859243 2786224
+OCSP_copy_nonce 2851876 2780112
+OCSP_BASICRESP_add_ext 2850797 2779200
+f(ARG1): (f(ARG1) + f()): f(Symbol)
+OCSP_basic_sign 2861527 2788192
+f(ARG4): ARG4: f(RSP)
+X509_pubkey_digest 2712021 2644480
+OCSP_basic_add1_status 2860804 2787664
+returns
+ASN1_TIME_to_generalizedtime 2540266 2434128
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_REQUEST 2847980 2778048
+util_do_cmds 1630066 1591728
+d2i_CMS_bio 2882604 2809856
+f(ARG2): f(ARG2): f(ARG2)
+CMS_ContentInfo_print_ctx 2877471 2803488
+gnames_stack_print 1624827 1298600
+GENERAL_NAME_print 2741607 2682064
+f(ARG1): ARG1: f(Symbol)
+CMS_EncryptedData_decrypt 2884759 2812112
+f(ARG3): (ARG3 + 80): f(ARG3 , RSP)
+CMS_decrypt 2889060 2817712
+f(ARG2): (ARG2 + 80): f(ARG2 , RSP)
+CMS_sign_receipt 2887281 2815520
+f(ARG1): (ARG1 + 80): f(ARG1 , RSP)
+CMS_sign 2886917 2815008
+f(ARG1): [([(ARG1 + 8)] + 16)]: f()
+CMS_SignedData_init 2890141 2818768
+f(ARG1): [([([(ARG1 + 8)] + 8)] + 8)]: f(Symbol)
+CMS_data 2884094 2811072
+PEM_write_bio_CMS_stream 2883097 2810112
+f(ARG3): (ARG3 + 96): f()
+CMS_decrypt_set1_pkey 2888088 2816640
+f(ARG2): (ARG2 + 96): f()
+CMS_RecipientInfo_ktri_cert_cmp 2900133 2828848
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): ([(f(ARG1) + 8)] + 8): f(ARG1)
+a2i_GENERAL_NAME 2744208 2685312
+f(ARG1): (ARG1 + 4294967295): f()
+a2i_ipadd 2737334 2674576
+f(ARG3): ((ARG3 + [(ARG3 + 16)]) + 1): f()
+ipv6_cb 2738148 2666544
+X509V3_NAME_from_section 2738656 2675952
+f(ARG1): [([(f(ARG1) + 8)] + 24)]: f(ARG1 , RSP)
+CMS_decrypt_set1_key 2888495 2817088
+CMS_add0_recipient_key 2901767 2829152
+f(ARG3): (ARG3 + 80): f(ARG3)
+i2d_CMS_bio_stream 2883042 2810096
+CMS_data_create 2884255 2811216
+CMS_add0_recipient_password 2909774 2838448
+f(ARG1): [([([(ARG1 + 8)] + 8)] + 8)]: f(Symbol)
+CMS_verify_receipt 2886813 2814096
+returns
+cms_Receipt_verify 2908053 2836864
+f(ARG1): [([([(ARG1 + 8)] + 24)] + 8)]: f(Symbol)
+CMS_verify 2885665 2812784
+f(ARG1): ([(f(ARG1) + 8)] + 80): f(ARG1 , RSP)
+CMS_set1_signers_certs 2893836 2820160
+f(ARG2): (ARG2 + 96): f()
+CMS_SignerInfo_cert_cmp 2893795 2820000
+f(ARG2): (ARG2 + 96): f()
+cms_SignerIdentifier_cert_cmp 2891532 2819360
+CMS_SignerInfo_set1_signer_cert 2893583 2819808
+f(ARG2): ARG2: f(ARG2)
+d2i_CMS_ContentInfo 2877326 2803424
+f(ARG1): (f(ARG1) + 64): f(ARG1)
+SMIME_read_CMS 2883303 2810256
+f(ARG2): (ARG2 + 80): f(ARG2 , RSP)
+CMS_add1_signer 2891738 2825184
+f(ARG2): (ARG2 + 96): f()
+CMS_add1_cert 2880679 2807904
+f(ARG2): (ARG2 + 96): f()
+CMS_add0_cert 2880437 2807600
+cms_add_cipher_smcap 2897590 2818496
+returns
+X509at_get0_data_by_OBJ 2701229 2633008
+returns
+X509_ATTRIBUTE_get0_data 2702622 2636384
+returns
+X509_ATTRIBUTE_get0_type 2702746 2636576
+returns
+X509_ATTRIBUTE_count 2702523 2636320
+CMS_digest_create 2884600 2811792
+f(ARG1): [ARG1]: f(ARG1)
+cms_DigestAlgorithm_set 2879486 2806768
+SMIME_write_CMS 2883159 2810144
+returns
+CMS_get0_eContentType 2879033 2805728
+f(ARG1): (f(ARG1) + 80): f(ARG1 , RSP)
+CMS_encrypt 2887784 2816208
+f(ARG2): (ARG2 + 80): f(ARG2 , RSP)
+CMS_add1_recipient_cert 2899205 2828032
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): [([(f(ARG1) + 8)] + 24)]: f(ARG1 , RSP)
+CMS_decrypt_set1_password 2888831 2817504
+returns
+CMS_get0_RecipientInfos 2898980 2827616
+returns
+cms_get0_enveloped 2898688 2827536
+f(ARG2): [([(ARG2 + 8)] + 24)]: f(ARG1 , RSP)
+CMS_RecipientInfo_decrypt 2904180 2830128
+AES_unwrap_key 3055654 2971568
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+CMS_set1_eContentType 2879084 2805888
+f(ARG1): [([([(ARG1 + 8)] + 24)] + 8)]: f(Symbol)
+CMS_digest_verify 2884360 2811472
+cms_copy_content 2883347 2810272
+CMS_EncryptedData_encrypt 2885011 2812416
+f(ARG1): [([([(ARG1 + 8)] + 24)] + 8)]: f(Symbol)
+CMS_final 2889407 2818080
+f(ARG1): [([([(ARG1 + 8)] + 24)] + 8)]: f(Symbol)
+CMS_dataInit 2877758 2804192
+f(ARG1): [([(f(ARG1) + 8)] + 24)]: f(A_Stack[-0x38]:8)
+cms_EnvelopedData_init_bio 2904324 2831248
+f(ARG3): ARG3: f(ARG2 , Symbol)
+AES_wrap_key 3055206 2971280
+f(ARG2): [([(ARG2 + 8)] + 24)]: f(ARG1 , RSP)
+cms_RecipientInfo_pwri_crypt 2912225 2839600
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_ALGOR 2554178 2456176
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+CMS_dataFinal 2878090 2804800
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+CMS_signed_get_attr_count 3232748 3146512
+cms_DigestAlgorithm_find_ctx 2879861 2807120
+returns
+CMS_get0_SignerInfos 2893345 2819520
+CMS_set_detached 2879275 2806384
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): ([([(ARG1 + 8)] + 8)] + 24): f()
+CMS_EncryptedData_set1_key 2906295 2833952
+cms_EncryptedContent_init 2906125 2833824
+SMIME_write_PKCS7 2831420 2760704
+SMIME_write_ASN1 3217265 3137904
+f(ARG3): (ARG3 + 80): f(ARG3)
+i2d_PKCS7_bio_stream 2831303 2760656
+PEM_write_bio_PKCS7_stream 2831358 2760672
+PEM_write_bio_ASN1_stream 3216348 3137184
+B64_write_ASN1 3216145 3137568
+f(ARG3): (ARG3 + 80): f(ARG3)
+i2d_ASN1_bio_stream 3215901 3136992
+f(ARG2): ARG2: f(ARG2 , ARG3 , RSP)
+ASN1_item_ndef_i2d 2587042 2511360
+f(ARG1): f(ARG1): f(ARG1 , Symbol)
+PKCS7_verify 2826533 2756800
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+X509_find_by_issuer_and_serial 2670817 2604896
+returns
+X509_issuer_and_serial_cmp 2669183 2602944
+PKCS7_signatureVerify 2822090 2751408
+EVP_VerifyFinal 2486919 2384432
+f(ARG1): (f(ARG1) + 64): f(ARG1)
+SMIME_read_PKCS7 2831551 2760800
+f(ARG3): f(ARG3): f(ARG3)
+SMIME_read_ASN1 3218903 3134864
+f(ARG3): (f(ARG3) + 28): f(ARG3)
+PKCS7_sign 2824679 2755568
+PKCS7_content_new 2808010 2738720
+PKCS7_set_content 2808133 2739344
+PKCS7_encrypt 2828992 2758640
+PKCS7_add_recipient 2811390 2742096
+f(ARG1): [([ARG1] + 8)]: f()
+PKCS7_RECIP_INFO_set 2811668 2742736
+PKCS7_add_recipient_info 2811507 2742608
+PKCS7_set_cipher 2812259 2743200
+f(ARG1): f(ARG1): f(ARG2)
+PKCS7_sign_add_signer 2825460 2754592
+f(ARG1): f(ARG1): f(ARG1)
+PKCS7_add_certificate 2809631 2740416
+add_cipher_smcap 2825320 2754304
+returns
+PKCS7_get_signer_info 2811175 2741968
+returns
+PKCS7_digest_from_attributes 2823762 2753264
+PKCS7_add_attrib_smimecap 2830299 2759840
+PKCS7_add_signature 2810678 2741264
+PKCS7_add_signer 2809141 2740064
+f(ARG1): [(ARG1 + 16)]: f(ARG4)
+PKCS7_SIGNER_INFO_set 2810229 2740928
+PKCS7_add_attrib_content_type 2830959 2760336
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+PKCS7_decrypt 2829363 2759088
+SMIME_text 3220779 3139840
+f(ARG1): [(ARG1 + 16)]: f(ARG1)
+mime_hdr_addparam 3223729 3132032
+PKCS7_dataDecode 2816348 2746656
+returns
+EVP_CIPHER_asn1_to_param 2502085 2399952
+pkcs7_decrypt_rinfo 2813862 2743696
+f(ARG1): f(ARG1): f(ARG1 , Symbol)
+PKCS7_final 2825092 2754384
+f(ARG1): [(f(ARG1) + 24)]: f(A_Stack[-0x30]:8)
+PKCS7_dataInit 2814446 2744176
+EVP_CIPHER_CTX_rand_key 2459129 2360864
+SMIME_crlf_copy 3220271 3136608
+f(ARG1): [(f(ARG1) + 40)]: f(A_Stack[-0x58]:8)
+PKCS7_dataFinal 2819203 2749216
+returns
+PKCS7_ctrl 2807601 2738416
+EVP_SignFinal 2486142 2383904
+returns
+BIO_next 2393540 2265136
+returns
+PKCS7_get_signed_attribute 2823484 2752944
+PKCS7_add1_attrib_digest 2831176 2760528
+PKCS7_add0_attrib_signing_time 2831056 2760432
+PKCS7_add_signed_attribute 2824211 2753728
+f(ARG1): [(ARG1 + 40)]: f(A_Stack[-0x58]:8)
+PKCS7_SIGNER_INFO_sign 2821027 2748720
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+spkac_main 1597280 1561984
+f(ARG1): [(ARG1 + 8)]: f(RSP)
+NETSCAPE_SPKI_sign 2709938 2643024
+NETSCAPE_SPKI_print 2582450 2487712
+NETSCAPE_SPKI_set_pubkey 2675270 2608496
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+pkeyutl_main 1592147 1558096
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+pkeyparam_main 1591026 1556720
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+pkey_main 1588861 1554704
+i2d_PUBKEY_bio 2713300 2645312
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+pkcs8_main 1584730 1551072
+d2i_PKCS8_PRIV_KEY_INFO_bio 2713013 2645104
+d2i_PKCS8_bio 2712524 2644768
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+pkcs12_main 1573186 1540080
+PKCS12_create 2835465 2764304
+f(ARG1): (ARG1 + 24): f(ARG2)
+PKCS7_set_type 2808341 2739520
+PKCS12_add_key 2836924 2764048
+PKCS12_add_cert 2836647 2763776
+returns
+X509_keyid_get0 2565546 2466512
+PKCS12_pack_authsafes 2833189 2762192
+dump_certs_keys_p12 1581495 1538400
+returns
+dump_certs_pkeys_bags 1581975 1549728
+returns
+dump_certs_pkeys_bag 1582109 1536240
+print_attribs 1583807 1535632
+hex_prin 1584495 1550976
+f(ARG2): ARG2: f(ARG2)
+d2i_PBEPARAM 2631431 2563120
+f(ARG1): [[[(ARG1 + 8)]]]: f(ARG7 , Symbol)
+PKCS12_set_mac 2844491 2775088
+f(ARG1): [[[(ARG1 + 8)]]]: f(ARG5)
+PKCS12_setup_mac 2844838 2775824
+i2d_PKCS12_bio 2845856 2776576
+f(ARG2): ARG2: f()
+set_pbe 1584581 1298292
+PEM_write_bio_NETSCAPE_CERT_SEQUENCE 2649109 2578736
+f(ARG2): ARG2: f(ARG2)
+d2i_NETSCAPE_CERT_SEQUENCE 2570867 2469968
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+SSL_CIPHER_description 1958740 1860304
+returns
+SSL_get_cipher_list 1918028 1823920
+f(ARG1): (ARG1 + 108): f(ARG2)
+SSL_SESSION_set1_id_context 1945796 1850560
+setup_verify 1546350 1511680
+set_cert_stuff 1558415 1521376
+SSL_CTX_use_certificate_file 1973008 1873616
+SSL_CTX_use_PrivateKey_file 1974534 1875856
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+speed_main 1500448 1469344
+f(ARG3): (ARG3 + 52): f()
+private_Camellia_set_key 2160445 2053696
+f(ARG2): ARG2: f(ARG2)
+d2i_DSA_SIG 2345758 2218736
+f(ARG1): ((ARG1 + 96) + 128): f(ARG1)
+CRYPTO_gcm128_init 2186082 2064800
+f(ARG5): (ARG5 + 2): f(ARG1)
+RC2_cbc_encrypt 2115734 2023776
+f(ARG5): (ARG5 + 2): f(ARG1)
+CAST_cbc_encrypt 2149061 2042784
+RSA_verify 2330169 2202800
+f(ARG4): (ARG4 + 4): f()
+int_rsa_verify 2328852 2201504
+f(ARG7): (ARG7 + 7): f(ARG1 , ARG7)
+DES_ede3_cbc_encrypt 2096518 2003952
+f(ARG1): (ARG1 + 372): f(ARG1)
+CRYPTO_gcm128_aad 2187073 2066304
+f(ARG1): (ARG1 + (((f() * 2) + 1) * 4)): f(RSP)
+CAST_set_key 2136557 2037296
+f(ARG2): ARG2: f(ARG2)
+d2i_ECDSA_SIG 3173209 3087264
+f(ARG5): (ARG5 + 8): f()
+AES_ige_encrypt 2100177 2006656
+f(ARG3 , Symbol): f(ARG3 , Symbol): f(RSP)
+SHA256 2033825 1932224
+f(ARG1): (ARG1 + 32): f()
+SHA256_Init 2033506 1931312
+f(ARG1): (ARG1 + 36): f(ARG1)
+SHA256_Update 2034087 1934192
+f(ARG5): (ARG5 + 8): f()
+SEED_cbc_encrypt 2183709 2063312
+SEED_encrypt 2166929 2056752
+f(ARG5): (ARG5 + 8): f(ARG2)
+CRYPTO_cbc128_encrypt 2183834 2063360
+SEED_decrypt 2175319 2060032
+f(ARG5): ARG5: f()
+CRYPTO_cbc128_decrypt 2184207 2063904
+f(ARG5): (ARG5 + 7): f(ARG1)
+BF_cbc_encrypt 2133976 2036016
+f(ARG1): ARG1: f()
+RC2_set_key 2115200 2022144
+f(ARG2): (f(ARG2) + 48): f(ARG2)
+idea_set_encrypt_key 2128039 2031888
+f(ARG1): f(ARG1): f(ARG1)
+BF_set_key 2129267 2033552
+f(ARG5): (ARG5 + 6): f(ARG1)
+idea_cbc_encrypt 2121515 2030160
+returns
+SSLeay_version 2011526 1910944
+f(ARG2): (ARG2 + 44): f()
+SEED_set_key 2160663 2053840
+returns
+ecdsa_check 3172538 3086416
+returns
+ECDSA_get_default_method 3171906 3086160
+returns
+ecdh_check 3179233 3093088
+returns
+EC_KEY_get_key_method_data 2308404 2183568
+returns
+EC_KEY_insert_key_method_data 2308520 2183680
+returns
+ECDH_get_default_method 3178601 3092832
+f(ARG3 , ): (f(ARG3 , Symbol) + 3): f(RSP)
+SHA512 2037567 1942144
+f(ARG2): (ARG2 + ([(ARG2 + 208)] + 80)): f()
+SHA512_Final 2035605 1935664
+f(ARG1): (ARG1 + 72): f(ARG1)
+SHA512_Update 2036797 1939024
+f(ARG1): (ARG1 + 212): f()
+SHA512_Init 2035395 1935504
+f(ARG5): ARG5: f(ARG5)
+DES_ncbc_encrypt 2093945 2002688
+f(ARG3 , ): (f(ARG3 , Symbol) + 28): f(RSP)
+WHIRLPOOL 2063902 1972800
+f(ARG1): (ARG1 + 160): f()
+WHIRLPOOL_Init 2062105 1970096
+f(ARG1): ((ARG1 + 64) + f(ARG1)): f(ARG1 , ARG2 , ARG3 , A_Stack[-0x10]:8)
+WHIRLPOOL_Update 2062146 1971136
+f(ARG1 , ARG3): f(ARG1 , ARG3): f(ARG2 , ARG3 , A_Stack[-0x10]:8)
+WHIRLPOOL_BitUpdate 2062292 1970160
+f(ARG1): (ARG1 + 8): f(ARG2)
+WHIRLPOOL_Final 2063465 1971936
+f(ARG1): (ARG1 + 372): f()
+CRYPTO_gcm128_setiv 2186427 2065488
+f(ARG3 , ): (f(ARG3 , Symbol) + 12): f(RSP)
+KDF1_SHA1 1500368 1468736
+f(ARG3 , ): (f(ARG3 , Symbol) + 12): f(RSP)
+SHA1 2033188 1930624
+f(ARG1): (ARG1 + 20): f()
+SHA1_Init 2033093 1930544
+f(ARG1): (ARG1 + 24): f(ARG1)
+SHA1_Update 2032036 1929664
+SSL_CTX_set_srp_client_pwd_callback 1999001 1896960
+f(ARG1): (ARG1 + 32): f(RSP)
+asn1_GetSequence 2627099 2558176
+SSL_CTX_set_srp_strength 1998831 1896832
+returns
+BIO_find_type 2393420 2265040
+f(ARG1): ([(ARG1 + 304)] + 48): f(ARG2 , RSP)
+SSL_CTX_set_srp_username 1998737 1896768
+f(ARG3): (ARG3 + 2): f(A_Stack[-0x20]:4)
+extract_host_port 1565182 1528864
+SSL_CTX_set_srp_verify_param_callback 1998876 1896864
+print_stuff 1496366 1452512
+returns
+SSL_get_current_expansion 1930633 1836992
+returns
+SSL_COMP_get_name 1961065 1862528
+returns
+SSL_get_client_CA_list 1937406 1842048
+returns
+SSL_get_current_compression 1930586 1836960
+returns
+SSL_get_peer_cert_chain 1914333 1820912
+f(ARG1): (ARG1 + 384): f(ARG2)
+SSL_set_session 1945155 1850048
+SSL_set_ssl_method 1927233 1834384
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+ssl_srp_verify_param_cb 1479747 1450784
+f(ARG4): (f(ARG4) + 1): f()
+psk_client_cb 1476825 1451920
+f(ARG1): ([(ARG1 + 392)] + 24): f(ARG2)
+SSL_CTX_set1_param 1911214 1818176
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+SSL_alert_type_string_long 1967994 1867632
+returns
+SSL_alert_desc_string_long 1968622 1868256
+f(ARG1): ([(ARG1 + 304)] + 48): f(ARG2 , RSP)
+SSL_CTX_set_srp_cb_arg 1998915 1896896
+f(ARG1): ([(ARG1 + 304)] + 48): f(ARG4 , RSP)
+ssl3_ctx_ctrl 1763740 1696512
+f(ARG3): ([ARG3] + f()): f()
+generate_session_id 1476632 1437200
+f(ARG3): f(ARG3): f()
+SSL_has_matching_session_id 1910711 1817712
+set_cert_key_stuff 1558683 1521552
+SSL_CTX_use_certificate 1972142 1873056
+SSL_CTX_use_PrivateKey 1974381 1875392
+ssl_cert_type 1796273 1724144
+SRP_VBASE_init 2949949 2870944
+returns
+SRP_get_default_gN 2946797 2868576
+f(ARG1): (ARG1 + 16): f()
+SRP_user_pwd_set_sv 2948515 2870448
+SSL_CTX_set_cipher_list 1918149 1824032
+f(ARG3): ARG3: f()
+SSL_get0_next_proto_negotiated 1920217 1826016
+PEM_write_bio_SSL_SESSION 1948210 1852144
+SSL_CTX_set_client_CA_list 1937340 1841968
+SSL_CTX_load_verify_locations 1931560 1837744
+X509_STORE_load_locations 2668948 2602784
+SSL_set_msg_callback 1933172 1838864
+returns
+SSL_get_shared_ciphers 1918438 1824240
+print_stats 1465318 1426096
+SSL_get_error 1927468 1834528
+f(ARG1): ((-8 & (ARG1 + 276)) + f()): f(ARG1 , ARG2)
+SSL_set_session_id_context 1910413 1817296
+returns
+SSL_get_current_cipher 1930512 1836928
+SSL_set_bio 1912343 1819088
+returns
+SSL_get_ciphers 1917820 1823792
+SSL_SESSION_print 1986930 1887840
+returns
+SSL_CIPHER_get_version 1960358 1861712
+f(ARG1): (ARG1 + 344): f(ARG2)
+SSL_CTX_set_session_id_context 1910299 1817072
+returns
+HMAC 2061728 1968816
+f(ARG1 , ARG3): f(ARG1 , ARG3): f()
+HMAC_Init 2061042 1967344
+f(ARG1): (ARG1 + 320): f(ARG2)
+SSL_CTX_set_tmp_rsa_callback 1932180 1838080
+SSL_CTX_set_srp_username_callback 1998962 1896928
+ssl3_ctx_callback_ctrl 1765549 1697808
+OCSP_parse_url 2857303 2784336
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , Symbol)
+OCSP_cert_to_id 2856363 2783184
+returns
+X509_get0_pubkey_bitstr 2671247 2605344
+f(ARG1): f(ARG1): f()
+OCSP_cert_id_new 2856506 2783696
+f(ARG4): ARG4: f(RSP)
+X509_NAME_digest 2712303 2644640
+OCSP_REQUEST_add_ext 2849952 2778880
+returns
+SSL_ctrl 1916105 1822784
+process_responder 1648622 1597232
+returns
+SSL_CTX_ctrl 1916828 1823200
+BIO_new_ssl 1992976 1892656
+f(ARG2): ([(ARG2 + 264)] + 272): f(ARG1)
+SSL_CTX_remove_session 1944237 1847952
+OCSP_sendreq_nbio 2854625 2781568
+f(ARG2): ARG2: f(ARG2)
+d2i_OCSP_RESPONSE 2848270 2778176
+OCSP_REQ_CTX_set1_req 2853204 2781008
+ssl_create_cipher_list 1956979 1856752
+f(ARG3): (f(ARG3) + 16): f()
+ssl_cipher_process_rulestr 1954964 1852992
+f(ARG1 , ARG2): ([(f(ARG1 , ARG2) + 16)] + 24): f(ARG1 , ARG2)
+ssl_cipher_strength_sort 1954554 1852512
+OCSP_RESPONSE_print 2863270 2789856
+returns
+OCSP_crl_reason_str 2862601 2789264
+returns
+OCSP_response_status_str 2862525 2789056
+returns
+ASN1_ENUMERATED_get 2548579 2442400
+ocsp_certid_print 2862110 2788816
+i2a_ASN1_STRING 3212620 3128368
+returns
+OCSP_cert_status_str 2862563 2789200
+OCSP_request_add0_id 2858074 2784944
+returns
+SSL_get_certificate 1930411 1836864
+returns
+ssl_servername_cb#2 1451724 1437328
+returns
+SSL_get_servername 1919732 1825584
+returns
+SSL_set_SSL_CTX 1931287 1837520
+f(ARG1): ([(ARG1 + 272)] + 264): f(ARG2)
+timeout_LHASH_DOALL_ARG 1946638 1844160
+f(ARG1): f(ARG1): f(ARG1)
+EC_KEY_dup 2305831 2181232
+f(ARG1 , ARG2): (f(ARG1 , ARG2) + 8): f(ARG2)
+EC_KEY_copy 2305140 2180816
+f(ARG3): f(ARG3): f(ARG3)
+ssl_srp_server_param_cb 1449020 1435984
+f(ARG5): f(ARG5): f(ARG5)
+SSL_set_srp_server_param 1996490 1895072
+psk_server_cb 1448344 1436224
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+genpkey_main 1444860 1423648
+PEM_write_bio_Parameters 2659033 2585152
+i2d_PrivateKey_bio 2713199 2645248
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+gendsa_main 1442620 1420640
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+genrsa_main 1439709 1417744
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+RSA_generate_key_ex 2322841 2196960
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+x509_main 1424217 1405104
+f(ARG1): [(ARG1 + 8)]: f(RSP)
+X509_sign 2709381 2642720
+returns
+X509_alias_get0 2565440 2466464
+returns
+X509_add1_reject_object 2565798 2466688
+X509_ocspid_print 2576231 2475696
+returns
+X509_add1_trust_object 2565652 2466560
+PEM_write_bio_X509_AUX 2653679 2581264
+f(ARG1): ([(ARG1 + 40)] + 24): f(ARG1)
+X509_STORE_CTX_set_flags 2692582 2624096
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+ecparam_main 1416885 1399520
+ecparam_print_var 1423832 1298060
+f(ARG2): ARG2: f(ARG2)
+d2i_ECPKParameters 2300991 2175504
+f(ARG2): ARG2: f(ARG2)
+d2i_ECPKPARAMETERS 2293751 2175376
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+ECPKParameters_print 2309553 2186992
+f(ARG5 , ): (f() + f(ARG5 , Symbol)): f()
+EC_POINT_point2bn 2291925 2168864
+f(ARG1): (f(ARG1) + 12): f(Symbol)
+EC_KEY_generate_key 2305981 2181584
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+EC_GROUP_check 2291312 2168080
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+ec_main 1413329 1396400
+PEM_write_bio_EC_PUBKEY 2652296 2580464
+d2i_EC_PUBKEY_bio 2711819 2644352
+i2d_ECPrivateKey_bio 2711977 2644448
+PEM_write_bio_ECPrivateKey 2651940 2580304
+f(ARG1): f(ARG1): f(ARG1)
+i2d_ECPrivateKey 2302391 2177344
+EC_KEY_print 2309336 2186768
+PEM_write_bio_ECPKParameters 2651780 2580208
+PEM_read_bio_ECPrivateKey 2651554 2580048
+d2i_EC_PUBKEY 2556947 2459936
+returns
+EVP_PKEY_get1_EC_KEY 2489526 2387936
+d2i_ECPrivateKey_bio 2711920 2644416
+i2d_EC_PUBKEY_bio 2711876 2644384
+f(ARG1): (ARG1 + 16): f(Symbol)
+EVP_PKEY_set1_EC_KEY 2489463 2387552
+f(ARG1): f(ARG1): f(ARG1)
+i2d_ECPKParameters 2301259 2175920
+f(ARG2): (f(ARG2) + 24): f()
+ec_asn1_group2parameters 2296462 2171808
+f(ARG2): (f(ARG2) + 16): f(ARG2)
+EC_GROUP_get_cofactor 2274110 2154880
+f(ARG4 , ARG6 , ): (ARG4 + f(ARG6 , Symbol)): f()
+EC_POINT_point2oct 2312926 2189744
+f(ARG4): ARG4: f(ARG3)
+ec_GFp_simple_point2oct 3147030 3063168
+f(ARG4 , ARG6 , ): (ARG4 + f(ARG6 , Symbol)): f()
+ec_GF2m_simple_point2oct 3149996 3066160
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+dsaparam_main 1409273 1392928
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+DSA_generate_key 2342931 2216288
+DSAparams_print 2350683 2222544
+EVP_PKEY_print_params 2490513 2389024
+PEM_write_bio_DSAparams 2651283 2579952
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+dsa_main 1405870 1389904
+DSA_print 2350574 2222432
+returns
+EVP_PKEY_get1_DSA 2489374 2387472
+PEM_write_bio_DSA_PUBKEY 2650897 2579696
+PEM_write_bio_DSAPrivateKey 2650541 2579536
+i2d_DSAPrivateKey_bio 2711472 2644128
+i2d_DSA_PUBKEY_bio 2711573 2644192
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+rsautl_main 1402351 1386784
+f(ARG1): (ARG1 + 88): f(ARG1)
+BIO_dump 2419797 2305488
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+rsa_main 1398133 1383344
+i2d_RSAPublicKey_bio 2711128 2643904
+PEM_write_bio_RSAPublicKey 2649884 2579184
+RSA_print 2337852 2211264
+EVP_PKEY_print_private 2490401 2388928
+returns
+i2d_RSA_NET 2610893 2545200
+f(ARG2 , Symbol): f(ARG2 , Symbol): f(ARG2 , )
+i2b_PrivateKey_bio 2665012 2597648
+f(ARG2 , ): (f(ARG2 , Symbol) + 3): f()
+i2b_PVK_bio 2668492 2602400
+f(ARG2 , ): (f(ARG2 , Symbol) + 3): f()
+i2b_PVK 2667351 2586336
+returns
+ERR_get_error 2446509 2337568
+PEM_write_bio_RSAPrivateKey 2649528 2579024
+PEM_write_bio_RSA_PUBKEY 2650196 2579344
+i2d_RSA_PUBKEY_bio 2711169 2643936
+f(ARG2 , Symbol): f(ARG2 , Symbol): f()
+i2b_PublicKey_bio 2665054 2600320
+returns
+check_bitlen_rsa 2664043 2585968
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+RSA_check_key 2334878 2208880
+f(ARG1 , ARG4): (f(ARG1 , ARG4) + 8): f(ARG4)
+BN_gcd 3114734 3033808
+i2d_RSAPrivateKey_bio 2710989 2643808
+returns
+EVP_PKEY_get1_RSA 2489222 2387008
+f(ARG4): ARG4: f(RSP)
+X509_CRL_digest 2712183 2644576
+f(ARG4): ARG4: f()
+X509_CRL_get_ext_d2i 2699203 2631920
+i2d_X509_CRL_bio 2710314 2643296
+returns
+sk_shift 2433908 2319056
+d2i_X509_CRL_bio 2710273 2643264
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+pkcs7_main 1388959 1374736
+X509_CRL_print 2580984 2486432
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS7 2805890 2737728
+d2i_PKCS7_bio 2710437 2643392
+f(ARG2): f(ARG2): f(ARG2)
+PKCS7_print_ctx 2807543 2738400
+f(ARG2): f(ARG2): f(ARG2)
+ASN1_item_print 3208467 3126432
+f(ARG1): (ARG1 + 88): f(ARG1)
+ASN1_STRING_print_ex 2553852 2455968
+f(ARG2): f(ARG2): f(ARG2)
+asn1_template_print_ctx 3210109 3122432
+asn1_print_fsname 3210807 3121776
+PEM_write_bio_PKCS7 2648797 2578576
+dump_cert_text 1537665 1506624
+i2d_PKCS7_bio 2710478 2643424
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+ca_main 1357953 1356512
+f(ARG8): f(ARG8): f(ARG8 , A_Stack[-0x38]:8)
+certify 1374615 1297457
+X509_REQ_print 2574257 2474288
+X509_REQ_check_private_key 2673539 2607024
+returns
+i2a_ASN1_INTEGER 2608968 2543040
+X509_to_X509_REQ 2673146 2606704
+f(ARG1): [(ARG1 + 8)]: f(RSP)
+X509_REQ_sign 2709578 2642832
+f(ARG2): ARG2: f(RSP)
+ASN1_item_sign 3201722 3114864
+X509V3_EXT_CRL_add_nconf 2725982 2659152
+f(ARG1): [([[ARG1]] + 8)]: f()
+X509_CRL_set_version 2693638 2624880
+f(ARG2): f(ARG2): f(A_Stack[-0x20]:8)
+TXT_DB_read 2802056 2734688
+returns
+parse_yesno 1553108 1516384
+f(ARG2): f(ARG2): f(ARG2 , A_Stack[-0x38]:8)
+do_revoke 1383633 1353552
+X509_print 2574506 2481056
+PEM_write_bio_X509_CRL 2648485 2578416
+returns
+CONF_load 2787776 2722048
+returns
+CONF_load_bio 2788052 2722496
+f(ARG2): ARG2: f(ARG2)
+d2i_NETSCAPE_SPKI 2570655 2469856
+returns
+NETSCAPE_SPKI_get_pubkey 2675339 2608528
+NETSCAPE_SPKI_verify 2709318 2642688
+f(ARG1): ARG1: f()
+do_body 1375910 1293283
+old_entry_print 1387520 1356016
+copy_extensions 1545358 1511216
+X509_add_ext 2699639 2632080
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+X509_delete_ext 2699598 2632064
+f(ARG1 , ARG2): ([(ARG1 + 8)] + (f(ARG2) * 8)): f(ARG1 , ARG2)
+X509v3_delete_ext 2697808 2630704
+returns
+X509_NAME_delete_entry 2695277 2627072
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+TXT_DB_insert 2804625 2736800
+TXT_DB_write 2804050 2736320
+returns
+TXT_DB_get_by_index 2803461 2735888
+f(ARG1): [(ARG1 + 8)]: f()
+ASN1_ENUMERATED_set 2548193 2441712
+unpack_revinfo 1388133 1373648
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+gendh_main 1355789 1350864
+f(ARG2 , ): ([f(ARG2 , Symbol)] + f()): f()
+passwd_main 1349453 1347712
+f(ARG3): (f(ARG3) + 1): f(ARG3 , )
+do_passwd 1354809 1344768
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+dhparam_main 1337006 1333052
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1 , Symbol)
+DH_generate_parameters_ex 2351745 2223632
+f(ARG4 , ): f(ARG4 , ): f(ARG1 , ARG4 , Symbol)
+BN_generate_prime_ex 2238395 2117392
+f(ARG2): f(ARG2): f()
+DSA_generate_parameters_ex 2339514 2216128
+f(ARG2): f(ARG2): f(Symbol)
+dsa_builtin_paramgen 2339739 2213248
+f(ARG1): (ARG1 + 8): f(ARG1)
+BN_mask_bits 2212868 2092288
+f(ARG2): ARG2: f(ARG2)
+d2i_DSAparams 2346060 2218800
+f(ARG1): f(ARG1): f(ARG1)
+DSA_dup_DH 2345206 2218336
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+dh_main 1334247 1330416
+DHparams_print 2360247 2231696
+ASN1_bn_print 2581781 2487136
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1 , Symbol)
+DH_check 2355891 2227376
+f(ARG3 , ): f(ARG3 , ): f(ARG3 , RSP , Symbol)
+BN_is_prime_ex 2239174 2121328
+f(ARG3 , ): f(ARG3 , ): f(ARG3 , RSP , Symbol)
+BN_is_prime_fasttest_ex 2239230 2122576
+returns
+BN_mod_word 2236648 2115696
+f(ARG1): (f(ARG1) + 8): f(ARG2 , Symbol)
+BN_pseudo_rand_range 2234720 2113472
+PEM_write_bio_DHparams 2652682 2580720
+f(ARG2): ARG2: f(ARG2)
+d2i_DHparams 2351619 2223584
+f(ARG2): [([ARG2] + 8)]: f(RSP)
+do_X509_CRL_sign 1327047 1323264
+f(ARG1): [[([ARG1] + 8)]]: f(ARG1)
+X509_CRL_sign_ctx 2709847 2642976
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+req_main 1307973 1310752
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_REQ 2557986 2460928
+f(ARG1): [([([ARG1] + 24)] + 8)]: f()
+X509_REQ_set_version 2694427 2625520
+f(ARG2 , ): (f(ARG2 , ) + 8): f()
+X509at_add1_attr_by_NID 2701000 2635184
+f(ARG2): (f(ARG2) + 20): f()
+X509_ATTRIBUTE_create_by_NID 2701407 2636000
+check_end 1324668 1293056
+X509_REQ_add1_attr_by_txt 2675188 2608464
+returns
+X509at_add1_attr_by_txt 2701113 2634672
+returns
+X509at_add1_attr 2700609 2632752
+returns
+X509_ATTRIBUTE_create_by_txt 2701796 2635648
+returns
+X509_ATTRIBUTE_create_by_OBJ 2701552 2634016
+f(ARG1): [ARG1]: f(ARG1)
+X509_ATTRIBUTE_set1_object 2701971 2633536
+X509_ATTRIBUTE_set1_data 2702052 2633600
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+X509_NAME_add_entry_by_txt 2695782 2629552
+returns
+X509_NAME_ENTRY_create_by_txt 2696373 2627728
+X509_REQ_set_pubkey 2694555 2625600
+X509V3_EXT_add_nconf 2725902 2658960
+print_name 1546106 1511520
+X509V3_EXT_REQ_add_nconf 2726062 2659344
+X509V3_EXT_add_nconf_sk 2725683 2658688
+X509V3_EXT_nconf 2723097 2657568
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): f(ARG1): f(ARG2)
+X509_EXTENSION_create_by_NID 2698214 2631072
+returns
+X509_EXTENSION_create_by_OBJ 2698349 2631360
+f(ARG1): [ARG1]: f(ARG1)
+X509_EXTENSION_set_object 2698610 2631568
+returns
+X509v3_add_ext 2697887 2630784
+i2d_X509_bio 2710150 2643168
+X509_REQ_verify 2709255 2642656
+PEM_write_bio_X509 2653367 2581104
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+X509_CERT_AUX_print 2579980 2485760
+X509V3_extensions_print 2730705 2665280
+ASN1_TIME_print 2577758 2477168
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+d2i_X509_REQ_bio 2710601 2643520
+i2d_X509_REQ_bio 2710642 2643552
+ASN1_item_i2d_bio 2547952 2441504
+returns
+EVP_PKEY_CTX_get_keygen_info 2518839 2415088
+f(ARG1): (f(ARG1) + f()): f(RSP)
+X509_gmtime_adj 2689148 2616224
+f(ARG2): [(ARG2 + 8)]: f(RSP)
+do_X509_sign 1326725 1310208
+f(ARG1): [(ARG1 + 8)]: f(ARG2)
+X509_sign_ctx 2709487 2642784
+add_oid_section 1540389 1507520
+PEM_write_bio_X509_REQ_NEW 2648173 2578256
+f(ARG1): [([[ARG1]] + 8)]: f()
+X509_set_version 2692887 2624288
+X509_set_pubkey 2693568 2624832
+PEM_write_bio_PrivateKey 2658314 2584560
+PEM_write_bio_PKCS8PrivateKey 2654487 2582384
+do_pk8pkey 2654761 2581744
+i2d_PKCS8_bio 2712581 2644800
+i2d_PKCS8_PRIV_KEY_INFO_bio 2713070 2645136
+ASN1_i2d_bio 2547515 2440976
+PEM_write_bio_PKCS8 2656774 2583632
+f(ARG1): (f(ARG1) + 24): f()
+EVP_CIPHER_type 2502475 2400352
+EVP_CIPHER_param_to_asn1 2501964 2399824
+f(ARG1): [ARG1]: f(ARG1)
+PKCS5_pbe_set0_algor 2631576 2563184
+returns
+ASN1_item_pack 3228335 3143056
+PEM_write_bio_PKCS8_PRIV_KEY_INFO 2657086 2583792
+PEM_write_bio_X509_REQ 2648013 2578160
+set_keygen_ctx 1324775 1309008
+f(ARG1): ARG1: f(ARG1)
+EVP_PKEY_set_type_str 2489024 2385888
+X509_REQ_print_ex 2572151 2472688
+X509_NAME_print_ex 2553621 2452544
+send_bio_chars 2549247 2443056
+ASN1_STRING_print 2577427 2476896
+returns
+X509_REQ_get_pubkey 2673480 2606976
+EVP_PKEY_print_public 2490289 2388832
+X509_signature_print 2577104 2476400
+X509_signature_dump 2576801 2476144
+returns
+X509at_get_attr_by_NID 2700251 2632320
+returns
+X509at_get_attr_by_OBJ 2700321 2632464
+returns
+X509at_get_attr 2700459 2632592
+X509V3_EXT_print 2730049 2664576
+X509V3_EXT_val_prn 2729649 2664112
+PEM_write_bio_PUBKEY 2652994 2580880
+PEM_ASN1_write_bio 2640709 2572912
+f(ARG1): f(ARG1): f(string)
+PEM_proc_type 2638501 2569520
+f(ARG1): (ARG1 + 16): f(ARG1)
+EVP_EncryptInit_ex 2455953 2352208
+PEM_write_bio 2644114 2572176
+f(ARG1): (ARG1 + 4): f()
+EVP_EncodeInit 3192568 3106800
+f(ARG3): ARG3: f()
+EVP_EncodeFinal 3193129 3106832
+f(ARG3): ARG3: f()
+EVP_EncodeUpdate 3192611 3107616
+f(ARG1): (f(ARG1) + 2): f(ARG2 , Symbol)
+EVP_EncodeBlock 3193254 3107280
+f(ARG1): f(ARG1): f(ARG4 , )
+PEM_dek_info 2638659 2569648
+f(ARG2): [(ARG2 + 8)]: f(RSP)
+do_X509_REQ_sign 1326886 1310480
+f(ARG1): [(ARG1 + 8)]: f(ARG2)
+X509_REQ_sign_ctx 2709667 2642880
+f(ARG2): ARG2: f(ARG6)
+ASN1_item_sign_ctx 3201905 3115936
+f(ARG2 , ): (f(ARG2 , ) + 8): f()
+X509_NAME_add_entry_by_NID 2695664 2629840
+f(ARG1): f(ARG1): f(ARG2)
+X509_NAME_ENTRY_create_by_NID 2696548 2628192
+returns
+X509_NAME_ENTRY_create_by_OBJ 2696686 2628640
+f(ARG1): [ARG1]: f(ARG1)
+X509_NAME_ENTRY_set_object 2696897 2629008
+X509_NAME_ENTRY_set_data 2697022 2629120
+returns
+table_cmp_BSEARCH_CMP_FN 2629336 2653616
+ASN1_parse_dump 2621847 2556624
+asn1_parse2 2621925 2553728
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_ENUMERATED 2603448 2539568
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+ASN1_BIT_STRING_set_bit 2534643 2429248
+returns
+s2i_ASN1_INTEGER 2732500 2669408
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_TYPE 2605478 2540464
+f(ARG1): ([(ARG1 + 24)] + 24): f(ARG2)
+X509_STORE_set1_param 2709124 2642592
+f(ARG1): (ARG1 + 24): f(ARG2)
+X509_VERIFY_PARAM_set1 2721624 2654544
+returns
+X509_STORE_add_lookup 2704977 2638624
+load_crls 1545010 1510512
+args_verify 1554588 1517472
+X509_VERIFY_PARAM_set_time 2722045 2655280
+f(ARG1): ([(ARG1 + 24)] + 36): f()
+X509_STORE_free 2704761 2638416
+returns
+cb 1303405 1302608
+returns
+do_print_ex 2551332 2443168
+returns
+X509_NAME_ENTRY_get_object 2697281 2630096
+X509_NAME_print 2579563 2485456
+f(ARG2): (f(ARG2) + 2): f(ARG1 , )
+X509_NAME_oneline 2671527 2605648
+returns
+X509_verify_cert_error_string 2713401 2645376
+policies_print 1556780 1519856
+X509_POLICY_NODE_print 2755391 2696672
+print_qualifiers 2754697 2693216
+returns
+i2a_ASN1_OBJECT 2531970 2426208
+returns
+X509_policy_tree_get0_policies 2787247 2721648
+f(ARG1): ([(ARG1 + 40)] + 16): f(ARG1)
+X509_STORE_CTX_init 2691003 2621072
+f(ARG1): (ARG1 + 220): f()
+check_revocation 2679998 2615296
+f(ARG3): ARG3: f()
+get_crl_sk 2681326 2613104
+returns
+X509_EXTENSION_get_data 2698865 2631760
+returns
+GENERAL_NAME_cmp 2739641 2676576
+returns
+OTHERNAME_cmp 2739953 2676816
+returns
+ASN1_TYPE_cmp 2544841 2438576
+f(ARG1): (f(ARG1) + (f(ARG1) * 8)): f(RSP)
+check_policy 2686658 2609408
+f(ARG3): (f(ARG3) + 56): f(RSP)
+X509_policy_check 2786634 2718272
+returns
+X509_policy_tree_get0_user_policies 2787279 2721680
+returns
+policy_cache_set_mapping 2782033 2717680
+policy_node_match 3232551 3146368
+returns
+level_find_node 3232015 3145984
+f(ARG2): f(ARG2): f(ARG2)
+policy_data_new 2781699 2717424
+level_add_node 3232151 3146096
+returns
+table_cmp_BSEARCH_CMP_FN#2 2722556 2560688
+f(ARG1): (ARG1 + 184): f()
+check_issued 2678034 2609296
+f(ARG2): (ARG2 + 96): f()
+X509_check_issued 2766410 2707200
+returns
+ASN1_INTEGER_cmp 2540816 2434624
+f(ARG1): (ARG1 + 24): f(ARG2)
+X509_VERIFY_PARAM_inherit 2721129 2653856
+returns
+X509_VERIFY_PARAM_set1_policies 2722201 2655376
+cert_crl 2686410 2609744
+f(ARG1): (f(ARG1) + 112): f(RSP)
+check_crl 2685577 2622032
+f(ARG1): ([(ARG1 + 40)] + 36): f()
+X509_STORE_CTX_set0_param 2692827 2624240
+returns
+X509_STORE_CTX_get1_issuer 2708392 2641840
+f(ARG4): ([(ARG4 + 8)] + 24): f(ARG4)
+X509_STORE_get_by_subject 2705170 2638832
+returns
+X509_OBJECT_retrieve_by_subject 2706847 2639552
+returns
+x509_object_cmp 2704162 2637232
+returns
+X509_subject_name_cmp 2669696 2603456
+returns
+X509_CRL_cmp 2669747 2603584
+f(ARG1): ([(ARG1 + 40)] + 36): f()
+X509_STORE_CTX_free 2690964 2620912
+f(ARG1): ([(ARG1 + 40)] + 36): f()
+X509_STORE_CTX_cleanup 2692269 2623920
+f(ARG1): (ARG1 + 36): f()
+X509_VERIFY_PARAM_free 2721090 2653632
+f(ARG1): [(ARG1 + 8)]: f(ARG1)
+policy_data_free 2781591 2717360
+f(ARG1): ([(ARG1 + 24)] + 24): f(ARG1)
+X509_STORE_set_flags 2708964 2642512
+f(ARG1): (ARG1 + 24): f(ARG1)
+X509_VERIFY_PARAM_set_flags 2721805 2655152
+f(ARG1): (f(ARG1) + 80): f(ARG1 , RSP)
+X509_verify_cert 2675941 2617056
+f(ARG2): (ARG2 + 96): f()
+X509_cmp 2670043 2604400
+returns
+X509_TRUST_get0 2714352 2647344
+returns
+X509_NAME_entry_count 2694938 2626656
+returns
+X509_NAME_get_entry 2695200 2626992
+returns
+X509_NAME_get_index_by_NID 2694981 2626688
+returns
+X509_NAME_get_index_by_OBJ 2695051 2626848
+nc_match 2773532 2712944
+nc_match_single 2773942 2712192
+returns
+X509_NAME_ENTRY_get_data 2697312 2630128
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+X509_verify 2709192 2642624
+ASN1_item_verify 3203983 3117728
+f(ARG1): (f(ARG1) + f()): f(RSP)
+X509_time_adj 2689190 2616384
+f(ARG1): (f(ARG1) + f()): f(RSP)
+X509_time_adj_ex 2689237 2616560
+f(ARG1): (f(ARG1) + f()): f(RSP)
+ASN1_TIME_adj 2539946 2433872
+f(ARG1): (f(ARG1) + f()): f(RSP)
+ASN1_GENERALIZEDTIME_adj 2539276 2433248
+f(ARG1): (f(ARG1) + f()): f(RSP)
+ASN1_UTCTIME_adj 2536452 2431008
+f(ARG1): (ARG1 + 16): f(ARG1)
+OPENSSL_gmtime_adj 3020436 2944112
+f(ARG1): (ARG1 + 80): f(ARG1 , RSP)
+X509_check_purpose 2760734 2704992
+f(ARG1): (ARG1 + 80): f(ARG1 , RSP)
+X509_check_ca 2764995 2706784
+f(ARG1): (ARG1 + 80): f(ARG1 , RSP)
+x509v3_cache_extensions 2762923 2702208
+returns
+X509v3_get_ext_by_NID 2697384 2630192
+returns
+X509v3_get_ext_by_OBJ 2697454 2630336
+returns
+OBJ_cmp 2027378 1925520
+f(ARG4): ARG4: f(RSP)
+X509_digest 2712123 2644544
+f(ARG5): ARG5: f(RSP)
+ASN1_item_digest 3203238 3117136
+DIST_POINT_set_dpname 2760402 2701680
+X509_NAME_add_entry 2695903 2627280
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_item_dup 2545248 2438864
+returns
+X509v3_get_ext_count 2697344 2630160
+returns
+X509_NAME_cmp 2670142 2604480
+f(ARG4): ARG4: f()
+X509_get_ext_d2i 2699698 2632112
+f(ARG4): ARG4: f()
+X509V3_get_d2i 2728801 2663120
+returns
+X509_supported_extension 2762327 2706672
+returns
+X509_EXTENSION_get_object 2698834 2631728
+returns
+X509v3_get_ext 2697737 2630624
+load_cert 1541254 1507776
+d2i_X509_bio 2710109 2643136
+get_issuer_sk 2678183 2609936
+load_certs 1544885 1510016
+PEM_X509_INFO_read_bio 2635323 2566816
+f(ARG2): ARG2: f(ARG2)
+d2i_ECPrivateKey 2301447 2176256
+f(ARG2): ARG2: f(ARG2)
+d2i_EC_PRIVATEKEY 2293896 2175440
+returns
+EC_GROUP_set_seed 2274305 2155024
+f(ARG1 , ): f(ARG1 , ): f(ARG5)
+EC_POINT_oct2point 2313249 2189920
+f(ARG5): ([f(ARG5)] + -8): f(ARG1 , ARG3 , Symbol)
+ec_GFp_simple_oct2point 3148103 3064192
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , ARG3 , Symbol)
+EC_POINT_set_compressed_coordinates_GFp 2312324 2189392
+f(ARG1 , ): f(ARG1 , ): f(ARG5)
+ec_GF2m_simple_oct2point 3151135 3067168
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , ARG3 , Symbol)
+EC_POINT_set_compressed_coordinates_GF2m 2312625 2189568
+f(ARG1 , ARG5): (f(ARG1 , ARG5) + 16): f(ARG1)
+ec_GF2m_simple_set_compressed_coordinates 3149148 3065328
+f(ARG3): ([f()] + ((f(ARG3) / 64) * 8)): f()
+BN_GF2m_mod_sqrt_arr 3300655 3208816
+f(ARG2 , ARG5): f(ARG2 , ARG5): f(ARG2)
+BN_GF2m_mod_exp_arr 3300038 3207856
+f(ARG2 , ARG4): f(ARG2 , ARG4): f(ARG2)
+BN_GF2m_mod_solve_quad_arr 3301060 3209408
+f(ARG2): f(ARG2): f(ARG2 , Symbol)
+BN_GF2m_mod_mul_arr 3295043 3203056
+f(ARG1 , ARG2 , ARG3): f(ARG1 , ARG2 , ARG3): f(ARG2 , ARG3)
+BN_GF2m_add 3293021 3200416
+f(ARG4): ([f(ARG4)] + 68719476728): f(ARG2 , )
+BN_GF2m_mod_sqr_arr 3296143 3202112
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG2)
+BN_GF2m_mod_arr 3293434 3201168
+f(ARG5 , Symbol): f(ARG5 , Symbol): f(ARG5)
+ec_GFp_simple_set_compressed_coordinates 3145540 3061808
+f(ARG1 , ARG4): (f(ARG1 , ARG4) + 24): f(ARG1 , ARG4)
+BN_mod_add_quick 2228750 2104576
+f(ARG4 , Symbol): f(ARG4 , Symbol): f(ARG4)
+BN_mod_sqrt 3290232 3197552
+f(ARG3 , Symbol): f(ARG3 , Symbol): f(ARG3 , Symbol)
+BN_kronecker 3289292 3196912
+f(ARG3 , ): f(ARG3 , ): f(ARG1 , ARG3 , ARG4 , Symbol)
+BN_mod_sqr 2229250 2105120
+f(ARG1): (ARG1 + 12): f(ARG1)
+BN_mod_lshift1_quick 2229422 2105312
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_AUX 2564479 2465776
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_CERT_AUX 2564728 2465952
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_CRL 2568536 2468960
+f(ARG2): ARG2: f(ARG2)
+d2i_DSAPrivateKey 2345967 2218768
+f(ARG2): ARG2: f(ARG2)
+d2i_X509 2564148 2465632
+returns
+X509_PURPOSE_get0 2761044 2705552
+chopup_args 1536960 1506064
+returns
+UI_method_get_writer 2873774 2800736
+returns
+UI_method_get_closer 2873870 2800832
+returns
+UI_method_get_opener 2873742 2800704
+f(ARG2): f(ARG2): f(ARG1)
+ui_read 1537914 1503360
+returns
+UI_method_get_reader 2873838 2800800
+f(ARG2): f(ARG2): f(ARG3)
+UI_set_result 2874289 2801136
+do_cmd 1297861 1300800
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+enc_main 1341642 1337936
+f(ARG2): (ARG2 + (f() / 2)): f(ARG1 , ARG2)
+set_hex 1349103 1337664
+EVP_CIPHER_CTX_set_flags 2503383 2401088
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+dgst_main 1327397 1324608
+app_passwd 1539181 1506944
+app_get_pass 1539436 1504432
+returns
+EVP_MD_CTX_md 2503246 2401008
+load_key 1541928 1508464
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_SIG 2557613 2460752
+f(ARG8): ARG8: f()
+load_pkcs12 1540667 1505312
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG5): f(ARG5): f(ARG5)
+parse_bags 2842604 2771424
+X509_keyid_set1 2565205 2466240
+returns
+ASN1_STRING_to_UTF8 2553950 2456000
+returns
+PKCS12_get_attr_gen 2834348 2762880
+PKCS12_unpack_p7encdata 2833030 2762080
+f(ARG2): f(ARG2): f(ARG2)
+PKCS12_item_decrypt_d2i 2838394 2766800
+returns
+EVP_CipherUpdate 2455632 2356208
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1)
+EVP_CipherFinal_ex 2455735 2348304
+f(ARG2): f(ARG2): f(ARG2)
+ASN1_item_unpack 3228649 3143296
+X509_check_private_key 2671286 2605376
+returns
+X509_get_pubkey 2671188 2605296
+d2i_PKCS12_bio 2845938 2776640
+PKCS12_verify_mac 2844224 2774400
+PKCS12_gen_mac 2843499 2774272
+HMAC_Final 2061171 1968272
+f(ARG1 , ARG3): f(ARG1 , ARG3): f()
+HMAC_Init_ex 2060032 1966464
+f(ARG1): ((ARG1 + 104) + 32): f()
+HMAC_CTX_init 2061375 1968448
+b2i_PVK_bio 2666914 2601920
+f(ARG1): f(ARG1): f()
+do_PVK_body 2665722 2590896
+f(ARG1): f(ARG1): f()
+b2i_PrivateKey 2662572 2593952
+d2i_PrivateKey_bio 2713243 2645280
+f(ARG2): ARG2: f(ARG2)
+d2i_AutoPrivateKey 2571634 2470496
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_SEQUENCE_ANY 2606058 2540720
+f(ARG2): (f(ARG2) + 16): f(Symbol)
+d2i_PrivateKey 2571157 2470096
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG3)
+i2t_ASN1_OBJECT 2531925 2426192
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG3)
+OBJ_obj2txt 2023610 1920784
+f(ARG1 , ): (f() + (f(ARG1 , Symbol) + 1)): f()
+BN_bn2dec 2230408 2106576
+f(ARG2): ARG2: f(ARG2)
+d2i_PKCS8_PRIV_KEY_INFO 2634508 2566384
+EVP_DigestSignInit 2519732 2415472
+BIO_clear_flags 2390571 2261680
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+BIO_push 2392995 2264480
+EVP_DigestVerifyInit 2519799 2415856
+app_RAND_load_file 1566670 1529552
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201912.json'
+
+returns
+RAND_file_name 2440329 2323696
+list_md_fn 1327208 1300688
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+setup_engine 1546847 1512000
+f(ARG4): (f(ARG4) + f()): f(Symbol)
+ENGINE_ctrl_cmd 2367653 2238672
+do_fp 1333269 1323712
+EVP_DigestSignFinal 2519866 2416240
+returns
+EVP_MD_size 2503160 2400928
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+EVP_DigestVerifyFinal 2520414 2416640
+f(ARG1): ARG1: f(ARG2)
+EVP_MD_CTX_copy_ex 2453132 2344704
+f(ARG2): f(ARG2): f(ARG1)
+program_name 1536870 1506000
+BIO_debug_callback 2394285 2266416
+load_pubkey 1542761 1509264
+f(ARG1): ARG1: f(ARG1)
+b2i_rsa 2661968 2592928
+f(ARG1): ARG1: f(ARG1)
+b2i_dss 2661366 2589936
+f(ARG1): (ARG1 + 16): f(Symbol)
+EVP_PKEY_set1_DSA 2489311 2387088
+load_netscape_key 1543640 1504080
+d2i_RSA_NET 2612511 2546880
+f(ARG2): ARG2: f()
+d2i_RSA_NET_2 2612934 2544320
+f(ARG2): ARG2: f(ARG2)
+d2i_NETSCAPE_PKEY 2610701 2545136
+f(ARG2): ARG2: f(ARG2)
+d2i_RSAPrivateKey 2337446 2210960
+f(ARG4): ARG4: f(RSP)
+EVP_Digest 2453712 2343232
+f(ARG2): ARG2: f(ARG2)
+d2i_NETSCAPE_ENCRYPTED_PKEY 2610556 2545072
+d2i_RSAPublicKey_bio 2711030 2643840
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_item_d2i_bio 2545792 2440240
+d2i_PUBKEY_bio 2713344 2645344
+ASN1_d2i_bio 2545620 2440096
+asn1_d2i_read_bio 2546121 2439056
+BIO_read 2390792 2261824
+f(ARG1): (ARG1 + 16): f(Symbol)
+EVP_PKEY_set1_RSA 2489159 2386624
+f(ARG2): ARG2: f(ARG2)
+d2i_PUBKEY 2555983 2458128
+f(ARG2): ARG2: f(ARG2)
+d2i_X509_PUBKEY 2554959 2457264
+PEM_ASN1_read_bio 2654151 2581520
+PEM_bytes_read_bio 2640074 2576688
+f(ARG5): ARG5: f()
+PEM_read_bio 2645204 2574624
+f(ARG3): ARG3: f()
+EVP_DecodeFinal 3195086 3109376
+f(ARG1): (ARG1 + 4): f()
+EVP_DecodeInit 3193739 3108000
+f(ARG3): ARG3: f()
+EVP_DecodeUpdate 3193793 3108464
+returns
+EVP_DecodeBlock 3194559 3108032
+returns
+BUF_MEM_grow 2388216 2259520
+returns
+ERR_peek_error 2446680 2337504
+returns
+PEM_do_header 2642160 2570032
+f(ARG3): ARG3: f()
+EVP_DecryptFinal_ex 2457827 2359104
+EVP_DigestInit_ex 2452025 2342096
+EVP_MD_CTX_clear_flags 2503315 2401056
+f(ARG1): (ARG1 + 16): f()
+EVP_MD_CTX_init 2451875 2341440
+f(ARG1): (ARG1 + 160): f()
+EVP_CIPHER_CTX_init 2454243 2345840
+returns
+PEM_def_callback 2638219 2569264
+returns
+EVP_DecryptUpdate 2457271 2357600
+EVP_EncryptUpdate 2456143 2355632
+f(ARG1): (ARG1 + 16): f(ARG1)
+EVP_DecryptInit_ex 2456076 2354480
+f(ARG1): ARG1: f(ARG2)
+EVP_CipherInit_ex 2454429 2347120
+returns
+pem_check_suffix 2647703 2577984
+f(ARG2): ((ARG2 + 8) + (f() / 2)): f(ARG2 , RSP)
+PEM_get_EVP_CIPHER_INFO 2642889 2570576
+f(ARG2): ARG2: f(ARG2)
+d2i_RSAPublicKey 2337539 2210992
+returns
+password_callback 1538447 1503520
+returns
+UI_ctrl 2872837 2800064
+returns
+UI_get_default_method 2873238 2800304
+returns
+UI_add_input_string 2870056 2796224
+returns
+UI_add_verify_string 2870314 2796912
+pkey_ctrl_string 1556470 1519760
+EVP_PKEY_CTX_ctrl_str 2513320 2410336
+init_gen_str 1447555 1423216
+BIO_set_flags 2390629 2261712
+load_config 1547273 1512464
+ERR_print_errors_cb 2451262 2340560
+f(ARG2): (f(ARG2) + f()): f(Symbol)
+ERR_error_string_n 2447701 2330784
+f(ARG1): ARG1: f(Symbol)
+ERR_get_error_line_data 2446611 2337088
+X509V3_get_value_bool 2733092 2670400
+f(ARG1): [(ARG1 + 8)]: f(ARG1)
+cleanup3_LHASH_DOALL 2020974 1918736
+returns
+OBJ_create 2026435 1924352
+returns
+added_obj_LHASH_COMP 2020638 1918976
+returns
+added_obj_LHASH_HASH 2020242 1918768
+returns
+OBJ_dup 2026724 1925008
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+NCONF_get_number_e 2789702 2724720
+f(ARG1): (f(ARG1) + f()): f()
+ENGINE_by_id 2364375 2235472
+ENGINE_set_default_string 2370940 2242448
+int_def_cb 2370295 2241408
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG3): (f(ARG3) + f()): f(Symbol)
+ENGINE_ctrl_cmd_string 2367908 2239280
+f(ARG4): (f(ARG4) + f()): f(Symbol)
+ENGINE_ctrl 2367077 2237072
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+NCONF_get_string 2789509 2724528
+_CONF_get_string 2790628 2725936
+returns
+NCONF_get_section 2789378 2724400
+_CONF_get_section_values 2790377 2725680
+_CONF_get_section 2790256 2725584
+list_md_fn#2 1300039 1323536
+f(ARG1): (f(ARG1) + f()): f()
+BIO_snprintf 2417943 2293216
+f(ARG1): (f(ARG1) + f()): f()
+BIO_vsnprintf 2418168 2296784
+ERR_CSWIFT_error 2971319 2895488
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG1): f(ARG1): f(ARG1)
+hwcrhk_mutex_unlock 2988989 2904736
+f(ARG1): f(ARG1): f(ARG1)
+hwcrhk_mutex_lock 2988940 2904768
+hwcrhk_mutex_init 2988887 2904944
+hwcrhk_load_pubkey 2985791 2911888
+hwcrhk_load_privkey 2984350 2910800
+ibm_4758_load_privkey 2956334 2877248
+ibm_4758_load_pubkey 2957350 2878240
+returns
+dynamic_ctrl 2378414 2250144
+f(ARG1): (ARG1 + 188): f(ARG1)
+dynamic_load 2379572 2248848
+DSO_convert_filename 3183641 3097552
+ENGINE_set_ex_data 2361536 2233360
+returns
+CRYPTO_get_ex_data 2015688 1915392
+ERR_UBSEC_error 3003040 2927728
+surewarehk_load_privkey 2999560 2924304
+f(ARG1): (ARG1 + 172): f(ARG1)
+surewarehk_load_pubkey 2999913 2922800
+DSA_set_ex_data 2345122 2218304
+RSA_set_ex_data 2327280 2200304
+CRYPTO_set_ex_data 2015463 1915168
+returns
+RSA_get_default_method 2325644 2199152
+ERR_SUREWARE_error 2992944 2915136
+returns
+ENGINE_load_aep 2962593 2887808
+returns
+DSO_load 3181772 3096816
+returns
+DSO_ctrl 3182716 3096224
+f(ARG3 , ARG8 , Symbol): f(ARG3 , ARG8 , Symbol): f(ARG3)
+aep_dsa_mod_exp 2965159 2884576
+f(ARG5 , ): f(ARG5 , ): f(ARG6)
+aep_mod_exp_dsa 2965407 2884992
+f(ARG1 , ARG5 , Symbol): f(ARG1 , ARG5 , Symbol): f(ARG1)
+aep_mod_exp 2964036 2884032
+f(ARG1): f(ARG1): f()
+pkey_gost_ctrl94_str 3013375 2938480
+f(ARG2): (ARG2 + 32): f()
+pkey_gost01_cp_sign 3014954 2937984
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+pkey_gost94_cp_verify 3015125 2938848
+f(ARG4 , Symbol): f(ARG4 , Symbol): f(ARG4)
+gost_do_verify 3018360 2942080
+f(ARG1): f(ARG1): f(ARG1)
+pkey_gost01_cp_verify 3015277 2937872
+f(ARG4): (f(ARG4) + 16): f(ARG4)
+gost2001_do_verify 3241566 3158416
+f(ARG1): (f(ARG1) + 40): f(ARG3)
+pkey_gost_mac_ctrl_str 3016184 2939600
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , Symbol)
+pkey_gost2001_derive 3237276 3154928
+pkey_GOST94cp_encrypt 3249460 3165712
+pkey_GOST94cp_decrypt 3250775 3166800
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , Symbol)
+pkey_GOST01cp_decrypt 3238837 3156224
+EVP_PKEY_derive_set_peer 2516837 2413360
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+f(ARG2): ARG2: f(ARG2)
+d2i_GOST_KEY_TRANSPORT 3261586 3176880
+f(ARG2): (ARG2 + 16): f(Symbol)
+pkey_gost01cp_keygen 3014702 2940256
+f(ARG1 , ): f(ARG1 , ): f(ARG1 , Symbol)
+pkey_GOST01cp_encrypt 3237512 3155136
+f(ARG1): f(ARG1): f(ARG1)
+gost2001_keygen 3242894 3159472
+X509_PUBKEY_set 2555104 2457328
+returns
+get_encryption_params 3262456 3183680
+f(ARG1 , ): (Symbol + (ARG1 * 8)): f()
+get_gost_engine_param 3267638 3184000
+f(ARG4 , ): f(ARG4 , ): f(ARG4 , Symbol)
+VKO_compute_key 3236363 3154320
+f(ARG2): ARG2: f(ARG2)
+pkey_gost01_paramgen 3014450 2939248
+EVP_DigestFinal_ex 2452877 2343088
+EVP_MD_CTX_set_flags 2503277 2401040
+f(ARG1): f(ARG1): f()
+pkey_gost_ctrl01_str 3013829 2938128
+f(ARG1 , ): (ARG1 + f(Symbol)): f()
+a2d_ASN1_OBJECT 2530628 2424800
+returns
+BN_div_word 2236824 2115824
+f(ARG2): f(ARG2): f(ARG2 , RSP)
+pkey_gost94cp_keygen 3014621 2940080
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+gost_sign_keygen 3019670 2943184
+f(ARG2): ARG2: f(ARG2)
+pkey_gost94_paramgen 3014286 2939408
+f(ARG1 , Symbol): f(ARG1 , Symbol): f(ARG1)
+pkey_gost94_cp_sign 3014783 2938960
+f(ARG2 , ARG3): (ARG3 + ARG2): f()
+pack_sign_cp 3018218 2941872
+f(ARG3 , Symbol): f(ARG3 , Symbol): f(ARG3)
+gost_do_sign 3017625 2941248
+f(ARG1): (f(ARG1) + 8): f(ARG2 , Symbol)
+BN_rand_range 2234681 2113024
+returns
+RAND_get_rand_method 2440678 2324000
+f(ARG4 , ARG5 , ): f(ARG4 , ARG5 , ): f()
+BN_mod_mul 2229052 2104880
+f(ARG4 , ): f(ARG4 , ): f(ARG1 , ARG4 , Symbol)
+BN_mod_add 2228662 2104448
+returns
+pkey_gost_ctrl 3013011 2937520
+returns
+pkey_gost_mac_ctrl 3015734 2937088
+f(ARG1): f(ARG1): f(ARG1)
+pkey_gost94_derive 3249347 3165616
+f(ARG1): f(ARG1): f(ARG1)
+make_cp_exchange_key 3248925 3165232
+returns
+DH_get_default_method 2354273 2225776
+f(ARG2): ARG2: f(ARG2)
+pkey_gost_mac_keygen 3016513 2939104
+f(ARG2 , ): f(ARG2 , ): f()
+gost_control_func 3267549 3183904
+f(ARG1 , ): (Symbol + (ARG1 * 8)): f()
+gost_set_default_param 3267905 3184080
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+priv_decode_gost 3254144 3170624
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_INTEGER 2603303 2539504
+returns
+ASN1_INTEGER_to_BN 2543683 2437584
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+EC_KEY_set_private_key 2308081 2182816
+pub_print_gost94 3255406 3171648
+f(ARG1): [ARG1]: f(Symbol)
+pub_encode_gost94 3257974 3174224
+f(ARG1): (ARG1 + 16): f(Symbol)
+param_copy_gost01 3257056 3169216
+f(ARG4): ((f(ARG4) * 8) + f()): f(ARG1)
+EC_POINTs_mul 2280607 2159920
+f(ARG4): ((f(ARG4) * 8) + f()): f(ARG1)
+ec_wNAF_mul 2282706 2161248
+f(ARG3): ARG3: f(ARG1 , Symbol)
+compute_wNAF 2281775 2160240
+param_print_gost01 3256339 3171312
+priv_print_gost94 3255460 3172176
+gost94_param_decode 3260538 3169712
+param_print_gost94 3255352 3171408
+pub_decode_gost94 3257523 3169936
+returns
+pkey_ctrl_gost 3253369 3173712
+pub_decode_gost01 3258442 3168608
+f(ARG2): ARG2: f(ARG2)
+d2i_ASN1_OCTET_STRING 2603738 2539696
+decode_gost_algor_params 3252358 3168128
+f(ARG2): ARG2: f(ARG2)
+d2i_GOST_KEY_PARAMS 3262021 3177072
+f(ARG2): f(ARG2): f(ARG2 , ARG4)
+ASN1_item_d2i 2591971 2529168
+f(ARG4): f(ARG4): f(ARG4)
+ASN1_item_ex_d2i 2592226 2526688
+f(ARG2): ARG2: f(ARG2)
+asn1_template_ex_d2i 2595891 2522480
+f(ARG4): f(ARG4): f(ARG4)
+asn1_template_noexp_d2i 2596541 2531392
+returns
+sk_pop 2433970 2319152
+f(ARG2): ARG2: f(ARG2)
+asn1_d2i_ex_primitive 2597686 2520608
+f(ARG2): ARG2: f(ARG2)
+asn1_collect 2600381 2518768
+f(ARG1): ([f(ARG1)] + 4): f(ARG1 , ARG4)
+asn1_ex_c2i 2598893 2519584
+returns
+c2i_ASN1_BIT_STRING 2534107 2428816
+returns
+c2i_ASN1_INTEGER 2541479 2435120
+returns
+BUF_MEM_grow_clean 2388648 2259808
+f(ARG3): ARG3: f(ARG11)
+asn1_check_tlen 2601259 2518176
+f(ARG3): ([f(ARG3)] + -8): f(ARG1)
+BN_bin2bn 2211113 2091008
+f(ARG1): [[(ARG1 + 16)]]: f(ARG1)
+priv_encode_gost 3254715 3174592
+returns
+BN_to_ASN1_INTEGER 2543303 2437296
+f(ARG1): [[(ARG1 + 16)]]: f(ARG1)
+PKCS8_pkey_set0 2634653 2566448
+f(ARG1): [(ARG1 + 8)]: f()
+ASN1_INTEGER_set 2542723 2436368
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+pub_encode_gost01 3259177 3173152
+f(ARG2): (f(ARG2) + 16): f(ARG2)
+EC_GROUP_get_order 2274038 2154832
+f(ARG2): f(ARG2): f(RSP)
+ASN1_item_i2d 2587089 2508560
+f(ARG2): f(ARG2): f(RSP)
+ASN1_item_ex_i2d 2587395 2504064
+returns
+asn1_enc_restore 2602750 2539104
+f(ARG2): f(ARG2): f(RSP)
+asn1_template_ex_i2d 2589039 2505680
+f(ARG2): [ARG2]: f(ARG3 , ARG4 , ARG5)
+asn1_i2d_ex_primitive 2590775 2502704
+f(ARG1): ([ARG1] + 1): f()
+ASN1_put_eoc 2626565 2557808
+f(ARG1): (f(ARG1) + -1): f(ARG1)
+asn1_ex_i2c 2591111 2516832
+f(ARG1 , ARG2): (f(ARG1 , ARG2) + f()): f(ARG1)
+i2c_ASN1_INTEGER 2540924 2434688
+f(ARG1 , ARG2): f(ARG1 , ARG2): f(ARG1 , ARG2)
+i2c_ASN1_BIT_STRING 2533614 2428368
+returns
+BN_bn2bin 2211551 2091488
+f(ARG1): [ARG1]: f(ARG1)
+X509_ALGOR_set0 2554449 2456288
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_item_new 2583014 2489712
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_item_ex_new 2583105 2491760
+ASN1_primitive_new 2584797 2488336
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_item_ex_free 2585425 2500320
+f(ARG1 , ARG2): f(ARG1 , ARG2): f()
+ASN1_template_new 2584481 2488592
+f(ARG2): f(ARG2): f(ARG2)
+ASN1_item_free 2585382 2497920
+f(ARG2): f(ARG2): f(ARG2)
+asn1_item_combine_free 2585468 2495408
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+ASN1_INTEGER_get 2543109 2437056
+f(ARG1): f(ARG1): f(ARG1)
+ASN1_primitive_free 2586671 2494944
+f(ARG3): f(ARG3): f(ARG3)
+asn1_do_lock 2602080 2538704
+f(ARG2): ([(f() + 8)] + (f(ARG2) * 8)): f()
+ASN1_template_free 2586450 2496560
+f(ARG2): ARG2: f(ARG1 , ARG2)
+gost2001_param_encode 3260461 3169472
+f(ARG1): f(ARG1): f(ARG3)
+ASN1_put_object 2626203 2557536
+returns
+OBJ_nid2obj 2021848 1919808
+f(ARG1): (ARG1 + 16): f(Symbol)
+gost2001_param_decode 3260763 3169520
+d2i_ASN1_OBJECT 2532256 2426496
+f(ARG2): ARG2: f(RSP)
+ASN1_get_object 2625355 2556816
+returns
+c2i_ASN1_OBJECT 2532493 2427312
+fill_GOST2001_params 3239887 3157040
+f(ARG2): (f(ARG2) + 8): f(ARG2)
+EC_KEY_set_group 2307976 2182736
+f(ARG1): f(ARG1): f(ARG1)
+EC_GROUP_dup 2273538 2153856
+f(ARG1 , ARG2): (f(ARG1 , ARG2) + 8): f(ARG2)
+EC_GROUP_copy 2272696 2152720
+BN_hex2bn 2231114 2107200
+returns
+ERR_peek_last_error 2446851 2337456
+f(ARG1): f(ARG1): f(ARG1)
+EC_GROUP_set_generator 2273717 2154240
+f(ARG1): ARG1: f(ARG1)
+ASN1_OBJECT_free 2533236 2428096
+priv_print_gost01 3256447 3175424
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+param_copy_gost94 3256643 3170304
+f(ARG1): (ARG1 + 16): f(Symbol)
+EVP_PKEY_assign 2489069 2386272
+f(ARG1): (ARG1 + 16): f(Symbol)
+EVP_PKEY_set_type 2488982 2385584
+returns
+EVP_PKEY_asn1_get0 2606435 2540864
+f(ARG1): (f(ARG1) + 16): f(ARG1)
+BN_dup 2210152 2089728
+f(ARG1): f(ARG1): f(ARG1 , RSP)
+gost94_compute_public 3019208 2942848
+f(ARG1 , ARG5 , Symbol): f(ARG1 , ARG5 , Symbol): f(ARG1)
+BN_mod_exp 2197783 2084704
+f(ARG4 , ): f(ARG4 , ): f(ARG2)
+BN_mod_exp_recp 2198023 2077200
+f(ARG1): (ARG1 + 16): f()
+BN_RECP_CTX_init 2266716 2147552
+f(ARG5): ([f(ARG5)] + 16): f(ARG2)
+BN_mod_mul_reciprocal 2267047 2147824
+f(ARG4): (ARG4 + 52): f(ARG3 , ARG4 , )
+BN_div_recp 2267271 2148640
+f(ARG2 , ARG4 , ): f(ARG2 , ARG4 , ): f()
+BN_reciprocal 2268103 2149376
+f(ARG1): f(ARG1): f(ARG1)
+BN_RECP_CTX_set 2266936 2147744
+f(ARG1): ([ARG1] + (f() * 8)): f(ARG1 , ARG5 , ARG6)
+BN_mod_exp_mont_word 2205458 2083536
+f(ARG1): ([f(ARG1)] + ((f() + 3) * 8)): f(ARG1 , ARG5 , ARG6)
+BN_mod_exp_mont 2199585 2082000
+f(ARG1): ([f(ARG1)] + (f() * 8)): f(ARG1 , ARG5 , ARG6)
+BN_mod_exp_mont_consttime 2201883 2078416
+f(ARG1): ([ARG1] + ((f() + 2) * 8)): f(ARG1 , ARG3 , ARG4)
+BN_from_montgomery 2270296 2150624
+f(ARG1): ([ARG1] + ((f() + 1) * 8)): f(ARG1 , ARG4 , ARG5)
+BN_mod_mul_montgomery 2268257 2150288
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+BN_sqr 2242216 2124624
+f(ARG1): ([ARG1] + (f() * 8)): f(ARG1 , ARG2 , ARG3)
+BN_from_montgomery_word 2268756 2149504
+f(ARG1): (ARG1 + 80): f(ARG1)
+BN_MONT_CTX_init 2270506 2150832
+f(ARG3 , ): f(ARG3 , ): f(ARG3 , RSP , Symbol)
+BN_MONT_CTX_set 2270716 2150976
+f(ARG3 , ARG4 , ): f(ARG3 , ARG4 , ): f()
+BN_mod_inverse 3115567 3034288
+f(ARG1): f(ARG1): f(ARG1)
+BN_rshift1 2235103 2114144
+f(ARG2 , ARG3 , ARG4 , ): f(ARG2 , ARG3 , ARG4 , ): f(ARG4)
+BN_mul 2226662 2099920
+f(ARG4 , ARG7): ((ARG7 + (ARG4 * 16)) + 40): f(ARG7)
+bn_mul_part_recursive 2221394 2098464
+f(ARG4 , ARG7): (ARG7 + (ARG4 * 8)): f(ARG7)
+bn_mul_recursive 2219263 2097136
+f(ARG3 , ): f(ARG3 , ): f(ARG2 , ARG3 , Symbol)
+BN_nnmod 2228521 2104336
+f(ARG3 , ARG4 , ARG5 , ): f(ARG3 , ARG4 , ARG5 , ): f()
+BN_div 3110053 3029472
+f(ARG1 , ARG2 , ARG3): f(ARG1 , ARG2 , ARG3): f(ARG2 , ARG3)
+BN_rshift 2236137 2115056
+f(ARG1 , ARG2): f(ARG1 , ARG2): f()
+BN_lshift1 2234759 2113920
+f(ARG1 , ARG3): f(ARG1 , ARG3): f(ARG2 , ARG3)
+BN_usub 3109066 3027376
+returns
+BN_num_bits_word 2208486 2087744
+f(ARG1): f(ARG1): f(ARG1)
+BN_set_bit 2212218 2091920
+f(ARG1 , ARG2): (f(ARG1 , ARG2) + 16): f(ARG2)
+BN_copy 2210250 2090176
+returns
+BN_sub_word 2237576 2116512
+f(ARG1): (ARG1 + 16): f()
+BN_set_negative 2213151 2092416
+f(ARG1): (ARG1 + 16): f(ARG1)
+BN_add_word 2237166 2116096
+f(ARG1 , ARG3): f(ARG1 , ARG3): f(ARG2 , ARG3)
+BN_lshift 2235499 2114400
+BN_is_bit_set 2212752 2092240
+returns
+BN_ucmp 2211704 2091632
+returns
+DSA_get_default_method 2343558 2216704
+pub_print_gost01 3256393 3174864
+f(ARG1): ((ARG1 + 32) + 8): f(ARG1)
+BN_CTX_end 2215378 2094272
+returns
+gost_get0_priv_key 3253198 3176336
+engine_table_select 3185835 3099184
+returns
+OBJ_bsearch_ 2025310 1923888
+returns
+OBJ_bsearch_ex_ 2025373 1924032
+returns
+BN_CTX_get 2215501 2094400
+f(ARG1): (ARG1 + 16): f()
+BN_init 2209224 2088624
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+BN_set_word 2210992 2090640
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+bn_expand2 2210036 2089328
+f(ARG1): (f(ARG1) + 8): f(ARG1)
+bn_expand_internal 2209403 2087184
+BN_print 2232821 2110000
+BIO_indent 2392093 2262800
+BIO_puts 2391462 2262320
+BIO_printf 2417392 2293024
+f(ARG3): [f(ARG3)]: f()
+BIO_vprintf 2417613 2289152
+f(ARG4): ARG4: f()
+fmtfp 2415665 2287232
+f(ARG2 , ARG3): (f(ARG2) + f(ARG3)): f()
+fmtint 2414600 2285968
+f(ARG1 , ARG3): (f(ARG1) + f(ARG3)): f(ARG5)
+doapr_outch 2417027 2285728
+BIO_write 2391122 2262064
+returns
+obj_name_LHASH_COMP 2016969 1916528
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+engine_table_register 3184666 3098448
+returns
+lh_retrieve 2435949 2321136
+returns
+sk_delete_ptr 2433211 2317872
+f(ARG1 , ARG2): ([(ARG1 + 8)] + (f(ARG2) * 8)): f(ARG1 , ARG2)
+sk_delete 2433307 2318048
+engine_unlocked_finish 2365255 2236320
+returns
+sk_push 2433823 2318640
+returns
+sk_insert 2432856 2317632
+f(ARG3): f(ARG3): f(ARG3)
+CRYPTO_add_lock 2002838 1901040
+Traceback (most recent call last):
+  File "compare_vsa.py", line 226, in compare_two_functions
+    if matchTwoStringArray(json_object1["return"], json_object2["return"]):
+  File "compare_vsa.py", line 112, in matchTwoStringArray
+    notVisited.remove(s2)
+ValueError: list.remove(x): x not in list
+
+returns
+SortFnByName 1299373 1300656
+f(ARG1): f(ARG1): f(ARG1 , A_Stack[-0x38]:8)
+lh_insert 2435252 2320128
+f(ARG1): (ARG1 + 28): f()
+BIO_set 2390015 2261152
+f(ARG1): f(ARG1): f(ARG2)
+BUF_strlcat 2389775 2260784
+f(ARG1): f(ARG1): f(ARG2)
+BUF_strlcpy 2389650 2260688
+f(ARG1): (ARG1 + 12): f(ARG2)
+CRYPTO_THREADID_cpy 2002532 1900192
+f(ARG1): ([(ARG1 + 40)] + 48): f(ARG1)
+app_info_free 2006381 1905520
+f(ARG1): (ARG1 + 8): f(ARG1)
+CRYPTO_THREADID_current 2002382 1900112
+f(ARG1): (ARG1 + 8): f(ARG1)
+CRYPTO_THREADID_set_pointer 2002231 1900048
+CRYPTO_THREADID_set_numeric 2002178 1900032
+f(ARG2): f(ARG2): f(ARG2)
+CRYPTO_lock 2002682 1900896
+returns
+sk_set 2434411 2319504
+returns
+CRYPTO_get_dynlock_value 2001810 1899632
+returns
+sk_num 2434313 2319440
+returns
+sk_value 2434343 2319456
+returns
+lh_delete 2435636 2320704
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202024.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201768.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202248.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201416.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295384.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202288.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295376.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201800.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295360.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202328.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295344.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202320.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295328.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202312.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295312.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202304.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295296.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202296.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295280.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202280.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295264.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202272.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295248.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202264.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295216.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202240.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295200.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202232.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295184.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202224.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295152.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202208.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295088.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202176.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295072.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202168.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295040.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202152.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295024.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202144.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295008.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202136.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294992.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202128.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294976.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202120.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294960.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202112.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294944.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202104.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294928.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202096.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294896.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202080.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294880.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202072.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294864.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202064.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294848.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202056.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294832.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202048.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294800.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202032.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294784.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202016.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294768.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202008.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294752.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202000.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294736.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201992.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294720.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201984.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294672.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201960.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294656.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201952.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294640.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201944.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294608.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201928.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294592.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201920.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294560.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201904.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294544.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201896.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294528.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201888.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294512.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201880.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294496.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201872.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294480.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201864.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294464.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201856.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294448.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201840.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294432.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201832.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294400.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201816.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294384.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201808.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294368.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201792.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294352.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201784.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294336.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201776.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294320.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201760.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294304.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201752.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294288.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201744.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294272.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201736.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294256.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201728.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294240.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201720.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294224.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201712.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294208.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201704.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294176.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201688.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294160.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201680.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294144.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201672.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294128.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201664.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294096.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201648.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294080.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201640.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294064.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201632.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294048.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201624.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294032.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201616.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294016.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294000.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201600.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293984.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201592.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293968.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201584.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293952.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201576.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293936.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201568.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293904.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201552.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293872.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201536.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293856.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201528.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293840.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201520.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293824.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201512.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293808.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201504.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293792.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201496.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293760.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201480.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293744.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201472.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293728.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201464.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293712.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201456.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293696.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201448.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293680.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201440.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293648.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201424.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293632.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201408.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293616.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201400.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293600.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201392.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293584.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201384.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293568.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201376.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293552.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201368.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293536.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201360.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293520.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201352.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1295104.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6202184.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1294688.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201968.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293888.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201544.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/1293504.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201344.json'
+
+Traceback (most recent call last):
+  File "compare_vsa.py", line 180, in compare_two_functions
+    with open(file1, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/6201848.json'
+
+2196 5568

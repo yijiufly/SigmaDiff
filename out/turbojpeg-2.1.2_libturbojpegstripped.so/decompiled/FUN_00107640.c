@@ -1,0 +1,85 @@
+1: 
+2: void FUN_00107640(long *param_1,uint param_2,float *param_3)
+3: 
+4: {
+5: byte *pbVar1;
+6: byte *pbVar2;
+7: ulong uVar3;
+8: byte *pbVar4;
+9: 
+10: uVar3 = (ulong)param_2;
+11: pbVar1 = (byte *)(*param_1 + uVar3);
+12: *param_3 = (float)(*pbVar1 - 0x80);
+13: param_3[1] = (float)(pbVar1[1] - 0x80);
+14: param_3[2] = (float)(pbVar1[2] - 0x80);
+15: param_3[3] = (float)(pbVar1[3] - 0x80);
+16: param_3[4] = (float)(pbVar1[4] - 0x80);
+17: param_3[5] = (float)(pbVar1[5] - 0x80);
+18: param_3[6] = (float)(pbVar1[6] - 0x80);
+19: pbVar2 = (byte *)(param_1[1] + uVar3);
+20: param_3[7] = (float)(pbVar1[7] - 0x80);
+21: param_3[8] = (float)(*pbVar2 - 0x80);
+22: param_3[9] = (float)(pbVar2[1] - 0x80);
+23: param_3[10] = (float)(pbVar2[2] - 0x80);
+24: param_3[0xb] = (float)(pbVar2[3] - 0x80);
+25: param_3[0xc] = (float)(pbVar2[4] - 0x80);
+26: param_3[0xd] = (float)(pbVar2[5] - 0x80);
+27: param_3[0xe] = (float)(pbVar2[6] - 0x80);
+28: pbVar1 = (byte *)(param_1[2] + uVar3);
+29: param_3[0xf] = (float)(pbVar2[7] - 0x80);
+30: param_3[0x10] = (float)(*pbVar1 - 0x80);
+31: param_3[0x11] = (float)(pbVar1[1] - 0x80);
+32: param_3[0x12] = (float)(pbVar1[2] - 0x80);
+33: param_3[0x13] = (float)(pbVar1[3] - 0x80);
+34: param_3[0x14] = (float)(pbVar1[4] - 0x80);
+35: param_3[0x15] = (float)(pbVar1[5] - 0x80);
+36: param_3[0x16] = (float)(pbVar1[6] - 0x80);
+37: pbVar2 = (byte *)(param_1[3] + uVar3);
+38: param_3[0x17] = (float)(pbVar1[7] - 0x80);
+39: param_3[0x18] = (float)(*pbVar2 - 0x80);
+40: param_3[0x19] = (float)(pbVar2[1] - 0x80);
+41: param_3[0x1a] = (float)(pbVar2[2] - 0x80);
+42: param_3[0x1b] = (float)(pbVar2[3] - 0x80);
+43: param_3[0x1c] = (float)(pbVar2[4] - 0x80);
+44: param_3[0x1d] = (float)(pbVar2[5] - 0x80);
+45: param_3[0x1e] = (float)(pbVar2[6] - 0x80);
+46: pbVar1 = (byte *)(param_1[4] + uVar3);
+47: param_3[0x1f] = (float)(pbVar2[7] - 0x80);
+48: param_3[0x20] = (float)(*pbVar1 - 0x80);
+49: param_3[0x21] = (float)(pbVar1[1] - 0x80);
+50: param_3[0x22] = (float)(pbVar1[2] - 0x80);
+51: param_3[0x23] = (float)(pbVar1[3] - 0x80);
+52: param_3[0x24] = (float)(pbVar1[4] - 0x80);
+53: param_3[0x25] = (float)(pbVar1[5] - 0x80);
+54: param_3[0x26] = (float)(pbVar1[6] - 0x80);
+55: pbVar2 = (byte *)(param_1[5] + uVar3);
+56: param_3[0x27] = (float)(pbVar1[7] - 0x80);
+57: param_3[0x28] = (float)(*pbVar2 - 0x80);
+58: param_3[0x29] = (float)(pbVar2[1] - 0x80);
+59: param_3[0x2a] = (float)(pbVar2[2] - 0x80);
+60: param_3[0x2b] = (float)(pbVar2[3] - 0x80);
+61: param_3[0x2c] = (float)(pbVar2[4] - 0x80);
+62: param_3[0x2d] = (float)(pbVar2[5] - 0x80);
+63: param_3[0x2e] = (float)(pbVar2[6] - 0x80);
+64: pbVar1 = (byte *)(param_1[6] + uVar3);
+65: pbVar4 = (byte *)(uVar3 + param_1[7]);
+66: param_3[0x2f] = (float)(pbVar2[7] - 0x80);
+67: param_3[0x30] = (float)(*pbVar1 - 0x80);
+68: param_3[0x31] = (float)(pbVar1[1] - 0x80);
+69: param_3[0x32] = (float)(pbVar1[2] - 0x80);
+70: param_3[0x33] = (float)(pbVar1[3] - 0x80);
+71: param_3[0x34] = (float)(pbVar1[4] - 0x80);
+72: param_3[0x35] = (float)(pbVar1[5] - 0x80);
+73: param_3[0x36] = (float)(pbVar1[6] - 0x80);
+74: param_3[0x37] = (float)(pbVar1[7] - 0x80);
+75: param_3[0x38] = (float)(*pbVar4 - 0x80);
+76: param_3[0x39] = (float)(pbVar4[1] - 0x80);
+77: param_3[0x3a] = (float)(pbVar4[2] - 0x80);
+78: param_3[0x3b] = (float)(pbVar4[3] - 0x80);
+79: param_3[0x3c] = (float)(pbVar4[4] - 0x80);
+80: param_3[0x3d] = (float)(pbVar4[5] - 0x80);
+81: param_3[0x3e] = (float)(pbVar4[6] - 0x80);
+82: param_3[0x3f] = (float)(pbVar4[7] - 0x80);
+83: return;
+84: }
+85: 

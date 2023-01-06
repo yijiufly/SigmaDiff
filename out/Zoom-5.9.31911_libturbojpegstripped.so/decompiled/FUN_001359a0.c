@@ -1,0 +1,112 @@
+1: 
+2: void FUN_001359a0(long param_1,long param_2,short *param_3,long *param_4,uint param_5)
+3: 
+4: {
+5: short *psVar1;
+6: long lVar2;
+7: long lVar3;
+8: long lVar4;
+9: long lVar5;
+10: undefined *puVar6;
+11: long lVar7;
+12: long lVar8;
+13: long lVar9;
+14: short *psVar10;
+15: long lVar11;
+16: long lVar12;
+17: long lVar13;
+18: long lVar14;
+19: long lVar15;
+20: long lVar16;
+21: long lVar17;
+22: long lVar18;
+23: int *piVar19;
+24: int *piVar20;
+25: long *plStack408;
+26: int aiStack344 [8];
+27: int aiStack312 [8];
+28: int aiStack280 [8];
+29: int aiStack248 [8];
+30: int aiStack216 [8];
+31: int aiStack184 [8];
+32: int aiStack152 [8];
+33: int aiStack120 [8];
+34: int aiStack88 [8];
+35: int aiStack56 [2];
+36: 
+37: psVar10 = *(short **)(param_2 + 0x58);
+38: lVar2 = *(long *)(param_1 + 0x1a8) + 0x80;
+39: psVar1 = param_3 + 8;
+40: piVar19 = aiStack344;
+41: piVar20 = piVar19;
+42: do {
+43: lVar5 = (long)((int)*param_3 * (int)*psVar10) * 0x2000 + 0x400;
+44: lVar11 = (long)((int)param_3[0x10] * (int)psVar10[0x10]);
+45: lVar7 = (long)((int)param_3[0x20] * (int)psVar10[0x20]);
+46: lVar3 = lVar5 + (long)((int)param_3[0x30] * (int)psVar10[0x30]) * 0x16a1;
+47: lVar5 = lVar5 + (long)((int)param_3[0x30] * (int)psVar10[0x30]) * -0x2d42;
+48: lVar8 = lVar3 + (lVar11 + lVar7) * 0x2a87 + lVar7 * -0x7dc;
+49: lVar4 = lVar3 + (lVar11 + lVar7) * -0x2a87 + lVar11 * 0x22ab;
+50: lVar3 = lVar3 + lVar11 * -0x22ab + lVar7 * 0x7dc;
+51: lVar17 = lVar5 + (lVar11 - lVar7) * 0x16a1;
+52: lVar14 = (long)((int)param_3[8] * (int)psVar10[8]);
+53: lVar16 = (long)((int)param_3[0x18] * (int)psVar10[0x18]) * -0x2731;
+54: lVar13 = (long)((int)param_3[0x28] * (int)psVar10[0x28]);
+55: lVar18 = (lVar14 + lVar13) * 0x1d17;
+56: lVar12 = (long)((int)param_3[0x38] * (int)psVar10[0x38]);
+57: lVar15 = (lVar14 - lVar13) - lVar12;
+58: lVar9 = (lVar14 + lVar12) * 0xf7a;
+59: lVar14 = lVar18 + lVar9 + (long)((int)param_3[0x18] * (int)psVar10[0x18]) * 0x2731;
+60: lVar9 = lVar16 + (lVar13 - lVar12) * 0x2c91 + lVar9;
+61: lVar18 = lVar18 + lVar16 + (lVar13 - lVar12) * -0x2c91;
+62: *piVar20 = (int)(lVar8 + lVar14 >> 0xb);
+63: param_3 = param_3 + 1;
+64: piVar20[0x40] = (int)(lVar8 - lVar14 >> 0xb);
+65: psVar10 = psVar10 + 1;
+66: piVar20[0x20] = (int)(lVar5 + (lVar11 - lVar7) * -0x2d42 >> 0xb);
+67: piVar20[8] = (int)(lVar17 + lVar15 * 0x2731 >> 0xb);
+68: piVar20[0x38] = (int)(lVar17 + lVar15 * -0x2731 >> 0xb);
+69: piVar20[0x10] = (int)(lVar4 + lVar18 >> 0xb);
+70: piVar20[0x30] = (int)(lVar4 - lVar18 >> 0xb);
+71: piVar20[0x18] = (int)(lVar3 + lVar9 >> 0xb);
+72: piVar20[0x28] = (int)(lVar3 - lVar9 >> 0xb);
+73: piVar20 = piVar20 + 1;
+74: } while (param_3 != psVar1);
+75: plStack408 = param_4;
+76: do {
+77: lVar12 = (long)piVar19[2];
+78: puVar6 = (undefined *)((ulong)param_5 + *plStack408);
+79: lVar9 = (long)piVar19[4];
+80: lVar8 = ((long)*piVar19 + 0x10) * 0x2000;
+81: lVar3 = lVar8 + (long)piVar19[6] * 0x16a1;
+82: lVar8 = lVar8 + (long)piVar19[6] * -0x2d42;
+83: lVar17 = (long)piVar19[1];
+84: lVar4 = lVar3 + (lVar12 + lVar9) * -0x2a87 + lVar12 * 0x22ab;
+85: lVar13 = (long)piVar19[7];
+86: lVar11 = lVar3 + (lVar12 + lVar9) * 0x2a87 + lVar9 * -0x7dc;
+87: lVar3 = lVar3 + lVar12 * -0x22ab + lVar9 * 0x7dc;
+88: lVar15 = (long)piVar19[5];
+89: lVar14 = (lVar17 + lVar13) * 0xf7a;
+90: lVar16 = (lVar17 - lVar15) - lVar13;
+91: lVar5 = (lVar17 + lVar15) * 0x1d17;
+92: lVar18 = (long)piVar19[3] * -0x2731;
+93: lVar7 = lVar5 + lVar14 + (long)piVar19[3] * 0x2731;
+94: lVar17 = lVar8 + (lVar12 - lVar9) * 0x16a1;
+95: *puVar6 = *(undefined *)(lVar2 + (ulong)((uint)(lVar11 + lVar7 >> 0x12) & 0x3ff));
+96: lVar5 = lVar18 + (lVar15 - lVar13) * -0x2c91 + lVar5;
+97: lVar14 = lVar18 + (lVar15 - lVar13) * 0x2c91 + lVar14;
+98: puVar6[8] = *(undefined *)(lVar2 + (ulong)((uint)(lVar11 - lVar7 >> 0x12) & 0x3ff));
+99: piVar19 = piVar19 + 8;
+100: puVar6[1] = *(undefined *)(lVar2 + (ulong)((uint)(lVar17 + lVar16 * 0x2731 >> 0x12) & 0x3ff));
+101: puVar6[7] = *(undefined *)(lVar2 + (ulong)((uint)(lVar17 + lVar16 * -0x2731 >> 0x12) & 0x3ff));
+102: puVar6[2] = *(undefined *)(lVar2 + (ulong)((uint)(lVar4 + lVar5 >> 0x12) & 0x3ff));
+103: puVar6[6] = *(undefined *)(lVar2 + (ulong)((uint)(lVar4 - lVar5 >> 0x12) & 0x3ff));
+104: puVar6[3] = *(undefined *)(lVar2 + (ulong)((uint)(lVar3 + lVar14 >> 0x12) & 0x3ff));
+105: puVar6[5] = *(undefined *)(lVar2 + (ulong)((uint)(lVar3 - lVar14 >> 0x12) & 0x3ff));
+106: puVar6[4] = *(undefined *)
+107: (lVar2 + (ulong)((uint)(lVar8 + (lVar12 - lVar9) * -0x2d42 >> 0x12) & 0x3ff));
+108: plStack408 = plStack408 + 1;
+109: } while (piVar19 != aiStack56);
+110: return;
+111: }
+112: 
