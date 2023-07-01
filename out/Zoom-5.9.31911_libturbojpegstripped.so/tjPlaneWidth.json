@@ -1,1 +1,0 @@
-{"arg3":"undefined8","stringsAndLibcalls":[],"arg2":"int","numargs":3,"calleesideeffect":{},"calls":[],"arg1":"int","loads":["f(ARG3): (((ARG3 \/ 2147483647) * 4) + 1621136)"],"calleeloads":{},"sideeffect":[],"return":[]}

@@ -1,1 +1,0 @@
-{"stringsAndLibcalls":["free_thunk"],"numargs":1,"calleesideeffect":{},"calls":[["f(ARG1)","f(free_thunk@1058736)"]],"arg1":"void *","loads":[],"calleeloads":{},"sideeffect":[],"return":[]}

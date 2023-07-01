@@ -11,21 +11,13 @@ import torch
 import torch.nn as nn
 
 from dgmc.models import DGMC, RelCNN
-import argparse
-# parser = argparse.ArgumentParser()
-# parser.add_argument('--dim', type=int, default=128)
-# parser.add_argument('--rnd_dim', type=int, default=32)
-# parser.add_argument('--num_layers', type=int, default=3)
-# parser.add_argument('--num_steps', type=int, default=5)
-# parser.add_argument('--k', type=int, default=25)
-# parser.add_argument('--in_channels', type=int, default=128)
-# args = parser.parse_args()
+
 
 model_path = 'llvm_3_7_0_vs_llvm_3_8_1'
 
-# configs = [('casestudy', 'openssl_1_1_0b_O3_vs_openssl_1_1_0c_O3')]
-
 def processDGMC(dir, filename1, filename2, args):
+    print(dir, filename1, filename2, args)
+    
     each_conf =  filename1 + '_vs_' + filename2
     subject_dir=dir+'/'+each_conf
 
@@ -224,3 +216,6 @@ def processDGMC(dir, filename1, filename2, args):
         del ids_1,edges_1,ids_2,edges_2
         del early_stopping
         torch.cuda.empty_cache()
+
+if __name__ == "__main__":
+    processDGMC("/mnt/sata/lian/github/SigmaDiff/out", "diffutils-2.8-O0_cmpstripped", "diffutils-2.8-O3_cmpstripped", None)

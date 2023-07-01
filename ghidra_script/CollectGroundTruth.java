@@ -50,27 +50,12 @@ public class CollectGroundTruth extends GhidraScript {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-//		BasicBlockModel bbm = new BasicBlockModel(this.currentProgram);
-//		CodeBlockIterator blocks;
-//		try {
-//			blocks = bbm.getCodeBlocks(TaskMonitor.DUMMY);
-//			Listing listing = currentProgram.getListing();
-//			FileWriter myObj = new FileWriter(this.getScriptArgs()[0] + "/basicblocks.txt");
-//			while(blocks.hasNext()) {
-//				CodeBlock block = blocks.next();
-//				block.getDestinations(monitor);
-//				myObj.append(block.getMinAddress().toString() + ", " + block.getMaxAddress().toString() + "\n");
-//			}
-//			myObj.close();
-//		} catch (Exception e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
+
 	}
 	
 	@Override
 	protected void run() throws Exception {
+		currentProgram.setImageBase(toAddr(0), false);
 		generateGroundTruth();
 	}
 }

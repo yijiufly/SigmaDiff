@@ -1,0 +1,17 @@
+     ../lib/c-stack.c \
+     ../lib/error.c \
+     ../lib/file-type.c \
+     ../lib/getopt.c \
+     ../lib/quotearg.c \
+     ../lib/regcomp.c \
+     ../lib/xalloc-die.c \
+     ../lib/xfreopen.c \
+     ../lib/xstrtol-error.c \
+     ../lib/version-etc.c \
+     ../src/analyze.c \
+     ../src/cmp.c \
+     ../src/diff.c \
+     ../src/diff3.c \
+     ../src/dir.c \
+     ../src/sdiff.c \
+     ../src/util.c

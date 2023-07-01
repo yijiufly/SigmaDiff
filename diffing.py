@@ -17,17 +17,16 @@ import numpy as np
 import pickle
 from tarjan_sort import robust_topological_sort
 from load_emb import load_file, load_file_with_debug
-#-------------------------------------------------------------------------------
+
 def log(msg):
     if isinstance(threading.current_thread(), threading._MainThread):
         print(("[%s] %s" % (time.asctime(), msg)))
 
-#-------------------------------------------------------------------------------
+
 def log_refresh(msg, show=False, do_log=True):
     log(msg)
 
 
-#-------------------------------------------------------------------------------
 class CBinDiff:
     def __init__(self, db_name):
         self.names = dict()
@@ -44,9 +43,8 @@ class CBinDiff:
         self.func2id1 = dict()
         self.func2id2 = dict()
         
-        ####################################################################
 
-    def diff(self, large_bin):
+    def diff(self):
         try:
             t0 = time.time()
             self.find_initial_matches()
@@ -55,15 +53,12 @@ class CBinDiff:
             print(tracemalloc.get_traced_memory())
             log_refresh("Find matches along the callgraph...")
             self.match_along_callgraph_nhop(1)
-            if large_bin:
-                self.match_subgraph(5, True)
-            else:
-                self.match_the_rest(self.isolate_funcs1, self.isolate_funcs2)
-                self.match_the_rest(self.nocaller1 - self.isolate_funcs1, self.nocaller2 - self.isolate_funcs2)
-                self.match_the_rest(self.functions1 - self.nocaller1, self.functions2 - self.nocaller2)
-                self.match_the_rest(self.functions1, self.nocaller2)
-                self.match_the_rest(self.nocaller1, self.functions2)
-                self.match_the_rest(self.functions1 - self.isolate_funcs1, self.functions2 - self.isolate_funcs2, 'ag')
+            self.match_the_rest(self.isolate_funcs1, self.isolate_funcs2)
+            self.match_the_rest(self.nocaller1 - self.isolate_funcs1, self.nocaller2 - self.isolate_funcs2)
+            self.match_the_rest(self.functions1 - self.nocaller1, self.functions2 - self.nocaller2)
+            self.match_the_rest(self.functions1, self.nocaller2)
+            self.match_the_rest(self.nocaller1, self.functions2)
+            self.match_the_rest(self.functions1 - self.isolate_funcs1, self.functions2 - self.isolate_funcs2, 'ag')
             total_time = time.time() - t0
             log("Done. Took {} seconds.".format(total_time))
         finally:
@@ -101,6 +96,7 @@ class CBinDiff:
                     for key in features[callee].keys():
                         features[func][callee].update(set([i for i in features[callee][key] if not i.startswith("sideeffect__") and not i.startswith("loads__")]))
 
+
     def find_initial_matches(self):
         candidates = self.functions1.intersection(self.functions2)
         for func in candidates:
@@ -111,7 +107,8 @@ class CBinDiff:
             self.mapping[func] = func
             self.initials.append(func)
 
-    def load_callgraph(self, path1, path2, load_gt=True):
+
+    def load_callgraph(self, path1, path2, load_gt):
         self.path1 = path1
         self.path2 = path2
         self.callgraph1 = defaultdict(list)
@@ -180,8 +177,6 @@ class CBinDiff:
             self.func2id2[func] = i
             i += 1
 
-        # self.func_semantic_sim = [[None]*len(self.functions2) for i in self.functions1]
-        # self.neighbor_sim = [[None]*len(self.functions2) for i in self.functions1]
         self.addr2funcname1 = dict()
         self.addr2funcname2 = dict()
         if load_gt:
@@ -216,6 +211,7 @@ class CBinDiff:
         else:
             self.emb2 = None
 
+
     def realname2strippedname(self):
         self.realname2strippedname1 = {}
         for addr, name in self.addr2funcname1.items():
@@ -230,8 +226,9 @@ class CBinDiff:
                     self.realname2strippedname2[name] = strippedname
                     break
 
-    def evaluate(self, matched_functions, load_gt=True):
-        if load_gt:
+
+    def evaluate(self, matched_functions, with_gt):
+        if with_gt:
             tp = set()
             fp = set()
             self.realname2strippedname()
@@ -276,6 +273,7 @@ class CBinDiff:
                 for func1, func2 in results:
                     f.write(func1 + " " +  func2 + "\n")
 
+
     def find_matched_neighbors(self, name1, name2):
         if self.neighbor_sim is None:
             return 0
@@ -313,6 +311,7 @@ class CBinDiff:
         sim = np.inner(e1, e2) / (np.linalg.norm(e1) * np.linalg.norm(e2))
         return sim, 10
 
+
     def check_semantic_conflict(self, ea, ea2):
         id1 = self.func2id1[ea]
         id2 = self.func2id2[ea2]
@@ -326,6 +325,7 @@ class CBinDiff:
             if self.func_semantic_sim is not None:
                 self.func_semantic_sim[id1][id2] = (sim, features)
             return (sim, features)
+
 
     def match_aggressively(self, matrix, confidence, name_list1, name_list2):
         row_ind = []
@@ -351,6 +351,7 @@ class CBinDiff:
             cid = np.delete(cid, ind[1])
         return row_ind, col_ind
         
+
     # find the most matched function pairs in the name lists
     # 1. find the function pairs that has most similar semantic features
     # 2. find the function pairs that already have some other matched neighbors
@@ -366,6 +367,7 @@ class CBinDiff:
             if min_value > 0.5:
                 return None
         return (row_ind, col_ind)
+
 
     def match_callees(self, callee1, callee2, caller, callerdiff, n):
         if len(callee1) == 0 or len(callee2) == 0 or len(callee1) > 1000 or len(callee2) > 1000:
@@ -386,8 +388,7 @@ class CBinDiff:
 
         callee_list1 = [m for m in callee1 if os.path.exists(os.path.join(self.path1, m + ".json"))]
         callee_list2 = [m for m in callee2 if os.path.exists(os.path.join(self.path2, m + ".json"))]
-        # callee_list1 = [m for m in callee1 if m in self.emb1]
-        # callee_list2 = [m for m in callee2 if m in self.emb2]
+
         matrix = np.ones(shape=(len(callee_list1), len(callee_list2)))
         confidence = np.zeros(shape=(len(callee_list1), len(callee_list2)))
         for i, func1 in enumerate(callee_list1):
@@ -428,13 +429,6 @@ class CBinDiff:
     def match_the_rest(self, set1, set2, method='la'):
         unmatched1 = set1 - set(self.matched1)
         unmatched2 = set2 - set(self.matched2)
-        # unmatched_list1 = [m for m in unmatched1 if m in self.emb1]
-        # unmatched_list2 = [m for m in unmatched2 if m in self.emb2]
-        # a = np.array([self.emb1[m] for m in unmatched_list1])
-        # b = np.array([self.emb2[m] for m in unmatched_list2])
-        # norm_a=a/np.linalg.norm(a,axis=1,keepdims=True)
-        # norm_b=b/np.linalg.norm(b,axis=1,keepdims=True)
-        # matrix = 1 - np.inner(norm_a,norm_b)
         unmatched_list1 = [m for m in unmatched1 if m.startswith("FUN_") and os.path.exists(os.path.join(self.path1, m + ".json"))]
         unmatched_list2 = [m for m in unmatched2 if m.startswith("FUN_") and os.path.exists(os.path.join(self.path2, m + ".json"))]
         matrix = np.ones(shape=(len(unmatched_list1), len(unmatched_list2)))
@@ -448,7 +442,6 @@ class CBinDiff:
                     matrix[i, j] = neighbor
                 else:
                     matrix[i, j] = (1 - sim) * 0.7 + neighbor * 0.3
-        
         
         if method == 'la':  # for functions that have features, combine features sim with neighbor sim
             # delete functions that have no features
@@ -474,41 +467,6 @@ class CBinDiff:
             self.matched2.append(unmatched_list2[c])
             self.mapping[unmatched_list1[r]] = unmatched_list2[c]
             
-    def match_subgraph(self, n, diff=True):
-        set1 = set()
-        set2 = set()
-        worklist1 = [(f, 0) for f in self.matched1]
-        worklist2 = [(f, 0) for f in self.matched2]
-        while len(worklist1) > 0:
-            func1, depth = worklist1.pop()
-            #neighbor = [c for c in self.callgraph1[func1] if c not in self.matched1]
-            neighbor = []
-            caller = [c for c in self.callgraph_reverse1[func1] if c not in self.matched1]
-            # print(1, func1, depth, len(caller), len(neighbor))
-            if len(caller) > 50:
-                continue
-            neighbor.extend(caller)
-            for c in set(neighbor):
-                if c not in set1 and depth < n:
-                    worklist1.append((c, depth + 1))
-            set1.update(set(neighbor))
-
-        while len(worklist2) > 0:
-            func2, depth = worklist2.pop()
-            # neighbor = []
-            neighbor = [c for c in self.callgraph2[func2] if c not in self.matched2]
-            caller = [c for c in self.callgraph_reverse2[func2] if c not in self.matched2]
-            # print(2, func2, depth, len(caller), len(neighbor))
-            # if len(caller) > 10:
-            #     continue
-            neighbor.extend(caller)
-            for c in set(neighbor):
-                if c not in set2 and depth < n:
-                    worklist2.append((c, depth + 1))
-            set2.update(set(neighbor))
-        if diff:
-            self.match_the_rest(set1, set2)
-        return set1, set2
 
     def match_along_callgraph_nhop(self, n):
         self.worklist = PriorityQueue()
@@ -529,16 +487,6 @@ class CBinDiff:
                 neighbortype = item[1][1]
                 neighbor1, neighbor2 = self.get_n_hop_neighbors(ea1, ea2, neighbortype, n)
                 self.match_callees(neighbor1, neighbor2, ea1, ea2, n)
-
-    def match_along_callgraph_nonpreemptive(self):
-        self.worklist = PriorityQueue()
-        for func1 in self.initials:
-            func2 = func1
-            callee1, callee2 = self.get_n_hop_neighbors(func1, func2, "callee", 1)
-            caller1, caller2 = self.get_n_hop_neighbors(func1, func2, "caller", 1)
-
-            self.worklist.put(((len(callee1) + len(callee2)), ((func1, func2), "callee")))
-            self.worklist.put(((len(caller1) + len(caller2)), ((func1, func2), "caller")))
 
 
     def get_n_hop_neighbors(self, name1, name2, neighbortype, n):
@@ -581,24 +529,15 @@ class CBinDiff:
             return set(caller1), set(caller2)
     
 
-def diff_two_files(db1, db2, out, large_bin):
+def diff_two_files(db1, db2, out, with_gt):
+    print(db1, db2, out, with_gt)
     bd = CBinDiff(db1)
-    bd.load_callgraph(db1, db2, load_gt=False)
-    bd.diff(large_bin)
+    bd.load_callgraph(db1, db2, with_gt)
+    bd.diff()
     if not (os.path.exists(out)):
         os.mkdir(out)
-    bd.evaluate(os.path.join(out, "matched_functions.txt"), load_gt=False)
+    bd.evaluate(os.path.join(out, "matched_functions.txt"), with_gt)
     
 
-def get_subgraph_funcs(db1, db2, out1, out2):
-    bd = CBinDiff(db1)
-    bd.load_callgraph(db1, db2, load_gt=False)
-    bd.find_initial_matches()
-    set1, set2 = bd.match_subgraph(5, diff=False)
-    print(out1 + "_set.txt", len(set1), out2 + "_set.txt", len(set2))
-    with open(out1 + "_set.txt", "w") as f:
-        for func in set1:
-            f.write(func + "\n")
-    with open(out2 + "_set.txt", "w") as f:
-        for func in set2:
-            f.write(func + "\n")
+if __name__ == "__main__":
+    diff_two_files("/mnt/sata/lian/github/SigmaDiff/out/diffutils-2.8-O0_sdiffstripped", "/mnt/sata/lian/github/SigmaDiff/out/diffutils-2.8-O3_sdiffstripped", "/mnt/sata/lian/github/SigmaDiff/out/diffutils-2.8-O0_sdiffstripped_vs_diffutils-2.8-O3_sdiffstripped", True)

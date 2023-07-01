@@ -6,8 +6,6 @@ import errno
 import shutil
 from collections import defaultdict
 
-from numpy.lib.arraysetops import unique
-
 def load_ast_nodes(file_path):
     node_features = dict()
     with open(file_path, "r") as f:
@@ -43,7 +41,9 @@ def load_ast_nodes(file_path):
 
     return node_features, func_nodes, node_features_full, node_names_full
 
-def add_attr_ast_nodes(file_path):
+
+def add_attr_ast_nodes(file_path, addrmap):
+    node_features = dict()
     with open(file_path, "r") as f:
         lines = f.readlines()
     
@@ -60,38 +60,57 @@ def add_attr_ast_nodes(file_path):
                         features[3] = "CMP"
                     else:
                         features[3] = features[3].split("@@")[0]
+                if features[-1] != "null":
+                    addr_set = [a for a in features[-1].split("##") if a !=""]
+                    src_line_set = set()
+                    for addr in addr_set:
+                        addr = addr.lstrip("0")
+                        if not addrmap is None and addr in addrmap:
+                            if addrmap[addr].startswith("??") or addrmap[addr].endswith("?"):
+                                continue
+                            if addrmap[addr].split("/")[-2] == '.':
+                                src_line = "/".join([addrmap[addr].split("/")[-3],addrmap[addr].split("/")[-1]])
+                            else:
+                                src_line = "/".join(addrmap[addr].split("/")[-2:])
+                            if src_line.endswith(")"):
+                                ind = src_line.rfind("(")
+                                src_line = src_line[:ind-1]
+                            src_line_set.add(src_line)
+                        else:
+                            continue
+                    if len(src_line_set) == 0:
+                        features.append("null")
+                        f.write("|&|".join(features) + '\n')
+                    else:
+                        features.append("##".join(src_line_set))
+                        f.write("|&|".join(features) + '\n')
+                else:
+                    f.write(line + '|&|null\n')
 
-                f.write("|&|".join(features) + '\n')
 
+def get_base_address(bin_path):
+    cmd = "readelf -l " + bin_path + " | grep LOAD"
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+    (out, err) = proc.communicate()
+    base = str(out).split()[3]
+    return int(base, 16)
 
-def parse_readelf_dump_file(dumpfile):
-    with open(dumpfile, "r") as f:
-        dumpinfo = f.readlines()
-    addr2file = {}
-    for line in dumpinfo:
-        if len(line) < 62:
-            continue
-        filename = line[:44].strip()
-        linenumber = line[44:60].strip()
-        address = line[62:].strip()
-        addr2file[address] = ":".join((filename, linenumber))
-
-    return addr2file
 
 def get_source_lines(bin_file, outputfile, node_features_full):
+    offset = get_base_address(bin_file)
     addresses_query = []
     for nodeid in node_features_full:
         addresses = node_features_full[nodeid][-1].split("##")
         for addr in addresses:
             if len(addr) > 2 and addr != "null":
-                addr = int(addr, 16) - 0x10000
+                addr = int(addr, 16) + offset
                 addresses_query.append(hex(addr)[2:])
 
-    addr2file = outputDebugInfo(bin_file, outputfile, addresses_query)
+    addr2file = outputDebugInfo(bin_file, outputfile, addresses_query, offset)
     return addr2file
 
 
-def outputDebugInfo(bin_file, output_file, addresses_query):
+def outputDebugInfo(bin_file, output_file, addresses_query, offset):
     f = open(output_file, 'w')
     f.close()
 
@@ -113,50 +132,10 @@ def outputDebugInfo(bin_file, output_file, addresses_query):
     addr2file = {}
     for i, addr in enumerate(addresses_query):
         file_info = dumpinfo[(i+1)*2-1]
-        addr = int(addr, 16) + 0x10000
+        addr = int(addr, 16) - offset  # need to substract the offset added when query addr2line
         addr2file[hex(addr)[2:]] = file_info.strip()
 
     return addr2file
-
-def get_source_lines2(bin_file, outputfile, node_features_full):
-    addresses_query = []
-    for nodeid in node_features_full:
-        addresses = node_features_full[nodeid][-1].split("##")
-        for addr in addresses:
-            if len(addr) > 2 and addr != "null":
-                addr = addr.lstrip("0")
-                addresses_query.append(addr)
-
-    addr2file = outputDebugInfo2(bin_file, outputfile, addresses_query)
-    return addr2file
-
-
-def outputDebugInfo2(bin_file, output_file, addresses_query):
-    f = open(output_file, 'w')
-    f.close()
-
-    for i in range((len(addresses_query) + 500 - 1) // 500):
-        cmd = 'addr2line -e {} -a {}'.format(bin_file, " ".join(addresses_query[i * 500:(i + 1) * 500]))
-        if not os.path.exists(os.path.dirname(output_file)):
-            try:
-                os.makedirs(os.path.dirname(output_file))
-            except OSError as exc: # Guard against race condition
-                if exc.errno != errno.EEXIST:
-                    raise
-
-        with open(output_file, 'a') as debugInfo:
-            p = subprocess.Popen(cmd, shell=True, stdout=debugInfo, close_fds=True)
-            p.wait()
-    
-    with open(output_file, "r") as f:
-        dumpinfo = f.readlines()
-    addr2file = {}
-    for i, addr in enumerate(addresses_query):
-        file_info = dumpinfo[(i+1)*2-1]
-        addr2file[addr] = file_info.strip()
-
-    return addr2file
-
 
 
 def filter_different_lines(map1, map2):
@@ -164,6 +143,7 @@ def filter_different_lines(map1, map2):
     keys2 = [k for k in map2.keys() if map2[k] in set(map2.values())-set(map1.values())]
     [map1.pop(k) for k in keys1]
     [map2.pop(k) for k in keys2]
+
 
 def load_edges(file):
     with open(file, "r") as f:
@@ -179,6 +159,7 @@ def load_edges(file):
 
     return graph, graph_reverse
 
+
 def add_training_nodes(file1, node_features_full1, file2, node_features_full2, matched_pair):
     g1, gr1 = load_edges(file1)
     g2, gr2 = load_edges(file2)
@@ -193,6 +174,7 @@ def add_training_nodes(file1, node_features_full1, file2, node_features_full2, m
                 added_pairs.append((parent1, parent2))
 
     return added_pairs
+
 
 def merge(dict1, dict2):
     for key in dict2.keys():
@@ -220,49 +202,9 @@ def test_two_binaries():
     
     select_training_node(node_file1, node_file2, "matched_functions.txt", "training/" + bin_name + "/training_nodes.txt", '/home/yijiufly/' + bin_name + '-O1/debug_info', '/home/yijiufly/' + bin_name + '-O2/debug_info', "training/" + bin_name + "/O1_nodelabel.txt", "training/" + bin_name + "/O2_nodelabel.txt", os.path.join(bin_dir1, bin_name), os.path.join(bin_dir2, bin_name))
 
-def add_func_summary(nodefile_path, callgraph_path, edge_path, node_features_full):
-    edges = []
-    with open(nodefile_path, "r") as f:
-        lines = f.readlines()
-    funcname = None
-    func_summary = {}
-    lastline = lines[-1].split("|&|")[0]
-    count_id = len(node_features_full)
-    for line in lines:
-        line = line.strip()
-        if line.startswith("#"):
-            funcname = line[1:]
-            func_summary[funcname] = count_id
-            count_id += 1
-        else:
-            features = line.split("|&|")
-            edges.append((func_summary[funcname], features[0]))
-
-    with open(nodefile_path, "a") as f:
-        for func in func_summary:
-            f.write(str(func_summary[func]) + "|&|" + func + "|&|FunctionSummary|&|null|&|null\n")
-
-    with open(callgraph_path, "r") as f:
-        lines = f.readlines()
-    
-
-    with open(edge_path, "w") as f:
-        for l in lines:
-            src = l.split(", ")[0]
-            des = l[len(src)+2:].strip()
-            if src == des:
-                continue
-            if src in func_summary.keys() and des in func_summary.keys():
-                f.write(str(func_summary[src]) + ", " + str(func_summary[des]) + "\n")
-
-        for src, des in edges:
-            f.write(str(src) + ", " + str(des) + "\n")
-
-    return func_summary
 
 
-
-def select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, callgraph_path1, edge_path1, callgraph_path2, edge_path2):
+def select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, with_gt):
     node_features1, func_nodes1, node_features_full1, node_names_full1 = load_ast_nodes(node_file1)
     node_features2, func_nodes2, node_features_full2, node_names_full2 = load_ast_nodes(node_file2)
 
@@ -276,8 +218,6 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
             matched1.add(func1)
             matched2.add(func2)
     
-    # func_summary1 = add_func_summary(node_file_new1, callgraph_path1, edge_path1, node_features_full1)
-    # func_summary2 = add_func_summary(node_file_new2, callgraph_path2, edge_path2, node_features_full2)
     with open(training_node_path, "w") as f:
         matched_pair = []
         for func_pair in func_list:
@@ -287,8 +227,7 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
                 f.write(func_nodes1[func1] + " " + func_nodes2[func2] + "\n")
             else:
                 continue
-            # if func1 in func_summary1 and func2 in func_summary2:
-            #     f.write(str(func_summary1[func1]) + " " + str(func_summary2[func2]) + "\n")
+
             # node text that are unique
             features1 = node_names_full1[func1]
             features2 = node_names_full2[func2]
@@ -296,7 +235,6 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
             unique2 = set([i for i in features2.keys() if len(features2[i]) == 1])
 
             for feat in unique1.intersection(unique2):
-                # f.write(list(features1[feat])[0] + " " + list(features2[feat])[0] + "\n")
                 matched_pair.append((list(features1[feat])[0], list(features2[feat])[0]))
 
             # vsa values that are unique
@@ -308,7 +246,6 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
             unique2 = set([i for i in features2.keys() if len(features2[i]) == 1])
 
             for feat in unique1.intersection(unique2):
-                # f.write(list(features1[feat])[0] + " " + list(features2[feat])[0] + "\n")
                 matched_pair.append((list(features1[feat])[0], list(features2[feat])[0]))
         
         matched_result = defaultdict(set)
@@ -322,10 +259,17 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
 
         print(len(set(matched_pair)) / len(node_features_full1.keys()))
 
-    add_attr_ast_nodes(node_file_new1)
-    add_attr_ast_nodes(node_file_new2)
+    if with_gt:
+        map1 = get_source_lines(bin_path1, debug_info1, node_features_full1)
+        map2 = get_source_lines(bin_path2, debug_info2, node_features_full2)
+        add_attr_ast_nodes(node_file_new1, map1)
+        add_attr_ast_nodes(node_file_new2, map2)
+    else:
+        add_attr_ast_nodes(node_file_new1, None)
+        add_attr_ast_nodes(node_file_new2, None)
 
-def process_two_files(output1, output2, compare_out):
+
+def process_two_files(bin_path1, bin_path2, output1, output2, compare_out, with_gt):
     filename1 = output1.split('/')[-1].split('_')[-1]
     filename2 = output2.split('/')[-1].split('_')[-1]
     node_file1 = os.path.join(output1, filename1+"_nodelabel.txt")
@@ -334,8 +278,8 @@ def process_two_files(output1, output2, compare_out):
     edge_file2 = os.path.join(output2, filename2+"_edges.txt")
     corpus_file1 = os.path.join(output1, filename1+"_corpus.txt")
     corpus_file2 = os.path.join(output2, filename2+"_corpus.txt")
-    callgraph_path1 = os.path.join(output1, "callgraph.txt")
-    callgraph_path2 = os.path.join(output2, "callgraph.txt")
+    debug_info1 = os.path.join(output1, filename1+"_debuginfo.txt")
+    debug_info2 = os.path.join(output2, filename2+"_debuginfo.txt")
     matched_functions = os.path.join(compare_out, "matched_functions.txt")
     training_node_path = os.path.join(compare_out, "training_nodes.txt")
     filename1 = output1.split('/')[-1]
@@ -346,8 +290,6 @@ def process_two_files(output1, output2, compare_out):
     edge_file_new2 = os.path.join(compare_out, filename2 + "_edges.txt")
     corpus_file_new1 = os.path.join(compare_out, filename1 + "_corpus.txt")
     corpus_file_new2 = os.path.join(compare_out, filename2 + "_corpus.txt")
-    edge_path1 = os.path.join(compare_out, filename1 + "_callgraphedges.txt")
-    edge_path2 = os.path.join(compare_out, filename2 + "_callgraphedges.txt")
 
     shutil.copy(node_file1, node_file_new1)
     shutil.copy(node_file2, node_file_new2)
@@ -355,61 +297,8 @@ def process_two_files(output1, output2, compare_out):
     shutil.copy(edge_file2, edge_file_new2)
     shutil.copy(corpus_file1, corpus_file_new1)
     shutil.copy(corpus_file2, corpus_file_new2)
-    select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, callgraph_path1, edge_path1, callgraph_path2, edge_path2)
+    if with_gt:
+        bin_path1 = bin_path1[:-8] # get rid of the stripped suffix
+        bin_path2 = bin_path2[:-8]
+    select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, with_gt)
 
-if __name__ == "__main__":
-    binary_group = 'coreutils'
-    path = 'Dataset_for_BinDiff/' + binary_group + '/output_others/'
-    bindir = 'Dataset_for_BinDiff/' + binary_group + '/binaries_'
-    ver = ['2.8', '3.1', '3.4', '3.6']
-    opt = ['O3']
-    versions_all = [['clang', 'x86']]
-    # for v in ver:
-    #     for o in opt[:-1]:
-    #         versions_all.append(['-'.join([binary_group, v, o]), '-'.join([binary_group, v, opt[-1]])])
-    
-    
-    # for o in opt:
-    #     for v in ver[:-1]:
-    #         versions_all.append(['-'.join([binary_group, v, o]), '-'.join([binary_group, ver[-1], o])])
-    # versions = ['coreutils-5.93-O2', 'coreutils-6.4-O2']
-    for versions in versions_all:
-        for i, v1 in enumerate(versions):
-            for j, v2 in enumerate(versions):
-                if not os.path.exists(os.path.join(path, v1 + "_vs_" + v2)):
-                    continue
-                for binary in os.listdir(os.path.join(path, v1 + "_vs_" + v2)):
-                    # if binary != "xargs":
-                    #     continue
-                    currentdir = os.path.join(path, v1 + "_vs_" + v2, binary)
-                    node_file1 = os.path.join(path, v1, binary+"_stripped", binary+"_stripped_nodelabel.txt")
-                    node_file2 = os.path.join(path, v2, binary+"_stripped", binary+"_stripped_nodelabel.txt")
-                    edge_file1 = os.path.join(path, v1, binary+"_stripped", binary+"_stripped_edges.txt")
-                    edge_file2 = os.path.join(path, v2, binary+"_stripped", binary+"_stripped_edges.txt")
-                    corpus_file1 = os.path.join(path, v1, binary+"_stripped", binary+"_stripped_corpus.txt")
-                    corpus_file2 = os.path.join(path, v2, binary+"_stripped", binary+"_stripped_corpus.txt")
-                    callgraph_path1 = os.path.join(path, v1, binary+"_stripped", "callgraph.txt")
-                    callgraph_path2 = os.path.join(path, v2, binary+"_stripped", "callgraph.txt")
-                    matched_functions = os.path.join(currentdir, "matched_functions.txt")
-                    training_node_path = os.path.join(currentdir, "training_nodes.txt")
-                    debug_info1 = os.path.join(path, v1, binary+"_stripped", binary+"_debuginfo.txt")
-                    debug_info2 = os.path.join(path, v2, binary+"_stripped", binary+"_debuginfo.txt")
-                    node_file_new1 = os.path.join(currentdir, v1 + "_" + binary + "_nodelabel.txt")
-                    node_file_new2 = os.path.join(currentdir, v2 + "_" + binary + "_nodelabel.txt")
-                    edge_file_new1 = os.path.join(currentdir, v1 + "_" + binary + "_edges.txt")
-                    edge_file_new2 = os.path.join(currentdir, v2 + "_" + binary + "_edges.txt")
-                    corpus_file_new1 = os.path.join(currentdir, v1 + "_" + binary + "_corpus.txt")
-                    corpus_file_new2 = os.path.join(currentdir, v2 + "_" + binary + "_corpus.txt")
-                    edge_path1 = os.path.join(currentdir, v1 + "_" + binary + "_callgraphedges.txt")
-                    edge_path2 = os.path.join(currentdir, v2 + "_" + binary + "_callgraphedges.txt")
-                    bin_path1 = os.path.join(bindir+v1, v1, binary)
-                    bin_path2 = os.path.join(bindir+v2, v2, binary)
-
-                    shutil.copy(node_file1, node_file_new1)
-                    shutil.copy(node_file2, node_file_new2)
-                    shutil.copy(edge_file1, edge_file_new1)
-                    shutil.copy(edge_file2, edge_file_new2)
-                    shutil.copy(corpus_file1, corpus_file_new1)
-                    shutil.copy(corpus_file2, corpus_file_new2)
-                    print(binary, v1, v2)
-                    select_training_node(node_file1, node_file2, matched_functions, training_node_path, debug_info1, debug_info2, node_file_new1, node_file_new2, bin_path1, bin_path2, callgraph_path1, edge_path1, callgraph_path2, edge_path2)

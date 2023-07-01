@@ -1,0 +1,7 @@
+out/*
+tmp/*
+*stripped
+*.csv
+casestudy--llvm_3_7_0_vs_llvm_3_8_1_Pretrain-results
+difflib.py
+Trained_Model.pkl

@@ -1,0 +1,10 @@
+setmode.o: setmode.c /usr/include/stdc-predef.h ../config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h setmode.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h:
+
+setmode.h:

@@ -29,7 +29,6 @@ class Corpus(object):
 
     def get_data(self, node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_dir,pretrained_subject):
         f_model=open(pretrained_subject+'/Doc2Vec_Model.pkl','rb')
-        # f_model=open('coreutils-5.93-O2_vs_coreutils-6.4-O2/expr/Doc2Vec_Model.pkl','rb')
         model = pickle.load(f_model)
 
         func_matching=open(func_matching_file,'r')
@@ -154,7 +153,7 @@ class Corpus(object):
             decompile_code=records[4]
             source_decompile_dict[node_seq]=decompile_code
 
-            lineNum=records[5]
+            lineNum=records[6]
             source_lineNum_list[node_seq]=lineNum
 
         label_file=open(node_label_file_2,'r')
@@ -207,7 +206,7 @@ class Corpus(object):
             decompile_code=records[4]
             dst_decompile_dict[node_seq]=decompile_code
 
-            lineNum=records[5]
+            lineNum=records[6]
             dst_lineNum_list[node_seq]=lineNum
             # print('#######')
             # print(node_seq)

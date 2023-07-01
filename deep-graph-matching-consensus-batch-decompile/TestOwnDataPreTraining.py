@@ -42,7 +42,7 @@ for each_conf in configs:
 
     for index,subject in enumerate(subjects):
 
-        if(not subject=='not'):#这个应该选择数据集中最大的program，例如coreutils中的ptx
+        if(not subject=='not'):
             continue
 
         start_time=datetime.datetime.now()
@@ -53,35 +53,7 @@ for each_conf in configs:
 
         MergingCorpus(subject_path,subject,conf_1,conf_2)
         Doc2VecModelBuilding(subject_path)
-        ###############################################################
-        # node_label_file_1=subject_path+"coreutils-5.93-O1_"+subject+"_nodelabel.txt"
-        # edge_file_1=subject_path+"coreutils-5.93-O1_"+subject+"_edges.txt"
-        # node_label_file_2=subject_path+"coreutils-5.93-O2_"+subject+"_nodelabel.txt"
-        # edge_file_2=subject_path+"coreutils-5.93-O2_"+subject+"_edges.txt"
-        # training_file=subject_path+"training_nodes.txt"
-        # func_matching_file=subject_path+"matched_functions.txt"
-        ###############################################################
-        # node_label_file_1=subject_path+"coreutils-5.93-O1_"+subject+"_nodelabel.txt"
-        # edge_file_1=subject_path+"coreutils-5.93-O1_"+subject+"_edges.txt"
-        # node_label_file_2=subject_path+"coreutils-5.93-O3_"+subject+"_nodelabel.txt"
-        # edge_file_2=subject_path+"coreutils-5.93-O3_"+subject+"_edges.txt"
-        # training_file=subject_path+"training_nodes.txt"
-        # func_matching_file=subject_path+"matched_functions.txt"
-        ###############################################################
-        # node_label_file_1=subject_path+"coreutils-5.93-O0_"+subject+"_nodelabel.txt"
-        # edge_file_1=subject_path+"coreutils-5.93-O0_"+subject+"_edges.txt"
-        # node_label_file_2=subject_path+"coreutils-5.93-O3_"+subject+"_nodelabel.txt"
-        # edge_file_2=subject_path+"coreutils-5.93-O3_"+subject+"_edges.txt"
-        # training_file=subject_path+"training_nodes.txt"
-        # func_matching_file=subject_path+"matched_functions.txt"
-        ###############################################################
-        # node_label_file_1=subject_path+"coreutils-5.93-O2_"+subject+"_nodelabel.txt"
-        # edge_file_1=subject_path+"coreutils-5.93-O2_"+subject+"_edges.txt"
-        # node_label_file_2=subject_path+"coreutils-6.4-O2_"+subject+"_nodelabel.txt"
-        # edge_file_2=subject_path+"coreutils-6.4-O2_"+subject+"_edges.txt"
-        # training_file=subject_path+"training_nodes.txt"
-        # func_matching_file=subject_path+"matched_functions.txt"
-        ###############################################################
+        
         node_label_file_1=subject_path+conf_1+"_"+subject+"_nodelabel.txt"
         edge_file_1=subject_path+conf_1+"_"+subject+"_edges.txt"
         node_label_file_2=subject_path+conf_2+"_"+subject+"_nodelabel.txt"
@@ -152,7 +124,7 @@ for each_conf in configs:
 
         result_dir=subject_dir.replace('/','--')+'_Pretrain'
 
-        patience = 50	# 当验证集损失在连续20次训练周期中都没有得到降低时，停止模型训练，以防止模型过拟合
+        patience = 50	# 当验证集损失在连续50次训练周期中都没有得到降低时，停止模型训练，以防止模型过拟合
         early_stopping = EarlyStopping(patience, verbose=True)
 
         def train():
@@ -180,19 +152,19 @@ for each_conf in configs:
 
         print('Optimize initial feature matching...')
         model.num_steps = 0
-        for epoch in range(1, 801):
+        for epoch in range(1, 1201):
 
-            if epoch == 600:
+            if epoch == 1001:
                 print('Refine correspondence matrix...')
                 model.num_steps = args.num_steps
                 model.detach = True
-                # end_time=datetime.datetime.now()
-                # accuracy=test(final=True)
-                # result_file.write(subject+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+','+str((end_time-start_time).total_seconds())+',Yes\n')
-                # result_file.flush()
+                end_time=datetime.datetime.now()
+                accuracy=test(final=True)
+                result_file.write(subject+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+','+str((end_time-start_time).total_seconds())+',Yes\n')
+                result_file.flush()
 
-                # f_model=open(each_conf+'_Trained_Model.pkl','wb')
-                # pickle.dump(model, f_model, protocol = 4)
+                f_model=open(each_conf+'_Trained_Model.pkl','wb')
+                pickle.dump(model, f_model, protocol = 4)
 
             loss = train()
             early_stopping(loss, model)
@@ -209,7 +181,7 @@ for each_conf in configs:
                 pickle.dump(model, f_model, protocol = 4)
                 break
 
-            if epoch == 800:
+            if epoch == 1200:
                 accuracy=test(final=True)
                 end_time=datetime.datetime.now()
                 result_file.write(subject+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+','+str((end_time-start_time).total_seconds())+',No\n')
@@ -217,10 +189,16 @@ for each_conf in configs:
 
                 f_model=open(each_conf+'_Trained_Model.pkl','wb')
                 pickle.dump(model, f_model, protocol = 4)
+                break
 
             if epoch % 10 == 0:
                 accuracy=test()
                 print(subject_path+':'+(f'{epoch:03d}: Loss: {loss:.4f}'))
+                end_time=datetime.datetime.now()
+                result_file.write(subject+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+','+str((end_time-start_time).total_seconds())+',Yes\n')
+                result_file.flush()
+                f_model=open(each_conf+'_Trained_Model.pkl','wb')
+                pickle.dump(model, f_model, protocol = 4)
             
         
         del model

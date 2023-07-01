@@ -1,0 +1,1438 @@
+# Japanese GNU diffutils messages
+# Copyright (C) 2000, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the diffutils package.
+# IIDA Yosiaki <iida@gnu.org>, 2002.
+# Masahito Yamaga <yamaga@ipc.chiba-u.ac.jp>, 2002.
+# GOTO Masanori <gotom@debian.or.jp>, 2006.
+#  derived from the version by Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp> 1998.
+#                              Jun Nishii <jun@flatout.org> 1999.
+#                              Daisuke Yamashita <yamad@mb.infoweb.ne.jp> 1999.
+# Yasuaki Taniguchi <yasuakit@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: diffutils 3.0\n"
+"Report-Msgid-Bugs-To: bug-diffutils@gnu.org\n"
+"POT-Creation-Date: 2011-08-10 12:34+0200\n"
+"PO-Revision-Date: 2010-10-19 10:06+0900\n"
+"Last-Translator: Yasuaki Taniguchi <yasuakit@gmail.com>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/c-stack.c:204 lib/c-stack.c:297
+msgid "program error"
+msgstr "プログラムエラー"
+
+#: lib/c-stack.c:205 lib/c-stack.c:298
+msgid "stack overflow"
+msgstr "スタックオーバーフロー"
+
+#: lib/error.c:185
+msgid "Unknown system error"
+msgstr "不明なシステムエラー"
+
+#: lib/file-type.c:38
+msgid "regular empty file"
+msgstr "通常の空ファイル"
+
+#: lib/file-type.c:38
+msgid "regular file"
+msgstr "通常ファイル"
+
+#: lib/file-type.c:41
+msgid "directory"
+msgstr "ディレクトリ"
+
+#: lib/file-type.c:44
+msgid "block special file"
+msgstr "ブロックスペシャルファイル"
+
+#: lib/file-type.c:47
+msgid "character special file"
+msgstr "キャラクタスペシャルファイル"
+
+#: lib/file-type.c:50
+msgid "fifo"
+msgstr "fifo"
+
+#: lib/file-type.c:53
+msgid "symbolic link"
+msgstr "シンボリックリンク"
+
+#: lib/file-type.c:56
+msgid "socket"
+msgstr "ソケット"
+
+#: lib/file-type.c:59
+msgid "message queue"
+msgstr "メッセージキュー"
+
+#: lib/file-type.c:62
+msgid "semaphore"
+msgstr "セマフォ"
+
+#: lib/file-type.c:65
+msgid "shared memory object"
+msgstr "共有メモリオブジェクト"
+
+#: lib/file-type.c:68
+msgid "typed memory object"
+msgstr "型付メモリオブジェクト"
+
+#: lib/file-type.c:70
+msgid "weird file"
+msgstr "不明なファイル"
+
+#: lib/getopt.c:547 lib/getopt.c:576
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: オプション '%s' は曖昧です\n"
+
+#: lib/getopt.c:624 lib/getopt.c:628
+#, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: オプション '--%s' は引数を取ることができません\n"
+
+#: lib/getopt.c:637 lib/getopt.c:642
+#, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: オプション '%c%s' は引数を取ることができません\n"
+
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
+msgid "%s: option '--%s' requires an argument\n"
+msgstr "%s: オプション '--%s' は引数が必要です\n"
+
+#: lib/getopt.c:742 lib/getopt.c:745
+#, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: オプション '--%s' を認識できません\n"
+
+#: lib/getopt.c:753 lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: オプション '%c%s' を認識できません\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: 無効なオプション -- '%c'\n"
+
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: オプションには引数が必要です -- '%c'\n"
+
+#: lib/getopt.c:934 lib/getopt.c:950
+#, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: オプション '-W %s' は曖昧です\n"
+
+#: lib/getopt.c:974 lib/getopt.c:992
+#, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: オプション '-W %s' は引数を取ることができません\n"
+
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: オプション '-W %s' は引数が必要です\n"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  If the catalog has no translation,
+#. locale_quoting_style quotes `like this', and
+#. clocale_quoting_style quotes "like this".
+#.
+#. For example, an American English Unicode locale should
+#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
+#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
+#. MARK).  A British English Unicode locale should instead
+#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK)
+#. and U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:271
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:272
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:133
+msgid "Success"
+msgstr "成功です"
+
+#: lib/regcomp.c:136
+msgid "No match"
+msgstr "一致しません"
+
+#: lib/regcomp.c:139
+msgid "Invalid regular expression"
+msgstr "無効な正規表現です"
+
+#: lib/regcomp.c:142
+msgid "Invalid collation character"
+msgstr "無効な照合文字です"
+
+#: lib/regcomp.c:145
+msgid "Invalid character class name"
+msgstr "無効な文字クラス名です"
+
+#: lib/regcomp.c:148
+msgid "Trailing backslash"
+msgstr "終端のバックスラッシュ"
+
+#: lib/regcomp.c:151
+msgid "Invalid back reference"
+msgstr "無効な前方参照です"
+
+#: lib/regcomp.c:154
+msgid "Unmatched [ or [^"
+msgstr "[ または [^ が不一致です"
+
+#: lib/regcomp.c:157
+msgid "Unmatched ( or \\("
+msgstr "( または \\( が不一致です"
+
+#: lib/regcomp.c:160
+msgid "Unmatched \\{"
+msgstr "\\{ が不一致です"
+
+#: lib/regcomp.c:163
+msgid "Invalid content of \\{\\}"
+msgstr "\\{\\} の中身が無効です"
+
+#: lib/regcomp.c:166
+msgid "Invalid range end"
+msgstr "無効な範囲終了です"
+
+#: lib/regcomp.c:169
+msgid "Memory exhausted"
+msgstr "メモリを使い果たしました"
+
+#: lib/regcomp.c:172
+msgid "Invalid preceding regular expression"
+msgstr "無効な前方正規表現です"
+
+#: lib/regcomp.c:175
+msgid "Premature end of regular expression"
+msgstr "正規表現が途中で終了しました"
+
+#: lib/regcomp.c:178
+msgid "Regular expression too big"
+msgstr "正規表現が大きすぎます"
+
+#: lib/regcomp.c:181
+msgid "Unmatched ) or \\)"
+msgstr ") または \\) が不一致です"
+
+#: lib/regcomp.c:702
+msgid "No previous regular expression"
+msgstr "以前に正規表現がありません"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "メモリを使い果たしました"
+
+#: lib/xfreopen.c:35
+msgid "stdin"
+msgstr "標準入力"
+
+#: lib/xfreopen.c:36
+msgid "stdout"
+msgstr "標準出力"
+
+#: lib/xfreopen.c:37
+msgid "stderr"
+msgstr "標準エラー出力"
+
+#: lib/xfreopen.c:38
+msgid "unknown stream"
+msgstr "不明なストリーム"
+
+#: lib/xfreopen.c:39
+#, c-format
+msgid "failed to reopen %s with mode %s"
+msgstr "%s をモード %s で再度開くことに失敗しました"
+
+#: lib/xstrtol-error.c:63
+#, c-format
+msgid "invalid %s%s argument `%s'"
+msgstr "引数 `%3$s' に対して %1$s%2$s が無効です"
+
+#: lib/xstrtol-error.c:68
+#, c-format
+msgid "invalid suffix in %s%s argument `%s'"
+msgstr "引数 `%3$s' に対して無効な接尾辞 %1$s%2$s です"
+
+#: lib/xstrtol-error.c:72
+#, c-format
+msgid "%s%s argument `%s' too large"
+msgstr "引数 `%3$s' に対する %1$s%2$s が大きすぎます"
+
+#: lib/version-etc.c:74
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "パッケージ作成者: %s (%s)\n"
+
+#: lib/version-etc.c:77
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "パッケージ作成者: %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:84
+msgid "(C)"
+msgstr "(C)"
+
+#: lib/version-etc.c:86
+msgid ""
+"\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+"html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"ライセンス GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+"html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:102
+#, c-format
+msgid "Written by %s.\n"
+msgstr "作者 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:106
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "作者 %s および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:110
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "作者 %s、 %s、および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:117
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:124
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"%s、および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:131
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"%s、 %s、および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:139
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"%s、 %s、 %s、および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:147
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"%s、 %s、 %s、 %s、\n"
+"および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:156
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"%s、 %s、 %s、 %s、\n"
+"%s、および %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:167
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"作者 %s、 %s、 %s、\n"
+"%s、 %s、 %s、 %s、\n"
+"%s、 %s、 および他の方々。\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:245
+#, c-format
+msgid ""
+"\n"
+"Report bugs to: %s\n"
+msgstr ""
+"\n"
+"バグを発見したら <%s> に報告して下さい。\n"
+"翻訳に関するバグは<translation-team-ja@lists.sourceforge.net>に報告してくださ"
+"い。\n"
+
+#: lib/version-etc.c:247
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "%s のバグは <%s> に報告してください。\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s のホームページ: <%s>\n"
+
+#: lib/version-etc.c:253
+#, c-format
+msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+msgstr "%s のホームページ: <http://www.gnu.org/software/%s/>\n"
+
+#: lib/version-etc.c:256
+msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+msgstr ""
+"GNU ソフトウェアを使用する際の一般的なヘルプ: <http://www.gnu.org/gethelp/>\n"
+
+#: src/analyze.c:459 src/diff.c:1272
+#, c-format
+msgid "Files %s and %s differ\n"
+msgstr "ファイル %s と %s は異なります\n"
+
+#: src/analyze.c:462
+#, c-format
+msgid "Binary files %s and %s differ\n"
+msgstr "バイナリファイル %s と%s は異なります\n"
+
+#: src/analyze.c:713 src/diff3.c:1437 src/util.c:545
+msgid "No newline at end of file"
+msgstr "ファイル末尾に改行がありません"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/cmp.c:43
+msgid "Torbjorn Granlund"
+msgstr "Torbjorn Granlund"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/cmp.c:44
+msgid "David MacKenzie"
+msgstr "David MacKenzie"
+
+#: src/cmp.c:118 src/diff.c:830 src/diff3.c:414 src/sdiff.c:154
+#, c-format
+msgid "Try `%s --help' for more information."
+msgstr "「%s --help」で、より詳細な情報を調べてみてください。"
+
+#: src/cmp.c:137
+#, c-format
+msgid "invalid --ignore-initial value `%s'"
+msgstr "無効な--ignore-initialの値「%s」"
+
+#: src/cmp.c:147
+#, c-format
+msgid "options -l and -s are incompatible"
+msgstr "オプション-lと-sは両立しません"
+
+#: src/cmp.c:155 src/diff.c:839 src/diff3.c:422 src/sdiff.c:163
+#: src/sdiff.c:310 src/sdiff.c:317 src/sdiff.c:877 src/util.c:191
+#: src/util.c:284 src/util.c:291
+msgid "write failed"
+msgstr "書込み失敗"
+
+#: src/cmp.c:157 src/diff.c:841 src/diff.c:1337 src/diff3.c:424
+#: src/sdiff.c:165
+msgid "standard output"
+msgstr "標準出力"
+
+#: src/cmp.c:161
+#, fuzzy
+msgid "-b, --print-bytes          print differing bytes"
+msgstr "-b  --print-bytes  異なるバイトを表示。"
+
+#: src/cmp.c:162
+#, fuzzy
+msgid "-i, --ignore-initial=SKIP         skip first SKIP bytes of both inputs"
+msgstr "-i SKIP  --ignore-initial=SKIP  入力の先頭SKIPバイトをスキップ。"
+
+#: src/cmp.c:163
+#, fuzzy
+msgid ""
+"-i, --ignore-initial=SKIP1:SKIP2  skip first SKIP1 bytes of FILE1 and\n"
+"                                      first SKIP2 bytes of FILE2"
+msgstr "  FILE1のSKIP1バイトとFILE2のSKIP2バイトをスキップ。"
+
+#: src/cmp.c:165
+#, fuzzy
+msgid ""
+"-l, --verbose              output byte numbers and differing byte values"
+msgstr "-l  --verbose  すべての異なるバイトの指数と値を出力。"
+
+#: src/cmp.c:166
+#, fuzzy
+msgid "-n, --bytes=LIMIT          compare at most LIMIT bytes"
+msgstr "-n LIMIT  --bytes=LIMIT  高々LIMITバイトを比較。"
+
+#: src/cmp.c:167
+msgid "-s, --quiet, --silent      suppress all normal output"
+msgstr ""
+
+#: src/cmp.c:168
+msgid "    --help                 display this help and exit"
+msgstr ""
+
+#: src/cmp.c:169
+#, fuzzy
+msgid "-v, --version              output version information and exit"
+msgstr "-v  --version  バージョン情報を出力。"
+
+#: src/cmp.c:178
+#, c-format
+msgid "Usage: %s [OPTION]... FILE1 [FILE2 [SKIP1 [SKIP2]]]\n"
+msgstr ""
+"使用法: %s [オプション]... ファイル1 [ファイル2 [スキップ1 [スキップ2]]]\n"
+
+#: src/cmp.c:180
+msgid "Compare two files byte by byte."
+msgstr "2つのファイルをバイトごとに比較します。"
+
+#: src/cmp.c:182
+#, fuzzy
+msgid ""
+"The optional SKIP1 and SKIP2 specify the number of bytes to skip\n"
+"at the beginning of each file (zero by default)."
+msgstr "「スキップ1」と「スキップ2」は、各ファイルをスキップするバイト数。"
+
+#: src/cmp.c:185 src/diff.c:945 src/diff3.c:462 src/sdiff.c:205
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+
+#: src/cmp.c:191
+msgid ""
+"SKIP values may be followed by the following multiplicative suffixes:\n"
+"kB 1000, K 1024, MB 1,000,000, M 1,048,576,\n"
+"GB 1,000,000,000, G 1,073,741,824, and so on for T, P, E, Z, Y."
+msgstr ""
+"スキップの値には、次の係数を続けることもできます。\n"
+"kB 1000、K 1024、MB 1,000,000、M 1,048,576、\n"
+"GB 1,000,000,000、G 1,073,741,824、またT、P、E、Z、Yについても同様。"
+
+#: src/cmp.c:194
+msgid "If a FILE is `-' or missing, read standard input."
+msgstr "もしファイルがないか「-」のとき、標準入力を読みます。"
+
+#: src/cmp.c:195 src/diff.c:933 src/sdiff.c:215
+msgid "Exit status is 0 if inputs are the same, 1 if different, 2 if trouble."
+msgstr ""
+"終了コードは、入力ファイルが同じ場合は 0、入力ファイルが異なる場合は 1、\n"
+"問題が発生したときは 2 になります。"
+
+#: src/cmp.c:240
+#, c-format
+msgid "invalid --bytes value `%s'"
+msgstr "無効な--bytesの値「%s」"
+
+#: src/cmp.c:266 src/diff.c:748 src/diff3.c:318 src/sdiff.c:556
+#, c-format
+msgid "missing operand after `%s'"
+msgstr "「%s」の後のオペランドがありません"
+
+#: src/cmp.c:278 src/diff.c:750 src/diff3.c:320 src/sdiff.c:558
+#, c-format
+msgid "extra operand `%s'"
+msgstr "余計なオペランド「%s」"
+
+#: src/cmp.c:491
+#, c-format
+msgid "%s %s differ: byte %s, line %s\n"
+msgstr "%s %s 異なります: バイト %s、行 %s\n"
+
+#: src/cmp.c:507
+#, c-format
+msgid "%s %s differ: byte %s, line %s is %3o %s %3o %s\n"
+msgstr "%s %s 異なります: バイト %s、行 %s %3o %s %3o %s\n"
+
+#: src/cmp.c:559
+#, c-format
+msgid "cmp: EOF on %s\n"
+msgstr "cmp: ファイル%sの末尾\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/diff.c:48
+msgid "Paul Eggert"
+msgstr "Paul Eggert"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/diff.c:49
+msgid "Mike Haertel"
+msgstr "Mike Haertel"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/diff.c:50
+msgid "David Hayes"
+msgstr "David Hayes"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/diff.c:51
+msgid "Richard Stallman"
+msgstr "Richard Stallman"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/diff.c:52
+msgid "Len Tower"
+msgstr "Len Tower"
+
+#: src/diff.c:334
+#, c-format
+msgid "invalid context length `%s'"
+msgstr "無効な前後の幅「%s」"
+
+#: src/diff.c:417
+#, c-format
+msgid "pagination not supported on this host"
+msgstr "このホストではページ割付けをサポートしません"
+
+#: src/diff.c:432 src/diff3.c:300
+#, c-format
+msgid "too many file label options"
+msgstr "ファイル・ラベル・オプションが多すぎます"
+
+#: src/diff.c:509
+#, c-format
+msgid "invalid width `%s'"
+msgstr "無効な幅「%s」"
+
+#: src/diff.c:513
+msgid "conflicting width options"
+msgstr "幅のオプションが衝突しています"
+
+#: src/diff.c:538
+#, c-format
+msgid "invalid horizon length `%s'"
+msgstr "無効な横幅「%s」"
+
+#: src/diff.c:589
+#, c-format
+msgid "invalid tabsize `%s'"
+msgstr "無効なタブ幅「%s」"
+
+#: src/diff.c:593
+msgid "conflicting tabsize options"
+msgstr "タブ幅のオプションが衝突しています"
+
+#: src/diff.c:725
+msgid "--from-file and --to-file both specified"
+msgstr "--from-fileと--to-fileの両方を指定しました"
+
+#: src/diff.c:845
+#, fuzzy
+msgid "    --normal                  output a normal diff (the default)"
+msgstr "--normal  標準的な差分を出力。"
+
+#: src/diff.c:846
+#, fuzzy
+msgid "-q, --brief                   report only when files differ"
+msgstr "-q  --brief  ファイルが異なるかどうかだけを出力。"
+
+#: src/diff.c:847
+#, fuzzy
+msgid "-s, --report-identical-files  report when two files are the same"
+msgstr "-s  --report-identical-files  両ファイルが同じときに報告する。"
+
+#: src/diff.c:848
+msgid ""
+"-c, -C NUM, --context[=NUM]   output NUM (default 3) lines of copied context"
+msgstr ""
+
+#: src/diff.c:849
+#, fuzzy
+msgid ""
+"-u, -U NUM, --unified[=NUM]   output NUM (default 3) lines of unified context"
+msgstr "-w NUM  --width=NUM  行当り高々NUM (既定は130) 桁で出力。"
+
+#: src/diff.c:850
+#, fuzzy
+msgid "-e, --ed                      output an ed script"
+msgstr "-e  --ed  edスクリプトを出力。"
+
+#: src/diff.c:851
+#, fuzzy
+msgid "-n, --rcs                     output an RCS format diff"
+msgstr "-n  --rcs  RCS形式の差分を出力。"
+
+#: src/diff.c:852
+msgid "-y, --side-by-side            output in two columns"
+msgstr ""
+
+#: src/diff.c:853
+#, fuzzy
+msgid ""
+"-W, --width=NUM               output at most NUM (default 130) print columns"
+msgstr "-w NUM  --width=NUM  行当り高々NUM (既定は130) 桁で出力。"
+
+#: src/diff.c:854
+#, fuzzy
+msgid ""
+"    --left-column             output only the left column of common lines"
+msgstr "-l  --left-column  共通行は左列だけ出力。"
+
+#: src/diff.c:855
+#, fuzzy
+msgid "    --suppress-common-lines   do not output common lines"
+msgstr "-s  --suppress-common-lines  共通行の出力を抑止。"
+
+#: src/diff.c:857
+msgid "-p, --show-c-function         show which C function each change is in"
+msgstr ""
+
+#: src/diff.c:858
+msgid "-F, --show-function-line=RE   show the most recent line matching RE"
+msgstr ""
+
+#: src/diff.c:859
+msgid ""
+"    --label LABEL             use LABEL instead of file name\n"
+"                                (can be repeated)"
+msgstr ""
+
+#: src/diff.c:862
+#, fuzzy
+msgid "-t, --expand-tabs             expand tabs to spaces in output"
+msgstr "-t  --expand-tabs  出力のタブを空白に展開する。"
+
+#: src/diff.c:863
+#, fuzzy
+msgid "-T, --initial-tab             make tabs line up by prepending a tab"
+msgstr "-T  --initial-tab  タブで始まる行は、前にタブを置いて揃える。"
+
+#: src/diff.c:864
+#, fuzzy
+msgid ""
+"    --tabsize=NUM             tab stops every NUM (default 8) print columns"
+msgstr "--tabsize=NUM  タブ幅を NUM (デフォルトは 8) 列に設定する。"
+
+#: src/diff.c:865
+#, fuzzy
+msgid ""
+"    --suppress-blank-empty    suppress space or tab before empty output lines"
+msgstr "--suppress-blank-empty  空の出力行でスペースまたはタブを抑止する。"
+
+#: src/diff.c:866
+#, fuzzy
+msgid "-l, --paginate                pass output through `pr' to paginate it"
+msgstr "-l  --paginate  出力を `pr' でページ分割する。"
+
+#: src/diff.c:868
+#, fuzzy
+msgid ""
+"-r, --recursive                 recursively compare any subdirectories found"
+msgstr "-r  --recursive  見つかった下位ディレクトリーを再帰的に比較する。"
+
+#: src/diff.c:869
+#, fuzzy
+msgid "-N, --new-file                  treat absent files as empty"
+msgstr "-N  --new-file  存在しないファイルは空とみなす。"
+
+#: src/diff.c:870
+#, fuzzy
+msgid "    --unidirectional-new-file   treat absent first files as empty"
+msgstr "--unidirectional-new-file  存在しない前者のファイルは空とみなす。"
+
+#: src/diff.c:871
+#, fuzzy
+msgid "    --ignore-file-name-case     ignore case when comparing file names"
+msgstr "--ignore-file-name-case  ファイル名の大文字小文字を無視。"
+
+#: src/diff.c:872
+#, fuzzy
+msgid "    --no-ignore-file-name-case  consider case when comparing file names"
+msgstr "--no-ignore-file-name-case  ファイル名の大文字小文字を区別。"
+
+#: src/diff.c:873
+#, fuzzy
+msgid "-x, --exclude=PAT               exclude files that match PAT"
+msgstr "-x PAT  --exclude=PAT  PATと一致するファイルを除外する。"
+
+#: src/diff.c:874
+#, fuzzy
+msgid ""
+"-X, --exclude-from=FILE         exclude files that match any pattern in FILE"
+msgstr ""
+"-X FILE  --exclude-from=FILE  FILE内の各パターンと一致するファイルを除外。"
+
+#: src/diff.c:875
+#, fuzzy
+msgid ""
+"-S, --starting-file=FILE        start with FILE when comparing directories"
+msgstr ""
+"-S FILE  --starting-file=FILE  ディレクトリーを比較する際、FILEから始める。"
+
+#: src/diff.c:876
+#, fuzzy
+msgid ""
+"    --from-file=FILE1           compare FILE1 to all operands;\n"
+"                                  FILE1 can be a directory"
+msgstr ""
+"--from-file=FILE1  全オペランドとFILE1を比較。FILE1はディレクトリーも可。"
+
+#: src/diff.c:878
+#, fuzzy
+msgid ""
+"    --to-file=FILE2             compare all operands to FILE2;\n"
+"                                  FILE2 can be a directory"
+msgstr ""
+"--to-file=FILE2  FILE2と全オペランドを比較。FILE2はディレクトリーも可。"
+
+#: src/diff.c:881
+#, fuzzy
+msgid ""
+"-i, --ignore-case               ignore case differences in file contents"
+msgstr "-i  --ignore-case  ファイル内容の大文字小文字を無視。"
+
+#: src/diff.c:882
+#, fuzzy
+msgid "-E, --ignore-tab-expansion      ignore changes due to tab expansion"
+msgstr "-E  --ignore-tab-expansion  タブ展開の差を無視。"
+
+#: src/diff.c:883
+#, fuzzy
+msgid ""
+"-b, --ignore-space-change       ignore changes in the amount of white space"
+msgstr "-b  --ignore-space-change  空白数の差を無視。"
+
+#: src/diff.c:884
+#, fuzzy
+msgid "-w, --ignore-all-space          ignore all white space"
+msgstr "-w  --ignore-all-space  全空白を無視。"
+
+#: src/diff.c:885
+#, fuzzy
+msgid ""
+"-B, --ignore-blank-lines        ignore changes whose lines are all blank"
+msgstr "-B  --ignore-blank-lines  空白だけの行の差を無視。"
+
+#: src/diff.c:886 src/sdiff.c:176
+#, fuzzy
+msgid "-I, --ignore-matching-lines=RE  ignore changes whose lines all match RE"
+msgstr "-i RE  --ignore-matching-lines=RE  REに一致するすべての行の差を無視。"
+
+#: src/diff.c:888
+#, fuzzy
+msgid "-a, --text                      treat all files as text"
+msgstr "-a  --text  すべてテキストとして処理。"
+
+#: src/diff.c:889
+#, fuzzy
+msgid "    --strip-trailing-cr         strip trailing carriage return on input"
+msgstr "--strip-trailing-cr  入力から行末キャリッジ・リターンを削除。"
+
+#: src/diff.c:891
+#, fuzzy
+msgid "    --binary                    read and write data in binary mode"
+msgstr "--binary  バイナリー・モードで読み書き。"
+
+#: src/diff.c:894
+#, fuzzy
+msgid ""
+"-D, --ifdef=NAME                output merged file with `#ifdef NAME' diffs"
+msgstr "-D NAME  --ifdef=NAME  差分を「#ifdef NAME」で示す併合ファイルを出力。"
+
+#: src/diff.c:895
+#, fuzzy
+msgid "    --GTYPE-group-format=GFMT   format GTYPE input groups with GFMT"
+msgstr "--GTYPE-group-format=GFMT  同様だが、GTYPEの入力群をGFMTで整形。"
+
+#: src/diff.c:896
+#, fuzzy
+msgid "    --line-format=LFMT          format all input lines with LFMT"
+msgstr "--line-format=LFMT  同様だが、全入力行をLFMTで整形。"
+
+#: src/diff.c:897
+#, fuzzy
+msgid "    --LTYPE-line-format=LFMT    format LTYPE input lines with LFMT"
+msgstr "--LTYPE-line-format=LFMT  同様だが、LTYPE入力行をLFMTで整形。"
+
+#: src/diff.c:898
+msgid ""
+"  These format options provide fine-grained control over the output\n"
+"    of diff, generalizing -D/--ifdef."
+msgstr ""
+
+#: src/diff.c:900
+msgid "  LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'."
+msgstr ""
+"  ここでLTYPEは「old」「new」「unchanged」。GTYPEはLTYPEか「changed」。"
+
+#: src/diff.c:901
+#, fuzzy
+msgid ""
+"  GFMT (only) may contain:\n"
+"    %<  lines from FILE1\n"
+"    %>  lines from FILE2\n"
+"    %=  lines common to FILE1 and FILE2\n"
+"    %[-][WIDTH][.[PREC]]{doxX}LETTER  printf-style spec for LETTER\n"
+"      LETTERs are as follows for new group, lower case for old group:\n"
+"        F  first line number\n"
+"        L  last line number\n"
+"        N  number of lines = L-F+1\n"
+"        E  F-1\n"
+"        M  L+1\n"
+"    %(A=B?T:E)  if A equals B then T else E"
+msgstr ""
+"  GFMTには以下を指定できます:\n"
+"    %<  FILE1の行\n"
+"    %>  FILE2の行\n"
+"    %=  FILE1とFILE2の共通行\n"
+"    %[-][WIDTH][.[PREC]]{doxX}LETTER  printf風指定でのLETTER\n"
+"      LETTERは、以下の文字で新しい方、小文字で古い方:\n"
+"        F  最初の行番号\n"
+"        L  最後の行番号\n"
+"        N  行数 = L-F+1\n"
+"        E  F-1\n"
+"        M  L+1"
+
+#: src/diff.c:913
+#, fuzzy
+msgid ""
+"  LFMT (only) may contain:\n"
+"    %L  contents of line\n"
+"    %l  contents of line, excluding any trailing newline\n"
+"    %[-][WIDTH][.[PREC]]{doxX}n  printf-style spec for input line number"
+msgstr ""
+"  LFMTには以下を指定できます:\n"
+"    %L  行内容\n"
+"    %l  後続する改行をのぞいた行内容\n"
+"    %[-][WIDTH][.[PREC]]{doxX}n  printf風指定での入力行数"
+
+#: src/diff.c:917
+#, fuzzy
+msgid ""
+"  Both GFMT and LFMT may contain:\n"
+"    %%  %\n"
+"    %c'C'  the single character C\n"
+"    %c'\\OOO'  the character with octal code OOO\n"
+"    C    the character C (other characters represent themselves)"
+msgstr ""
+"  GFMTやLFMTには以下を指定できます:\n"
+"    %%  %\n"
+"    %c'C'  文字C一文字\n"
+"    %c'\\OOO'  8進コードOOOの文字"
+
+#: src/diff.c:923
+#, fuzzy
+msgid "-d, --minimal            try hard to find a smaller set of changes"
+msgstr "-d  --minimal  できるだけがんばって、小さい差分を見つける。"
+
+#: src/diff.c:924
+#, fuzzy
+msgid "    --horizon-lines=NUM  keep NUM lines of the common prefix and suffix"
+msgstr "--horizon-lines=NUM  先頭と末尾にある共通なNUM行を確保。"
+
+#: src/diff.c:925
+#, fuzzy
+msgid ""
+"    --speed-large-files  assume large files and many scattered small changes"
+msgstr "-H  --speed-large-files  巨大なファイルに分散した変更があると仮定。"
+
+#: src/diff.c:927
+msgid "    --help               display this help and exit"
+msgstr ""
+
+#: src/diff.c:928
+#, fuzzy
+msgid "-v, --version            output version information and exit"
+msgstr "-v  --version  バージョン情報を出力。"
+
+#: src/diff.c:930
+msgid ""
+"FILES are `FILE1 FILE2' or `DIR1 DIR2' or `DIR FILE...' or `FILE... DIR'."
+msgstr "FILESは、「FILE1 FILE2」「DIR1 DIR2」「DIR FILE...」「FILE... DIR」。"
+
+#: src/diff.c:931
+#, fuzzy
+msgid ""
+"If --from-file or --to-file is given, there are no restrictions on FILE(s)."
+msgstr "--from-fileや--to-fileを指定すれば、FILESの制限はありません。"
+
+#: src/diff.c:932 src/diff3.c:481 src/sdiff.c:214
+msgid "If a FILE is `-', read standard input."
+msgstr "ファイルが「-」のとき、標準入力を読みます。"
+
+#: src/diff.c:942
+#, c-format
+msgid "Usage: %s [OPTION]... FILES\n"
+msgstr "使用法: %s [オプション]... FILES\n"
+
+#: src/diff.c:943
+#, fuzzy
+msgid "Compare FILES line by line."
+msgstr "2つのファイルを行ごとに比較します。"
+
+#: src/diff.c:977
+#, c-format
+msgid "conflicting %s option value `%s'"
+msgstr "%sオプションの値「%s」が衝突しています"
+
+#: src/diff.c:990
+#, c-format
+msgid "conflicting output style options"
+msgstr "出力指定オプションが衝突しています"
+
+#: src/diff.c:1047 src/diff.c:1247
+#, c-format
+msgid "Only in %s: %s\n"
+msgstr "%sだけに発見: %s\n"
+
+#: src/diff.c:1176
+msgid "cannot compare `-' to a directory"
+msgstr "「-」はディレクトリーと比較できません"
+
+#: src/diff.c:1208
+msgid "-D option not supported with directories"
+msgstr "-Dオプションはディレクトリーでのサポートをしていません"
+
+#: src/diff.c:1217
+#, c-format
+msgid "Common subdirectories: %s and %s\n"
+msgstr "共通の下位ディレクトリー: %sと%s\n"
+
+#: src/diff.c:1257
+#, c-format
+msgid "File %s is a %s while file %s is a %s\n"
+msgstr "ファイル%sは%s、ファイル%sは%s\n"
+
+#: src/diff.c:1328
+#, c-format
+msgid "Files %s and %s are identical\n"
+msgstr "ファイル%sと%sは同一\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/diff3.c:41
+msgid "Randy Smith"
+msgstr "Randy Smith"
+
+#: src/diff3.c:313
+#, c-format
+msgid "incompatible options"
+msgstr "両立しないオプション"
+
+#: src/diff3.c:353
+msgid "`-' specified for more than one input file"
+msgstr "入力ファイルに「-」が複数回指定されました"
+
+#: src/diff3.c:395 src/diff3.c:1262 src/diff3.c:1666 src/diff3.c:1721
+#: src/sdiff.c:302 src/sdiff.c:847 src/sdiff.c:858
+msgid "read failed"
+msgstr "読込み失敗"
+
+#: src/diff3.c:428
+#, fuzzy
+msgid "-A, --show-all              output all changes, bracketing conflicts"
+msgstr "-A  --show-all  衝突をくくり、全変更を出力。"
+
+#: src/diff3.c:430
+#, fuzzy
+msgid ""
+"-e, --ed                    output ed script incorporating changes\n"
+"                                from OLDFILE to YOURFILE into MYFILE"
+msgstr "-e  --ed  OLDFILEからYOURFILEへのMYFILEにたいする未併合の変更を出力。"
+
+#: src/diff3.c:432
+#, fuzzy
+msgid "-E, --show-overlap          like -e, but bracket conflicts"
+msgstr "-E  --show-overlap  衝突をくくり、未併合の変更を出力。"
+
+#: src/diff3.c:433
+#, fuzzy
+msgid ""
+"-3, --easy-only             like -e, but incorporate only nonoverlapping "
+"changes"
+msgstr "-3  --easy-only  衝突していない、未併合の変更を出力。"
+
+#: src/diff3.c:434
+#, fuzzy
+msgid ""
+"-x, --overlap-only          like -e, but incorporate only overlapping changes"
+msgstr "-x  --overlap-only  重複した変更を出力。"
+
+#: src/diff3.c:435
+msgid "-X                          like -x, but bracket conflicts"
+msgstr ""
+
+#: src/diff3.c:436
+#, fuzzy
+msgid "-i                          append `w' and `q' commands to ed scripts"
+msgstr "-i  edスクリプトの後に「w」と「q」コマンドを追加。"
+
+#: src/diff3.c:438
+msgid ""
+"-m, --merge                 output actual merged file, according to\n"
+"                                -A if no other options are given"
+msgstr ""
+
+#: src/diff3.c:441
+#, fuzzy
+msgid "-a, --text                  treat all files as text"
+msgstr "-a  --text  すべてテキストとして処理。"
+
+#: src/diff3.c:442
+#, fuzzy
+msgid "    --strip-trailing-cr     strip trailing carriage return on input"
+msgstr "--strip-trailing-cr  入力から行末キャリッジ・リターンを削除。"
+
+#: src/diff3.c:443
+#, fuzzy
+msgid "-T, --initial-tab           make tabs line up by prepending a tab"
+msgstr "-T  --initial-tab  タブで始まる行は、前にタブを置いて揃える。"
+
+#: src/diff3.c:444
+#, fuzzy
+msgid "    --diff-program=PROGRAM  use PROGRAM to compare files"
+msgstr "--diff-program=PROGRAM  ファイルの比較にPROGRAMを使用。"
+
+#: src/diff3.c:445
+msgid ""
+"-L, --label=LABEL           use LABEL instead of file name\n"
+"                                (can be repeated up to three times)"
+msgstr ""
+
+#: src/diff3.c:448
+msgid "    --help                  display this help and exit"
+msgstr ""
+
+#: src/diff3.c:449
+#, fuzzy
+msgid "-v, --version               output version information and exit"
+msgstr "-v  --version  バージョン情報を出力。"
+
+#: src/diff3.c:458
+#, c-format
+msgid "Usage: %s [OPTION]... MYFILE OLDFILE YOURFILE\n"
+msgstr "使用法: %s [オプション]... MYFILE OLDFILE YOURFILE\n"
+
+#: src/diff3.c:460
+msgid "Compare three files line by line."
+msgstr "3つのファイルを行ごとに比較します。"
+
+#: src/diff3.c:470
+msgid ""
+"\n"
+"The default output format is a somewhat human-readable representation of\n"
+"the changes.\n"
+"\n"
+"The -e, -E, -x, -X (and corresponding long) options cause an ed script\n"
+"to be output instead of the default.\n"
+"\n"
+"Finally, the -m (--merge) option causes diff3 to do the merge internally\n"
+"and output the actual merged file.  For unusual input, this is more\n"
+"robust than using ed.\n"
+msgstr ""
+
+#: src/diff3.c:482
+msgid "Exit status is 0 if successful, 1 if conflicts, 2 if trouble."
+msgstr ""
+"終了コードは、成功した場合は 0、競合がある場合は 1、\n"
+"問題が発生したときは 2 になります。"
+
+#: src/diff3.c:675
+msgid "internal error: screwup in format of diff blocks"
+msgstr "内部エラー: 差分ブロックの形式にハマる"
+
+#: src/diff3.c:968
+#, c-format
+msgid "%s: diff failed: "
+msgstr "%s: diff失敗: "
+
+#: src/diff3.c:990
+msgid "internal error: invalid diff type in process_diff"
+msgstr "内部エラー: process_diff内で無効な差分型"
+
+#: src/diff3.c:1015
+msgid "invalid diff format; invalid change separator"
+msgstr "無効な差分形式; 無効な変更区切り"
+
+#: src/diff3.c:1272
+msgid "invalid diff format; incomplete last line"
+msgstr "無効な差分形式; 最終行が未終端"
+
+#: src/diff3.c:1296 src/sdiff.c:270 src/util.c:301
+#, c-format
+msgid "subsidiary program `%s' could not be invoked"
+msgstr "下位プログラム `%s' が起動できません"
+
+#: src/diff3.c:1321
+msgid "invalid diff format; incorrect leading line chars"
+msgstr "無効な差分形式; 不正な行頭文字群"
+
+#: src/diff3.c:1394
+msgid "internal error: invalid diff type passed to output"
+msgstr "内部エラー: 出力に渡される無効な差分型"
+
+#: src/diff3.c:1668 src/diff3.c:1725
+msgid "input file shrank"
+msgstr "入力ファイルが縮んだ"
+
+#: src/dir.c:157
+#, c-format
+msgid "cannot compare file names `%s' and `%s'"
+msgstr "ファイル名「%s」と「%s」を比較できません"
+
+#: src/dir.c:208
+#, c-format
+msgid "%s: recursive directory loop"
+msgstr "%s: 再帰的なディレクトリループです"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/sdiff.c:42
+msgid "Thomas Lord"
+msgstr "Thomas Lord"
+
+#: src/sdiff.c:169
+#, fuzzy
+msgid ""
+"-o, --output=FILE            operate interactively, sending output to FILE"
+msgstr "-o FILE  --output=FILE  対話的に操作し、出力はFILEへ。"
+
+#: src/sdiff.c:171
+#, fuzzy
+msgid ""
+"-i, --ignore-case            consider upper- and lower-case to be the same"
+msgstr "-i  --ignore-case  ファイル内容の大文字小文字を同一視。"
+
+#: src/sdiff.c:172
+#, fuzzy
+msgid "-E, --ignore-tab-expansion   ignore changes due to tab expansion"
+msgstr "-E  --ignore-tab-expansion  タブ展開の差を無視。"
+
+#: src/sdiff.c:173
+#, fuzzy
+msgid ""
+"-b, --ignore-space-change    ignore changes in the amount of white space"
+msgstr "-b  --ignore-space-change  空白数の差を無視。"
+
+#: src/sdiff.c:174
+#, fuzzy
+msgid "-W, --ignore-all-space       ignore all white space"
+msgstr "-W  --ignore-all-space  全空白を無視。"
+
+#: src/sdiff.c:175
+#, fuzzy
+msgid "-B, --ignore-blank-lines     ignore changes whose lines are all blank"
+msgstr "-B  --ignore-blank-lines  空白だけの行の差を無視。"
+
+#: src/sdiff.c:177
+#, fuzzy
+msgid "    --strip-trailing-cr      strip trailing carriage return on input"
+msgstr "--strip-trailing-cr  入力から行末キャリッジ・リターンを削除。"
+
+#: src/sdiff.c:178
+#, fuzzy
+msgid "-a, --text                   treat all files as text"
+msgstr "-a  --text  すべてテキストとして処理。"
+
+#: src/sdiff.c:180
+#, fuzzy
+msgid ""
+"-w, --width=NUM              output at most NUM (default 130) print columns"
+msgstr "-w NUM  --width=NUM  行当り高々NUM (既定は130) 桁で出力。"
+
+#: src/sdiff.c:181
+#, fuzzy
+msgid ""
+"-l, --left-column            output only the left column of common lines"
+msgstr "-l  --left-column  共通行は左列だけ出力。"
+
+#: src/sdiff.c:182
+#, fuzzy
+msgid "-s, --suppress-common-lines  do not output common lines"
+msgstr "-s  --suppress-common-lines  共通行の出力を抑止。"
+
+#: src/sdiff.c:184
+#, fuzzy
+msgid "-t, --expand-tabs            expand tabs to spaces in output"
+msgstr "-t  --expand-tabs  出力のタブを空白に展開する。"
+
+#: src/sdiff.c:185
+#, fuzzy
+msgid ""
+"    --tabsize=NUM            tab stops at every NUM (default 8) print columns"
+msgstr "--tabsize=NUM  タブ幅を NUM (デフォルトは 8) 列に設定する。"
+
+#: src/sdiff.c:187
+#, fuzzy
+msgid "-d, --minimal                try hard to find a smaller set of changes"
+msgstr "-d  --minimal  できるだけがんばって、小さい差分を見つける。"
+
+#: src/sdiff.c:188
+#, fuzzy
+msgid ""
+"-H, --speed-large-files      assume large files, many scattered small changes"
+msgstr "-H  --speed-large-files  巨大なファイルに分散した変更があると仮定。"
+
+#: src/sdiff.c:189
+#, fuzzy
+msgid "    --diff-program=PROGRAM   use PROGRAM to compare files"
+msgstr "--diff-program=PROGRAM  ファイルの比較にPROGRAMを使用。"
+
+#: src/sdiff.c:191
+msgid "    --help                   display this help and exit"
+msgstr ""
+
+#: src/sdiff.c:192
+#, fuzzy
+msgid "-v, --version                output version information and exit"
+msgstr "-v  --version  バージョン情報を出力。"
+
+#: src/sdiff.c:201
+#, c-format
+msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr "使用法: %s [OPTION]... FILE1 FILE2\n"
+
+#: src/sdiff.c:203
+#, fuzzy
+msgid "Side-by-side merge of differences between FILE1 and FILE2."
+msgstr "ファイル差分の2段組併合"
+
+#: src/sdiff.c:324
+msgid "cannot interactively merge standard input"
+msgstr "標準出力は対話的に併合できません"
+
+#: src/sdiff.c:586
+msgid "both files to be compared are directories"
+msgstr "比較対象は両方ともディレクトリ"
+
+#: src/sdiff.c:821
+msgid ""
+"ed:\tEdit then use both versions, each decorated with a header.\n"
+"eb:\tEdit then use both versions.\n"
+"el or e1:\tEdit then use the left version.\n"
+"er or e2:\tEdit then use the right version.\n"
+"e:\tDiscard both versions then edit a new one.\n"
+"l or 1:\tUse the left version.\n"
+"r or 2:\tUse the right version.\n"
+"s:\tSilently include common lines.\n"
+"v:\tVerbosely include common lines.\n"
+"q:\tQuit.\n"
+msgstr ""
+"ed:\t両方の版にヘッダーで飾って、利用し、編集。\n"
+"eb:\t両側の版を使用して編集。\n"
+"el:\t左側の版を使用して編集。\n"
+"er:\t右側の版を使用して編集。\n"
+"e:\t新版を編集。\n"
+"l:\t左側の版を使用。\n"
+"r:\t右側の版を使用。\n"
+"s:\t共通行を寡黙に含む。\n"
+"v:\t共通行を饒舌に含む。\n"
+"q:\t終了。\n"
+
+#~ msgid "-i SKIP1:SKIP2  --ignore-initial=SKIP1:SKIP2"
+#~ msgstr "-i SKIP1:SKIP2  --ignore-initial=SKIP1:SKIP2"
+
+#~ msgid "-s  --quiet  --silent  Output nothing; yield exit status only."
+#~ msgstr "-s  --quiet  --silent  出力なし。終了ステータスのみ。"
+
+#~ msgid "--help  Output this help."
+#~ msgstr "--help  この説明を出力。"
+
+#, fuzzy
+#~ msgid ""
+#~ "-c  -C NUM  --context[=NUM]  Output NUM (default 3) lines of copied "
+#~ "context.\n"
+#~ "-u  -U NUM  --unified[=NUM]  Output NUM (default 3) lines of unified "
+#~ "context.\n"
+#~ "  -L LABEL  --label=LABEL  Use LABEL instead of file name.\n"
+#~ "  -p  --show-c-function  Show which C function each change is in.\n"
+#~ "  -F RE  --show-function-line=RE  Show the most recent line matching RE."
+#~ msgstr ""
+#~ "-c  -C NUM  --context[=NUM]  コピーした前後NUM行 (既定は3) を出力。\n"
+#~ "-u  -U NUM  --unified[=NUM]  統合した前後NUM行 (既定は3) を出力。\n"
+#~ "  --label LABEL  ファイル名の代わりにLABELを使用。\n"
+#~ "  -p  --show-c-function  各変更を含むCの関数名を表示。\n"
+#~ "  -F RE  --show-function-line=RE  REと一致する直近の行を表示。"
+
+#~ msgid ""
+#~ "-y  --side-by-side  Output in two columns.\n"
+#~ "  -W NUM  --width=NUM  Output at most NUM (default 130) print columns.\n"
+#~ "  --left-column  Output only the left column of common lines.\n"
+#~ "  --suppress-common-lines  Do not output common lines."
+#~ msgstr ""
+#~ "-y  --side-by-side  縦列出力。\n"
+#~ "  -W NUM  --width=NUM  高々NUM (既定は130) 印字桁で出力。\n"
+#~ "  --left-column  共通行は左列だけ出力。\n"
+#~ "  --suppress-common-lines  共通行の出力を抑止。"
+
+#~ msgid ""
+#~ "--speed-large-files  Assume large files and many scattered small changes."
+#~ msgstr "--speed-large-files  巨大なファイルに分散した変更があると仮定。"
+
+#~ msgid "-X  Output overlapping changes, bracketing them."
+#~ msgstr "-X  衝突をくくりながら、変更を出力。"
+
+#~ msgid "-m  --merge  Output merged file instead of ed script (default -A)."
+#~ msgstr ""
+#~ "-m  --merge  edスクリプトの代わりに、併合したファイルを出力 (既定は-A)。"
+
+#~ msgid "-L LABEL  --label=LABEL  Use LABEL instead of file name."
+#~ msgstr "-L LABEL  --label=LABEL  ファイル名の代わりにLABELを使用。"

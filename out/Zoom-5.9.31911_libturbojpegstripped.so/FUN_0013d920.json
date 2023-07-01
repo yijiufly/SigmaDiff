@@ -1,1 +1,0 @@
-{"arg3":"long","stringsAndLibcalls":[],"arg2":"undefined8","numargs":4,"calleesideeffect":{},"arg4":"ulong","calls":[],"arg1":{"offsets":[],"8":{"offsets":["88 load"],"isArray":false},"isArray":false},"loads":["f(ARG1): ([(ARG1 + 8)] + 88)","f(ARG1): (ARG1 + 8)"],"calleeloads":{},"sideeffect":[],"return":["ARG1","ARG3","ARG4"]}

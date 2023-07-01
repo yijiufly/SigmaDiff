@@ -1,1 +1,0 @@
-{"stringsAndLibcalls":["exit_thunk"],"numargs":1,"calleesideeffect":{},"calls":[["f()","f(exit_thunk@1059248)"],["f(ARG1)","f(FUN_0011f4e0@1176800)"]],"arg1":{"0":{"offsets":["16 load"],"isArray":false},"offsets":[],"isArray":false},"loads":["f(ARG1): ARG1","f(ARG1): ([ARG1] + 16)"],"calleeloads":{},"sideeffect":[],"return":[]}

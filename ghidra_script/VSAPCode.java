@@ -353,23 +353,17 @@ public class VSAPCode extends GhidraScript {
 			}
 		}
 		long end = System.currentTimeMillis();
-		System.out.println("VSA costs: " + String.valueOf(end - start) + "ms");
+		// System.out.println("VSA costs: " + String.valueOf(end - start) + "ms");
 		mstate.createStruct(mstateAll);
 		start = end;
 		end = System.currentTimeMillis();
-		System.out.println("Build struct & inter-procedual analysis costs: " + String.valueOf(end - start) + "ms");
+		// System.out.println("Build struct & inter-procedual analysis costs: " + String.valueOf(end - start) + "ms");
 		String binPath = this.currentProgram.getExecutablePath();
 		if (!f.isThunk()) {
 			String name = f.getName();
 			if (this.duplicateFuncNames.contains(name))
 				name = f.getPrototypeString(false, false).replace(' ', '_').replace(f.getName(), f.getName(true));
 			mstate.toJSON(output + "/" + name + ".json", hfunction);
-//			try {
-//				Files.write(Paths.get(output + "/" + f.getName() + ".txt", new String[0]),
-//						mstate.toString(hfunction).getBytes());
-//			} catch (IOException neighbours) {
-//				// empty catch block
-//			}
 		}
 		if (!f.isThunk())
 			getPDGIR(hfunction, mstate);
@@ -396,9 +390,7 @@ public class VSAPCode extends GhidraScript {
 
 		start = end;
 		end = System.currentTimeMillis();
-		System.out.println("File operation costs: " + String.valueOf(end - start) + "ms");
-		System.out.println(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory());
-		System.out.println(Runtime.getRuntime().freeMemory());
+		// System.out.println("File operation costs: " + String.valueOf(end - start) + "ms");
 		mstateAll.clear();
 	}
 
@@ -1498,29 +1490,8 @@ public class VSAPCode extends GhidraScript {
 	}
 
 	public void run() throws Exception {
-		if (true) {
-			processWholeFile();
-			return;
-		}
-//		Function func = this.getFunctionContaining(this.currentAddress);
-//		if (func == null) {
-//			Msg.showWarn(this, state.getTool().getToolFrame(), "Error", "No Function at current location");
-//			return;
-//		}
-//
-//		decomplib = setUpDecompiler(currentProgram);
-//
-//		if (!decomplib.openProgram(currentProgram)) {
-//			printf("Decompiler error: %s\n", decomplib.getLastMessage());
-//			return;
-//		}
-//
-//		HashMap<Address, HashMap<Long, String>> stringLocationMap = new HashMap<Address, HashMap<Long, String>>();
-//		collectStringDataReferenceLocations(stringLocationMap);
-//
-//		HashMap<Address, Long> refSymbolLocationMap = new HashMap<Address, Long>();
-//		collectSymbolDataRefenceLocations(refSymbolLocationMap);
-//		analyzeFunction(func, stringLocationMap, refSymbolLocationMap);
+		currentProgram.setImageBase(toAddr(0), false);
+		processWholeFile();
 	}
 }
 

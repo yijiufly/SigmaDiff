@@ -1,1 +1,0 @@
-{"stringsAndLibcalls":["calloc_thunk","__tls_get_addr_thunk"],"numargs":0,"calleesideeffect":{},"calls":[["f()","f(FUN_0014e780@1369984)"],["f()","f()","f(calloc_thunk@1058880)"],["f()","f(FUN_0014e2d0@1368784)"],["f()","f(__tls_get_addr_thunk@1058832)"]],"loads":[],"calleeloads":{},"sideeffect":[],"return":[]}
