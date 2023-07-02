@@ -10,10 +10,9 @@ from evaluate import evaluate_precision_recall_cross_optlevel_token, evaluate_pr
 sys.path.append('deep-graph-matching-consensus-batch-decompile')
 from TestOwnDataUseModel import processDGMC
 
-def extract_features(filepath, output, ghidra_home, with_gt=True):
+def extract_features(filepath, output, ghidra_home, ghidra_proj_name, with_gt=True):
     current_dir = os.path.dirname(os.path.realpath(__file__))
     script_dir = os.path.join(current_dir, 'ghidra_script')
-    # script_dir = "/home/administrator/ghidra_script"
     tmp_dir = os.path.join(current_dir, 'tmp')
     if not os.path.exists(tmp_dir):
         os.makedirs(tmp_dir)
@@ -28,13 +27,13 @@ def extract_features(filepath, output, ghidra_home, with_gt=True):
 
     # get ground truth
     if with_gt:
-        vsa_command = ghidra_home + "/support/analyzeHeadless " + tmp_dir + " utils -import " + filepath[:-8] + " -overwrite -scriptPath " + script_dir + " -postScript CollectGroundTruth.java " + output
+        vsa_command = ghidra_home + "/support/analyzeHeadless " + tmp_dir + " " + ghidra_proj_name + " -import " + filepath[:-8] + " -overwrite -scriptPath " + script_dir + " -postScript CollectGroundTruth.java " + output
         # print(vsa_command)
         os.system(vsa_command)
 
     # run preprocessing
     print("run scripts: " + time.strftime("%H:%M:%S", time.localtime()))
-    vsa_command = ghidra_home + "/support/analyzeHeadless " + tmp_dir + " utils -import " + filepath + " -overwrite -scriptPath " + script_dir + " -postScript VSAPCode.java " + output
+    vsa_command = ghidra_home + "/support/analyzeHeadless " + tmp_dir + " " + ghidra_proj_name + " -import " + filepath + " -overwrite -scriptPath " + script_dir + " -postScript VSAPCode.java " + output
     # print(vsa_command)
     os.system(vsa_command)
     
@@ -44,6 +43,7 @@ def compare_two_bins(filepath1, filepath2, args):
     output_dir = args.output_dir
     ghidra_home = args.ghidra_home
     src_dir = args.src_dir
+    ghidra_proj_name = args.ghidra_proj_name
 
     if with_gt:
         if "arm" in filepath1:
@@ -71,8 +71,8 @@ def compare_two_bins(filepath1, filepath2, args):
     t0 = time.time()
 
     # preprocess
-    extract_features(filepath1, output1, ghidra_home, with_gt)
-    extract_features(filepath2, output2, ghidra_home, with_gt)
+    extract_features(filepath1, output1, ghidra_home, ghidra_proj_name, with_gt)
+    extract_features(filepath2, output2, ghidra_home, ghidra_proj_name, with_gt)
 
     # function level diffing
     diff_two_files(output1, output2, compare_out, with_gt)
@@ -109,6 +109,7 @@ if __name__ == "__main__":
     parser.add_argument('--src_dir', required=False, help='The home directory of source code, used for cross-version diffing evaluation')
     parser.add_argument('--ghidra_home', required=True, help='Home directory of Ghidra')
     parser.add_argument('--output_dir', required=True, help='Specify the output directory') 
+    parser.add_argument('--ghidra_proj_name', required=True)
     parser.add_argument('--dim', type=int, default=128)
     parser.add_argument('--rnd_dim', type=int, default=32)
     parser.add_argument('--num_layers', type=int, default=3)
@@ -129,14 +130,14 @@ if __name__ == "__main__":
         f = open(os.path.join(args.output_dir, 'finalresults.txt'), 'a')
         path2bin = set(os.listdir(path2))
         for binary in os.listdir(path1):
-            if not binary.endswith("stripped") and binary in path2bin and 'cmp' in binary:
+            if not binary.endswith("stripped") and binary in path2bin:
                 ret = compare_two_bins(os.path.join(path1, binary), os.path.join(path2, binary), args)
                 if ret is not None:
-                    prec, recall, f1, time = ret
+                    prec, recall, f1, t = ret
                     prec_average.append(prec)
                     recall_average.append(recall)
                     f1_average.append(f1)
-                    time_average.append(time)
+                    time_average.append(t)
         print(path1.split('/')[-1] +'_vs_' + path2.split('/')[-1], sum(prec_average)/len(prec_average), sum(recall_average)/len(recall_average), sum(f1_average)/len(f1_average))
         f.write(','.join([path1.split('/')[-1] +'_vs_' + path2.split('/')[-1], str(sum(prec_average)/len(prec_average)), str(sum(recall_average)/len(recall_average)), str(sum(f1_average)/len(f1_average)), str(sum(time_average)/len(time_average))]) + '\n')
         f.close()
