@@ -34,8 +34,6 @@ def processDGMC(dir, filename1, filename2, args):
     # result_file.write('System,TrainingNodePercent,FinalAccuracy,Time,EarlyStop\n')
     # result_file.flush()
 
-    # size_file=open('Subject_Size.csv','w')
-
     start_time=datetime.datetime.now()
 
     subject_path=subject_dir+'/'
@@ -58,24 +56,15 @@ def processDGMC(dir, filename1, filename2, args):
     ids_1_list,edges_1_list,ids_2_list,edges_2_list,train_y_list,source_type_list_list,dst_type_list_list,source_lineNum_list_list,dst_lineNum_list_list,func_matching_dict_list,src_func_dict_list,des_func_dict_list,source_value_dict_list,dst_value_dict_list,source_decompile_dict_list,dst_decompile_dict_list, node_mapping1_list, node_mapping2_list = corpus.get_data(node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_dir,pretrained_subject)
     vocab_size = len(corpus.dictionary)
     subject_name=subject_path.strip('/').replace('/','-')
-    result_dir=subject_dir+'_Pretrain-results'
+    result_dir=subject_dir+'_Finetuned-results'
 
     if(not os.path.exists(result_dir)):
         os.mkdir(result_dir)
 
-    # if (os.path.exists(result_dir+'/'+subject_name+'-match_result.txt')):
-    #     print('analyzed ' + subject_name)
-    #     continue
     match_file=open(result_dir+'/'+subject_name+'-match_result.txt','w')
     before_filtering_match=open(result_dir+'/'+subject_name+'-Initial_match_result.txt','w')
     match_file.close()
     before_filtering_match.close()
-    # train doc2vec then load the dataset
-    # MergingCorpus(subject_path,subject)
-    # Doc2VecModelBuilding(subject_path)
-    # corpus = data_utils_doc2vec.Corpus()        
-    # ids_1,edges_1,ids_2,edges_2,train_y,source_type_list,dst_type_list,source_lineNum_list,dst_lineNum_list,func_matching_dict,src_func_dict,des_func_dict,source_value_dict,dst_value_dict,source_decompile_dict,dst_decompile_dict, _ = corpus.get_data(node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_path)
-    # vocab_size = len(corpus.dictionary)
     indexes = list(range(len(ids_1_list)))
     indexes.reverse()
     for i in indexes:
@@ -102,8 +91,6 @@ def processDGMC(dir, filename1, filename2, args):
         else:
             node_map1 = node_mapping1_list[i]
             node_map2 = node_mapping2_list[i]
-            if 153030 not in node_map1.keys():
-                continue
             node_mapping1 = {node_map1[key]:key for key in node_map1.keys()}
             node_mapping2 = {node_map2[key]:key for key in node_map2.keys()}
         def train():
@@ -137,9 +124,6 @@ def processDGMC(dir, filename1, filename2, args):
         print(training_nodes)
         print(float(training_nodes)/all_nodes)
 
-        # size_file.write(subject+','+str(all_nodes)+','+str(training_nodes)+'\n')
-        # size_file.flush()
-
         print(edges_1.size())
         print(ids_2.size())
         print(edges_2.size())
@@ -157,12 +141,6 @@ def processDGMC(dir, filename1, filename2, args):
         edge_index_2=edge_index_2.to(device)
         train_y=train_y.to(device)
 
-        # psi_1 = RelCNN(args.in_channels, args.dim, args.num_layers, batch_norm=False,
-        #             cat=True, lin=True, dropout=0.5, further_propogate=True)
-        # psi_2 = RelCNN(args.rnd_dim, args.rnd_dim, args.num_layers, batch_norm=False,
-        #             cat=True, lin=True, dropout=0.0, further_propogate=False)
-        # model = DGMC(psi_1, psi_2, num_steps=None, vocab_size=vocab_size, k=args.k).to(device)
-
         f_model=open(os.path.join(current_dir, model_path+'_Trained_Model.pkl'),'rb')
         model = pickle.load(f_model)
         optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
@@ -170,10 +148,7 @@ def processDGMC(dir, filename1, filename2, args):
         patience = 30	# 当验证集损失在连续30次训练周期中都没有得到降低时，停止模型训练，以防止模型过拟合
         early_stopping = EarlyStopping(patience, verbose=True)
 
-        result_dir=subject_dir+'_Pretrain'
-        # accuracy=test(final=True)
-        # result_file.write(subject+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+'\n')
-        # result_file.flush()
+        result_dir=subject_dir+'_Finetuned'
 
         print('Optimize initial feature matching...')
         model.num_steps = 0
@@ -192,16 +167,15 @@ def processDGMC(dir, filename1, filename2, args):
                 print("Early stopping")
                 # 结束模型训练
                 # end_time=datetime.datetime.now()
-                # accuracy=test(final=True)
+                accuracy=test(final=True)
                 # result_file.write(each_conf+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+','+str((end_time-start_time).total_seconds())+',Yes\n')
                 # result_file.flush()
                 break
 
             if epoch == 160:
-
                 # end_time=datetime.datetime.now()
 
-                # accuracy=test(final=True)
+                accuracy=test(final=True)
                 # result_file.write(each_conf+','+str(float(training_nodes)/all_nodes)+','+str(accuracy)+','+str((end_time-start_time).total_seconds())+',No\n')
                 # result_file.flush()
 

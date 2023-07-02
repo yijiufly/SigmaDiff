@@ -710,37 +710,6 @@ class DGMC(torch.nn.Module):
                             break
 
 
-
-
-
-            # src_func=src_func_dict[src_index]
-            # for j in range(0,25):
-            #     dst_func=des_func_dict[S.__idx__[src_index][j].item()]
-            #     if(src_func in func_matching_dict):
-            #         if(dst_func==func_matching_dict[src_func]):
-            #             dst_line=dst_lineNum_list[S.__idx__[src_index][j].item()]
-            #             if(not source_line=='null' and not dst_line=='null'):
-            #                 src_type=source_type_list[src_index]
-            #                 dst_type=dst_type_list[S.__idx__[src_index][j].item()]
-            #                 if(src_type==dst_type):
-            #                     matched=False
-            #                     if(source_line==dst_line):
-            #                         filter_TP=filter_TP+1
-            #                         matched=True
-            #                     elif(source_line in dst_line or dst_line in source_line):
-            #                         filter_TP=filter_TP+1
-            #                         matched=True
-            #                     else:
-            #                         missed_line=missed_line+1
-            #                     if(final):
-            #                         print('###########')
-            #                         print(source_line)
-            #                         print(dst_line)
-            #                         print('###########')
-            #                         match_file.write(str(src_index)+','+str(S.__idx__[src_index][j].item())+','+source_line+','+dst_line+','+str(matched)+','+str(S.__val__[src_index][j].item())+'\n')
-            #                         match_file.flush()
-            #                     break
-
         if(filter_total==0):
             filter_total=1
         accuracy=float(TP)/total
@@ -748,9 +717,6 @@ class DGMC(torch.nn.Module):
         print('TP+FP='+str(total))
         print('Filter True Positive='+str(filter_TP))
         print('Accuracy='+str(accuracy))
-        print('Relax Accuracy='+str(float(relax_TP)/total))
-        print('File Accuracy='+str(float(file_TP)/total))
-        print('Filter Accuracy='+str(float(filter_TP)/total))
         print('After Filter Accuracy='+str(float(filter_TP)/filter_total))
         return accuracy
 
