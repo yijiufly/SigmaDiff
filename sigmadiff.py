@@ -90,13 +90,24 @@ def compare_two_bins(filepath1, filepath2, args):
         version1 = filename1.split('_')[0].split('-')[1]
         version2 = filename2.split('_')[0].split('-')[1]
         if version1 == version2:
-            prec, recall, f1 = evaluate_precision_recall_cross_optlevel_token(output_dir, filename1, filename2)
+            if "arm" in filename1:
+                filtered = False
+            else:
+                filtered = True
+            prec, recall, f1 = evaluate_precision_recall_cross_optlevel_token(output_dir, filename1, filename2, filtered)
         else:
             if src_dir is None:
                 print("the directory of source code is needed for cross-version evaluation")
                 return None
             prec, recall, f1 = evaluate_precision_recall_cross_version_token(output_dir, filepath1, filepath2, src_dir)
-            
+        
+
+        f = open(os.path.join(args.output_dir, 'time.txt'), 'a')
+        size2 = os.path.getsize(filepath2[:-8])
+        size1 = os.path.getsize(filepath1[:-8])
+        size = size1+size2/2
+        f.write(','.join([filename1 + '_vs_' + filename2, str(total_time), str(size)]) + '\n')
+        f.close()
         return prec, recall, f1, total_time
 
 

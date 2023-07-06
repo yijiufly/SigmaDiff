@@ -1,7 +1,0 @@
-freesoft.o: freesoft.c /usr/include/stdc-predef.h ../config.h freesoft.h
-
-/usr/include/stdc-predef.h:
-
-../config.h:
-
-freesoft.h:

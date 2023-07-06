@@ -8,34 +8,30 @@ ghidra_home=/home/administrator/Downloads/Lian/ghidra_9.2.2_PUBLIC
 # the created project name, e.g., utils
 ghidra_proj_name=utils
 
-echo "version, precision, recall, f1-score, time" >> $home/out/finalresults.txt
-
-# cross version evaluation
-version2=diffutils-3.6-O2
-for version1 in diffutils-2.8-O2 diffutils-3.4-O2
-do
-    python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
-done
-
-# cross opt level evaluation
-version2=diffutils-3.4-O3
-for version1 in diffutils-3.4-O0 diffutils-3.4-O1 diffutils-3.4-O2
-do
-    python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
-done
-
-version2=diffutils-3.6-O3
-for version1 in diffutils-3.6-O0 diffutils-3.6-O1 diffutils-3.6-O2
-do
-    python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
-done
+echo "version, precision, recall, f1-score, avg_time" >> $home/out/finalresults.txt
+echo "compared binary, time, size" >> $home/out/time.txt
 
 # cross compiler evaluation
-version1=diffutils-3.6-clang
-version2=diffutils-3.6-x86
+version1=coreutils-8.1-clang
+version2=coreutils-8.1-x86
 python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
 
+
 # cross arch evaluation
-version1=diffutils-3.6-arm
-version2=diffutils-3.6-x86
+version1=coreutils-8.1-arm
+version2=coreutils-8.1-x86
 python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
+
+# cross opt level evaluation
+version2=coreutils-5.93-O3
+for version1 in coreutils-5.93-O0 coreutils-5.93-O1 coreutils-5.93-O2
+do
+    python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
+done
+
+# cross version evaluation
+version2=coreutils-8.1-O2
+for version1 in coreutils-5.93-O2 coreutils-6.4-O2
+do
+    python sigmadiff.py --input1 $home/data/binaries/$version1 --input2 $home/data/binaries/$version2 --ghidra_home $ghidra_home --output_dir $home/out --with_gt True --src_dir $home/data/sources --ghidra_proj_name $ghidra_proj_name
+done

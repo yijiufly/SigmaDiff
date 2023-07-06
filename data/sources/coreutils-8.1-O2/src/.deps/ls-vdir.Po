@@ -1,0 +1,5 @@
+ls-vdir.o: ls-vdir.c /usr/include/stdc-predef.h ls.h
+
+/usr/include/stdc-predef.h:
+
+ls.h:

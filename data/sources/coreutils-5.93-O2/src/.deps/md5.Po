@@ -1,0 +1,5 @@
+md5.o: md5.c /usr/include/stdc-predef.h checksum.h
+
+/usr/include/stdc-predef.h:
+
+checksum.h:

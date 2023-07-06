@@ -16,8 +16,13 @@
 - ghidra                    9.2.2 or higher
 
 **import json-simple-1.1.1.jar to ghidra**
-
 json-simple-1.1.1.jar is located at ./ghidra_script. And we need to import it to ghidra in order to run VSAPCode.java. Please do the following steps:
+
+Option 1:
+
+Add jar to `<ghidra install dir>/Ghidra/patch/`.
+
+Option 2:
 
 1. create a new project called utils
 

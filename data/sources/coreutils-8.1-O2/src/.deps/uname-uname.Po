@@ -1,0 +1,5 @@
+uname-uname.o: uname-uname.c /usr/include/stdc-predef.h uname.h
+
+/usr/include/stdc-predef.h:
+
+uname.h:

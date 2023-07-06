@@ -1,0 +1,159 @@
+Index: src/remove.c
+===================================================================
+RCS file: /fetish/cu/src/remove.c,v
+retrieving revision 1.158
+diff -u -p -u -r1.158 remove.c
+--- src/remove.c	3 Sep 2006 02:54:51 -0000	1.158
++++ src/remove.c	6 Sep 2006 18:57:46 -0000
+@@ -245,9 +245,10 @@ pop_dir (Dirstack_state *ds)
+ {
+   size_t n_lengths = obstack_object_size (&ds->len_stack) / sizeof (size_t);
+   size_t *length = obstack_base (&ds->len_stack);
++  size_t top_len;
+
+   assert (n_lengths > 0);
+-  size_t top_len = length[n_lengths - 1];
++  top_len = length[n_lengths - 1];
+   assert (top_len >= 2);
+
+   /* Pop the specified length of file name.  */
+@@ -379,10 +380,11 @@ AD_stack_top (Dirstack_state const *ds)
+ static void
+ AD_stack_pop (Dirstack_state *ds)
+ {
++  struct AD_ent *top;
+   assert (0 < AD_stack_height (ds));
+
+   /* operate on Active_dir.  pop and free top entry */
+-  struct AD_ent *top = AD_stack_top (ds);
++  top = AD_stack_top (ds);
+   if (top->unremovable)
+     hash_free (top->unremovable);
+   obstack_blank (&ds->Active_dir, -(int) sizeof (struct AD_ent));
+@@ -549,6 +551,7 @@ AD_mark_helper (Hash_table **ht, char *f
+       if (*ht == NULL)
+ 	xalloc_die ();
+     }
++  {
+   void *ent = hash_insert (*ht, filename);
+   if (ent == NULL)
+     xalloc_die ();
+@@ -557,7 +560,7 @@ AD_mark_helper (Hash_table **ht, char *f
+       if (ent != filename)
+ 	free (filename);
+     }
+-
++  }
+ }
+
+ /* Mark FILENAME (in current directory) as unremovable.  */
+@@ -1129,6 +1132,7 @@ fd_to_subdirp (int fd_cwd, char const *f
+       return NULL;
+     }
+
++  {
+   DIR *subdir_dirp = fdopendir (fd_sub);
+   if (subdir_dirp == NULL)
+     {
+@@ -1137,6 +1141,7 @@ fd_to_subdirp (int fd_cwd, char const *f
+     }
+
+   return subdir_dirp;
++  }
+ }
+
+ /* Remove entries in the directory open on DIRP
+@@ -1372,9 +1377,10 @@ remove_dir (int fd_cwd, Dirstack_state *
+ 	/* The name of the directory that we have just processed,
+ 	   nominally removing all of its contents.  */
+ 	char *empty_dir;
++	int fd;
+
+ 	AD_pop_and_chdir (&dirp, ds, &empty_dir);
+-	int fd = (dirp != NULL ? dirfd (dirp) : AT_FDCWD);
++	fd = (dirp != NULL ? dirfd (dirp) : AT_FDCWD);
+ 	assert (dirp != NULL || AD_stack_height (ds) == 1);
+
+ 	/* Try to remove EMPTY_DIR only if remove_cwd_entries succeeded.  */
+@@ -1386,8 +1392,9 @@ remove_dir (int fd_cwd, Dirstack_state *
+ 	       But that's no big deal since we're interactive.  */
+ 	    struct stat empty_st;
+ 	    Ternary is_empty;
++	    enum RM_status s;
+ 	    cache_stat_init (&empty_st);
+-	    enum RM_status s = prompt (fd, ds, empty_dir, &empty_st, x,
++	    s = prompt (fd, ds, empty_dir, &empty_st, x,
+ 				       PA_REMOVE_DIR, &is_empty);
+
+ 	    if (s != RM_OK)
+@@ -1452,6 +1459,7 @@ rm_1 (Dirstack_state *ds, char const *fi
+       return RM_ERROR;
+     }
+
++  {
+   struct stat st;
+   cache_stat_init (&st);
+   if (x->root_dev_ino)
+@@ -1473,6 +1481,7 @@ rm_1 (Dirstack_state *ds, char const *fi
+   AD_push_initial (ds);
+   AD_INIT_OTHER_MEMBERS ();
+
++  {
+   int fd_cwd = AT_FDCWD;
+   enum RM_status status = remove_entry (fd_cwd, ds, filename, &st, x, NULL);
+   if (status == RM_NONEMPTY_DIR)
+@@ -1491,6 +1500,8 @@ rm_1 (Dirstack_state *ds, char const *fi
+   ds_clear (ds);
+
+   return status;
++  }
++  }
+ }
+
+ /* Remove all files and/or directories specified by N_FILES and FILE.
+@@ -1513,9 +1524,11 @@ rm (size_t n_files, char const *const *f
+ 	}
+
+       cycle_check_init (&ds->cycle_check_state);
++      {
+       enum RM_status s = rm_1 (ds, file[i], x, &cwd_errno);
+       assert (VALID_STATUS (s));
+       UPDATE_STATUS (status, s);
++      }
+     }
+
+   if (x->require_restore_cwd && cwd_errno)
+Index: src/rm.c
+===================================================================
+RCS file: /fetish/cu/src/rm.c,v
+retrieving revision 1.140
+diff -u -p -u -r1.140 rm.c
+--- src/rm.c	3 Sep 2006 02:53:58 -0000	1.140
++++ src/rm.c	6 Sep 2006 18:57:46 -0000
+@@ -357,8 +357,10 @@ main (int argc, char **argv)
+ 	if (!yesno ())
+ 	  exit (EXIT_SUCCESS);
+       }
++   {
+     enum RM_status status = rm (n_files, file, &x);
+     assert (VALID_STATUS (status));
+     exit (status == RM_ERROR ? EXIT_FAILURE : EXIT_SUCCESS);
++   }
+   }
+ }
+Index: shred.c
+===================================================================
+RCS file: /fetish/cu/src/shred.c,v
+retrieving revision 1.130
+diff -u -p -r1.130 shred.c
+--- shred.c     3 Sep 2006 02:53:16 -0000       1.130
++++ shred.c     3 Oct 2006 13:48:24 -0000
+@@ -460,7 +460,7 @@ dopass (int fd, char const *qname, off_t
+ 		     out.  Thus, it shouldn't give up on bad blocks.  This
+ 		     code works because lim is always a multiple of
+ 		     SECTOR_SIZE, except at the end.  */
+-		  verify (sizeof r % SECTOR_SIZE == 0);
++		  { verify (sizeof r % SECTOR_SIZE == 0); }
+ 		  if (errnum == EIO && 0 <= size && (soff | SECTOR_MASK) < lim)
+ 		    {
+ 		      size_t soff1 = (soff | SECTOR_MASK) + 1;

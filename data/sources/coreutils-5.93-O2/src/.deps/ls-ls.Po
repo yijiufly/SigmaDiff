@@ -1,0 +1,5 @@
+ls-ls.o: ls-ls.c /usr/include/stdc-predef.h ls.h
+
+/usr/include/stdc-predef.h:
+
+ls.h:

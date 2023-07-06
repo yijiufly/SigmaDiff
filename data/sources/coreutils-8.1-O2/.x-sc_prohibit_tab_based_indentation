@@ -1,0 +1,7 @@
+^GNUMakefile$
+Makefile\.am$
+\.mk$
+^tests/pr/
+ChangeLog.*
+^man/help2man$
+^gl/lib/.*\.c\.diff$

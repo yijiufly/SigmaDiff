@@ -181,29 +181,6 @@ def merge(dict1, dict2):
         dict1[key].update(dict2[key])
 
 
-def test_two_binaries():
-    bin_name = "chown"
-    bin_dir1 = '/home/yijiufly/Downloads/projects/PseudocodeDiffing/Dataset_for_BinDiff/coreutils/binaries/coreutils-5.93-O1/'
-    bin_dir2 = '/home/yijiufly/Downloads/projects/PseudocodeDiffing/Dataset_for_BinDiff/coreutils/binaries/coreutils-5.93-O2/'
-    # bin_name = "xargs"
-    # bin_dir1 = "/home/yijiufly/Downloads/projects/PseudocodeDiffing/Dataset_for_BinDiff/findutils/binaries/findutils-4.233-O1/"
-    # bin_dir2 = "/home/yijiufly/Downloads/projects/PseudocodeDiffing/Dataset_for_BinDiff/findutils/binaries/findutils-4.233-O2/"
-    node_file1 = "/home/yijiufly/" + bin_name + "-O1/" + bin_name + "_stripped_nodelabel.txt"
-    node_file2 = "/home/yijiufly/" + bin_name + "-O2/" + bin_name + "_stripped_nodelabel.txt"
-    edge_file1 = "/home/yijiufly/" + bin_name + "-O1/" + bin_name + "_stripped_edges.txt"
-    edge_file2 = "/home/yijiufly/" + bin_name + "-O2/" + bin_name + "_stripped_edges.txt"
-    shutil.copy(node_file1, "training/" + bin_name + "/O1_nodelabel.txt")
-    shutil.copy(node_file2, "training/" + bin_name + "/O2_nodelabel.txt")
-    shutil.copy(edge_file1, "training/" + bin_name + "/O1_edges.txt")
-    shutil.copy(edge_file2, "training/" + bin_name + "/O2_edges.txt")
-    shutil.copy("matched_functions.txt", "training/" + bin_name + "/matched_functions.txt")
-    shutil.copy("/home/yijiufly/" + bin_name + "-O1/" + bin_name + "_stripped_corpus.txt", "training/" + bin_name + "/O1_corpus.txt")
-    shutil.copy("/home/yijiufly/" + bin_name + "-O2/" + bin_name + "_stripped_corpus.txt", "training/" + bin_name + "/O2_corpus.txt")
-    
-    select_training_node(node_file1, node_file2, "matched_functions.txt", "training/" + bin_name + "/training_nodes.txt", '/home/yijiufly/' + bin_name + '-O1/debug_info', '/home/yijiufly/' + bin_name + '-O2/debug_info', "training/" + bin_name + "/O1_nodelabel.txt", "training/" + bin_name + "/O2_nodelabel.txt", os.path.join(bin_dir1, bin_name), os.path.join(bin_dir2, bin_name))
-
-
-
 def select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, with_gt):
     node_features1, func_nodes1, node_features_full1, node_names_full1 = load_ast_nodes(node_file1)
     node_features2, func_nodes2, node_features_full2, node_names_full2 = load_ast_nodes(node_file2)

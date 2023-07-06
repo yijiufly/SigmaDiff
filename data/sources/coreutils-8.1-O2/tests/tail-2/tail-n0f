@@ -1,0 +1,53 @@
+#!/bin/sh
+# Make sure that `tail -n0 -f' and `tail -c0 -f' sleep
+# rather than doing what amounted to a busy-wait.
+
+# Copyright (C) 2003, 2006-2009 Free Software Foundation, Inc.
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# This bug was fixed for 5.0.91
+# It skips the test if your system lacks a /proc/$pid/status
+# file, or if its contents don't look right.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  tail --version
+fi
+
+. $srcdir/test-lib.sh
+
+require_proc_pid_status_
+
+touch empty || framework_failure
+echo anything > nonempty || framework_failure
+
+
+for inotify in ---disable-inotify ''; do
+  for file in empty nonempty; do
+    for c_or_n in c n; do
+      tail --sleep=4 -${c_or_n} 0 -f $inotify $file &
+      pid=$!
+      sleep .5
+      state=$(get_process_status_ $pid)
+      case $state in
+        S*) ;;
+        *) echo $0: process in unexpected state: $state 1>&2; fail=1 ;;
+      esac
+      kill $pid
+    done
+  done
+done
+
+Exit $fail

@@ -32,13 +32,13 @@ class CBinDiff:
         self.names = dict()
         self.db_name = db_name
         self.dbs_dict = {}
-        self.db = None # Used exclusively by the exporter!
+        self.db = None
         self.last_diff_db = None
         self.matched1 = []
         self.matched2 = []
         self.mapping = {}
         self.initials = []
-        self.func_semantic_sim = None
+        self.func_semantic_sim = {}
         self.neighbor_sim = None
         self.func2id1 = dict()
         self.func2id2 = dict()
@@ -48,9 +48,6 @@ class CBinDiff:
         try:
             t0 = time.time()
             self.find_initial_matches()
-            tracemalloc.start()
-            self.match_the_rest(self.nocaller1 - self.isolate_funcs1, self.nocaller2 - self.isolate_funcs2)
-            print(tracemalloc.get_traced_memory())
             log_refresh("Find matches along the callgraph...")
             self.match_along_callgraph_nhop(1)
             self.match_the_rest(self.isolate_funcs1, self.isolate_funcs2)
@@ -58,43 +55,11 @@ class CBinDiff:
             self.match_the_rest(self.functions1 - self.nocaller1, self.functions2 - self.nocaller2)
             self.match_the_rest(self.functions1, self.nocaller2)
             self.match_the_rest(self.nocaller1, self.functions2)
-            self.match_the_rest(self.functions1 - self.isolate_funcs1, self.functions2 - self.isolate_funcs2, 'ag')
             total_time = time.time() - t0
             log("Done. Took {} seconds.".format(total_time))
         finally:
             pass
         return total_time
-
-
-    def propagate_features(self, features, callgraph, callgraph_reverse, path1, matched):
-        filted_callgraph = {}
-        for key in callgraph.keys():
-            filted_callgraph[key] = [i for i in callgraph[key] if not i.startswith("string::") and not i.endswith("_thunk")]
-        order = robust_topological_sort(filted_callgraph)
-        order.reverse()
-        for func in order:
-            features[func] = defaultdict(set)
-            ret = compare_vsa.collect_features(os.path.join(path1, func + ".json"))
-            if ret is None:
-                continue
-            sideeffect, loads, calleesideeffect, calleeloads, strlibs = ret
-            features[func]["self_features"].update(set(["sideeffect__" + i.split(":")[0] + ":" + i.split(":")[2] for i in sideeffect]))
-            features[func]["self_features"].update(set(["loads__" + i.split(":")[0] for i in loads]))
-            features[func]["self_features"].update(set(["strlibs__" + i for i in strlibs]))
-            for key in calleesideeffect.keys():
-                features[func][key.split("@")[0]].update(set(["sideeffect__" + i.split(":")[0] + ":" + i.split(":")[2] for i in calleesideeffect[key]]))
-            
-            for key in calleeloads.keys():
-                features[func][key.split("@")[0]].update(set(["loads__" + i.split(":")[0] for i in calleeloads[key]]))
-        
-            matched_neighbors = set(filted_callgraph[func]).intersection(set(matched))
-            # matched_neighbors.update(set(callgraph_reverse[func]).intersection(set(matched)))
-            matched_neighbors_id = set(["func_" + str(matched.index(i)) for i in matched_neighbors])
-            features[func]["self_features"].update(matched_neighbors_id)
-            for callee in filted_callgraph[func]:
-                if callee in features:
-                    for key in features[callee].keys():
-                        features[func][callee].update(set([i for i in features[callee][key] if not i.startswith("sideeffect__") and not i.startswith("loads__")]))
 
 
     def find_initial_matches(self):
@@ -303,28 +268,22 @@ class CBinDiff:
         return 1 - count
 
 
-    def check_semantic_conflict_emb(self, ea, ea2):
-        if ea not in self.emb1 or ea2 not in self.emb2:
-            return 0, 0
-        e1 = self.emb1[ea]
-        e2 = self.emb2[ea2]
-        sim = np.inner(e1, e2) / (np.linalg.norm(e1) * np.linalg.norm(e2))
-        return sim, 10
-
-
     def check_semantic_conflict(self, ea, ea2):
         id1 = self.func2id1[ea]
         id2 = self.func2id2[ea2]
-        if self.func_semantic_sim is not None and self.func_semantic_sim[id1][id2] is not None:
-            return self.func_semantic_sim[id1][id2]
-        else:
-            sim, features = compare_vsa.compare_two_functions(os.path.join(self.path1, ea + ".json"), os.path.join(self.path2, ea2 + ".json"), self.callgraph_reverse1, self.callgraph_reverse2, 5)
-            if sim == 0 and ea == ea2:
-                sim = 1
-                features = 10
-            if self.func_semantic_sim is not None:
-                self.func_semantic_sim[id1][id2] = (sim, features)
-            return (sim, features)
+        if self.func_semantic_sim is not None and id1 in self.func_semantic_sim:
+            if id2 in self.func_semantic_sim[id1]:
+                return self.func_semantic_sim[id1][id2]
+
+        sim, features = compare_vsa.compare_two_functions(os.path.join(self.path1, ea + ".json"), os.path.join(self.path2, ea2 + ".json"), self.callgraph_reverse1, self.callgraph_reverse2, 5)
+        if sim == 0 and ea == ea2:
+            sim = 1
+            features = 10
+        if self.func_semantic_sim is not None:
+            if id1 not in self.func_semantic_sim:
+                self.func_semantic_sim[id1] = {}
+            self.func_semantic_sim[id1][id2] = (sim, features)
+        return (sim, features)
 
 
     def match_aggressively(self, matrix, confidence, name_list1, name_list2):
@@ -372,28 +331,13 @@ class CBinDiff:
     def match_callees(self, callee1, callee2, caller, callerdiff, n):
         if len(callee1) == 0 or len(callee2) == 0 or len(callee1) > 1000 or len(callee2) > 1000:
             return
-        if not caller.startswith('FUN') and len(callee1) == 1 and len(callee2) == 1:
-            f1 = list(callee1)[0]
-            f2 = list(callee2)[0]
-            if f2.endswith('thunk'):
-                return
-            self.matched1.append(f1)
-            self.matched2.append(f2)
-            self.mapping[f1] = f2
-            callee1, callee2 = self.get_n_hop_neighbors(f1, f2, "callee", n)
-            caller1, caller2 = self.get_n_hop_neighbors(f1, f2, "caller", n)
-            self.worklist.put(((len(callee1) + len(callee2)), ((f1, f2), "callee")))
-            self.worklist.put(((len(caller1) + len(caller2)), ((f1, f2), "caller")))
-            return
-
-        callee_list1 = [m for m in callee1 if os.path.exists(os.path.join(self.path1, m + ".json"))]
-        callee_list2 = [m for m in callee2 if os.path.exists(os.path.join(self.path2, m + ".json"))]
-
+        callee_list1 = list(callee1)
+        callee_list2 = list(callee2)
         matrix = np.ones(shape=(len(callee_list1), len(callee_list2)))
         confidence = np.zeros(shape=(len(callee_list1), len(callee_list2)))
         for i, func1 in enumerate(callee_list1):
             for j, func2 in enumerate(callee_list2):
-                (sim, features) = self.check_semantic_conflict(func1, func2)
+                sim, features = self.check_semantic_conflict(func1, func2)
                 matrix[i, j] = 1 - sim
                 confidence[i, j] = features
         
@@ -405,6 +349,8 @@ class CBinDiff:
         confidence = np.delete(confidence, ind[1], axis=1)
         callee_list1 = np.delete(callee_list1, ind[0])
         callee_list2 = np.delete(callee_list2, ind[1])
+        if matrix.shape[0] > 0 and matrix.shape[1] > 0:
+            matrix += 1 - confidence/confidence.max()
         row_ind, col_ind = linear_sum_assignment(matrix)
         # row_ind, col_ind = self.match_aggressively(matrix, confidence, callee_list1, callee_list2)
         for r, c in zip(row_ind, col_ind):
@@ -424,7 +370,6 @@ class CBinDiff:
             caller1, caller2 = self.get_n_hop_neighbors(callee_list1[r], callee_list2[c], "caller", n)
             self.worklist.put(((len(callee1) + len(callee2)), ((callee_list1[r], callee_list2[c]), "callee")))
             self.worklist.put(((len(caller1) + len(caller2)), ((callee_list1[r], callee_list2[c]), "caller")))
-
 
     def match_the_rest(self, set1, set2, method='la'):
         unmatched1 = set1 - set(self.matched1)
@@ -458,7 +403,7 @@ class CBinDiff:
         for r, c in zip(row_ind, col_ind):
             if unmatched_list1[r] in self.matched1 or unmatched_list2[c] in self.matched2:
                 continue
-            if matrix[r, c] > 0.2:
+            if matrix[r, c] > 0.5:
                 # print("features not matched")
                 continue
             # if len(np.where(matrix[r,:] < matrix[r, c])[0]) > 0:
