@@ -1309,6 +1309,11 @@ public class VSAPCode extends GhidraScript {
 		// delete the previous files
 		String outputPath = this.getScriptArgs()[0] + "/" + currentProgram.getName();
 		try {
+			long imagebase = currentProgram.getImageBase().getOffset();
+			BufferedWriter outIB = new BufferedWriter(
+				new OutputStreamWriter(new FileOutputStream(outputPath + "_imagebase.txt")));
+			outIB.write(String.valueOf(imagebase));
+			outIB.close();
 			BufferedWriter out = new BufferedWriter(
 					new OutputStreamWriter(new FileOutputStream(outputPath + "_nodelabel.txt")));
 			BufferedWriter outCorpus = new BufferedWriter(
@@ -1490,7 +1495,7 @@ public class VSAPCode extends GhidraScript {
 	}
 
 	public void run() throws Exception {
-		currentProgram.setImageBase(toAddr(0), false);
+		// currentProgram.setImageBase(toAddr(0), false);
 		processWholeFile();
 	}
 }

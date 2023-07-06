@@ -55,7 +55,7 @@ public class CollectGroundTruth extends GhidraScript {
 	
 	@Override
 	protected void run() throws Exception {
-		currentProgram.setImageBase(toAddr(0), false);
+		// currentProgram.setImageBase(toAddr(0), false);
 		generateGroundTruth();
 	}
 }

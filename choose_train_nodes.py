@@ -17,6 +17,7 @@ def load_ast_nodes(file_path):
     node_features_full = {}
     node_names_full = {}
     new_lines = []
+    string_libcall_id = {}
     for line in lines:
         line = line.strip()
         if line.startswith("#"):
@@ -26,7 +27,23 @@ def load_ast_nodes(file_path):
         else:
             features = line.split("|&|")
             if funcname not in func_nodes:
-                func_nodes[funcname] = features[0]
+                func_nodes[funcname] = [features[0]]
+            if features[1] == 'RETURN':
+                func_nodes[funcname].append(features[0])
+            elif features[1] == 'ARG1':
+                func_nodes[funcname].append(features[0])
+            elif features[1] == 'ARG2':
+                func_nodes[funcname].append(features[0])
+            elif features[1] == 'ARG3':
+                func_nodes[funcname].append(features[0])
+            elif features[1] == 'ARG4':
+                func_nodes[funcname].append(features[0])
+            elif features[1] == 'ARG5':
+                func_nodes[funcname].append(features[0])
+            elif features[1] == 'ARG6':
+                func_nodes[funcname].append(features[0])
+            if len(features) < 4:
+                print(line)
             if features[3] != "null":
                 if "@@" in features[3]:
                     seg = features[3].split("@@")
@@ -35,11 +52,13 @@ def load_ast_nodes(file_path):
                 func_features[features[3]].add(features[0])
             func_nodenames[features[1]].add(features[0])
             node_features_full[features[0]] = features[1:]
+            if features[3] == "LIBCALL" or features[3] == "STR":
+                string_libcall_id[features[1]] = features[0] 
 
         node_features[funcname] = func_features
         node_names_full[funcname] = func_nodenames
 
-    return node_features, func_nodes, node_features_full, node_names_full
+    return node_features, func_nodes, node_features_full, node_names_full, string_libcall_id
 
 
 def add_attr_ast_nodes(file_path, addrmap):
@@ -96,17 +115,18 @@ def get_base_address(bin_path):
     return int(base, 16)
 
 
-def get_source_lines(bin_file, outputfile, node_features_full):
+def get_source_lines(bin_file, outputfile, node_features_full, ghidra_base):
     offset = get_base_address(bin_file)
+    real_offset = offset - ghidra_base
     addresses_query = []
     for nodeid in node_features_full:
         addresses = node_features_full[nodeid][-1].split("##")
         for addr in addresses:
             if len(addr) > 2 and addr != "null":
-                addr = int(addr, 16) + offset
+                addr = int(addr, 16) + real_offset
                 addresses_query.append(hex(addr)[2:])
 
-    addr2file = outputDebugInfo(bin_file, outputfile, addresses_query, offset)
+    addr2file = outputDebugInfo(bin_file, outputfile, addresses_query, real_offset)
     return addr2file
 
 
@@ -160,6 +180,53 @@ def load_edges(file):
     return graph, graph_reverse
 
 
+def find_unchanged_functions(corpus_file1, corpus_file2):
+    func_corpus1 = dict()
+    func_corpus2 = dict()
+    func_lines1 = dict()
+    func_lines2 = dict()
+    with open(corpus_file1, "r") as f:
+        lines = f.readlines()
+    funcname = None
+    newlines = ''
+    for line in lines:
+        line = line.strip()
+        if line.startswith("#"):
+            funcname = line[1:]
+            func_corpus1[funcname] = []
+            func_lines1[funcname] = ""
+        else:
+            nodeid = line.split('##')[0]
+            strippedline = line[len(nodeid)+2:]
+            func_corpus1[funcname].append(nodeid)
+            func_lines1[funcname] += strippedline + ' '
+            newlines += strippedline + '\n'
+
+    with open(corpus_file1, "w") as f:
+        f.write(newlines)
+
+
+    with open(corpus_file2, "r") as f:
+        lines = f.readlines()
+    funcname = None
+    newlines = ''
+    for line in lines:
+        line = line.strip()
+        if line.startswith("#"):
+            funcname = line[1:]
+            func_corpus2[funcname] = []
+            func_lines2[funcname] = ""
+        else:
+            nodeid = line.split('##')[0]
+            strippedline = line[len(nodeid)+2:]
+            func_corpus2[funcname].append(nodeid)
+            func_lines2[funcname] += strippedline + ' '
+            newlines += strippedline + '\n'
+
+    with open(corpus_file2, "w") as f:
+        f.write(newlines)
+    return func_corpus1, func_lines1, func_corpus2, func_lines2
+
 def add_training_nodes(file1, node_features_full1, file2, node_features_full2, matched_pair):
     g1, gr1 = load_edges(file1)
     g2, gr2 = load_edges(file2)
@@ -181,10 +248,12 @@ def merge(dict1, dict2):
         dict1[key].update(dict2[key])
 
 
-def select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, with_gt):
-    node_features1, func_nodes1, node_features_full1, node_names_full1 = load_ast_nodes(node_file1)
-    node_features2, func_nodes2, node_features_full2, node_names_full2 = load_ast_nodes(node_file2)
-
+def select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, corpus_file_new1, corpus_file_new2, base1, base2, with_gt):
+    node_features1, func_nodes1, node_features_full1, node_names_full1, string_libcall_id1 = load_ast_nodes(node_file1)
+    node_features2, func_nodes2, node_features_full2, node_names_full2, string_libcall_id2 = load_ast_nodes(node_file2)
+    func_corpus1, func_lines1, func_corpus2, func_lines2 = find_unchanged_functions(corpus_file_new1, corpus_file_new2)
+    unchanged_functions = set()
+    matched_result = defaultdict(set)
     with open(matched_functions, "r") as f:
         func_list = f.readlines()
         matched1 = set()
@@ -194,24 +263,34 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
             func2 = func_pair.split(" ")[1].strip()
             matched1.add(func1)
             matched2.add(func2)
-    
+            if func1 in func_corpus1 and func2 in func_corpus2:
+                if func_lines1[func1] == func_lines2[func2]:
+                    unchanged_functions.add((func1, func2))
+                    for nodeid1, nodeid2 in zip(func_corpus1[func1], func_corpus2[func2]):
+                        if nodeid1 != 'null' and nodeid2 != 'null':
+                            matched_result[nodeid1].add(nodeid2)
+
     with open(training_node_path, "w") as f:
         matched_pair = []
         for func_pair in func_list:
             func1 = func_pair.split(" ")[0]
             func2 = func_pair.split(" ")[1].strip()
             if func1 in func_nodes1 and func2 in func_nodes2:
-                f.write(func_nodes1[func1] + " " + func_nodes2[func2] + "\n")
-            else:
-                continue
-
+                for i in range(min(len(func_nodes1[func1]), len(func_nodes2[func2]))):
+                    f.write(func_nodes1[func1][i] + " " + func_nodes2[func2][i] + "\n")
+            # if func1 in func_summary1 and func2 in func_summary2:
+            #     f.write(str(func_summary1[func1]) + " " + str(func_summary2[func2]) + "\n")
+            
             # node text that are unique
+            if func1 not in node_names_full1 or func2 not in node_names_full2:
+                continue
             features1 = node_names_full1[func1]
             features2 = node_names_full2[func2]
             unique1 = set([i for i in features1.keys() if len(features1[i]) == 1])
             unique2 = set([i for i in features2.keys() if len(features2[i]) == 1])
 
             for feat in unique1.intersection(unique2):
+                # f.write(list(features1[feat])[0] + " " + list(features2[feat])[0] + "\n")
                 matched_pair.append((list(features1[feat])[0], list(features2[feat])[0]))
 
             # vsa values that are unique
@@ -223,11 +302,17 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
             unique2 = set([i for i in features2.keys() if len(features2[i]) == 1])
 
             for feat in unique1.intersection(unique2):
+                # f.write(list(features1[feat])[0] + " " + list(features2[feat])[0] + "\n")
                 matched_pair.append((list(features1[feat])[0], list(features2[feat])[0]))
-        
-        matched_result = defaultdict(set)
+            
         for pair in matched_pair:
             i, j  = pair
+            matched_result[i].add(j)
+
+        # match the same string and libcalls
+        for strlibcall in set(string_libcall_id1.keys()).intersection(set(string_libcall_id2.keys())):
+            i = string_libcall_id1[strlibcall]
+            j = string_libcall_id2[strlibcall]
             matched_result[i].add(j)
 
         for i in matched_result:
@@ -237,8 +322,8 @@ def select_training_node(node_file1, node_file2, matched_functions, training_nod
         print(len(set(matched_pair)) / len(node_features_full1.keys()))
 
     if with_gt:
-        map1 = get_source_lines(bin_path1, debug_info1, node_features_full1)
-        map2 = get_source_lines(bin_path2, debug_info2, node_features_full2)
+        map1 = get_source_lines(bin_path1, debug_info1, node_features_full1, base1)
+        map2 = get_source_lines(bin_path2, debug_info2, node_features_full2, base2)
         add_attr_ast_nodes(node_file_new1, map1)
         add_attr_ast_nodes(node_file_new2, map2)
     else:
@@ -251,6 +336,8 @@ def process_two_files(bin_path1, bin_path2, output1, output2, compare_out, with_
     filename2 = output2.split('/')[-1].split('_')[-1]
     node_file1 = os.path.join(output1, filename1+"_nodelabel.txt")
     node_file2 = os.path.join(output2, filename2+"_nodelabel.txt")
+    image_base1 = os.path.join(output1, filename1+"_imagebase.txt")
+    image_base2 = os.path.join(output2, filename2+"_imagebase.txt")
     edge_file1 = os.path.join(output1, filename1+"_edges.txt")
     edge_file2 = os.path.join(output2, filename2+"_edges.txt")
     corpus_file1 = os.path.join(output1, filename1+"_corpus.txt")
@@ -274,8 +361,11 @@ def process_two_files(bin_path1, bin_path2, output1, output2, compare_out, with_
     shutil.copy(edge_file2, edge_file_new2)
     shutil.copy(corpus_file1, corpus_file_new1)
     shutil.copy(corpus_file2, corpus_file_new2)
+    base1 = int(open(image_base1, "r").readline().strip())
+    base2 = int(open(image_base2, "r").readline().strip())
+
     if with_gt:
         bin_path1 = bin_path1[:-8] # get rid of the stripped suffix
         bin_path2 = bin_path2[:-8]
-    select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, with_gt)
+    select_training_node(node_file1, node_file2, matched_functions, training_node_path, node_file_new1, node_file_new2, bin_path1, bin_path2, debug_info1, debug_info2, corpus_file_new1, corpus_file_new2, base1, base2, with_gt)
 
