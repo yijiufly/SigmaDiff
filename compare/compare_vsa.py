@@ -2,7 +2,6 @@ import json
 import os
 import time
 from collections import defaultdict
-import matplotlib.pyplot as plt
 import torch
 from model import Model
 
@@ -462,53 +461,3 @@ def test_infer_inlining(path1, path2):
     print(len(tp_new), len(fp_new), len(set(inlined_funcsO3) - set(inlined_funcsO1)))
     for fp_inline in fp_new:
         print(fp_inline)
-
-def test_filter(path1, path2):
-    strippedname2realname1, strippedname2realname2 = load_functions(path1, path2)
-    # count = 0
-    # total = 0
-    # for func in funcname1:
-    #     if func in funcname2:
-    #         total += 1
-            
-    #         conflict = compare_two_functions(os.path.join(path1, funcname2addr1[func] + '.json'), os.path.join(path2, funcname2addr2[func] + '.json'))
-    #         if conflict < 0.7:
-    #             count += 1
-    #         if conflict < 0.1:
-    #             print(func, funcname2addr1[func], funcname2addr2[func], conflict)
-
-    # print(count, total)
-    same_distribute = []
-    different_distribute = []
-    for func in strippedname2realname1.keys():
-        for func2 in strippedname2realname2.keys():
-            if strippedname2realname1[func] != strippedname2realname2[func2]:
-                continue
-            conflict, is_leaf = compare_two_functions(os.path.join(path1, func + '.json'), os.path.join(path2, func2 + '.json'))
-
-            if conflict < 0.6:
-                print(strippedname2realname1[func], func, func2, conflict)
-            if strippedname2realname1[func] == strippedname2realname2[func2]:
-                same_distribute.append(conflict)
-            else:
-                different_distribute.append(conflict)
-
-    plt.hist(same_distribute, bins=100, range=(0, 1))
-    # plt.hist(different_distribute, bins=100, range=(0, 1))
-    plt.xlabel('similarity')
-    plt.ylabel('number of pairs')
-    plt.show()
-    
-
-
-if __name__ == "__main__":
-    # path1 = '/home/yijiufly/Downloads/projects/lineage_inference/data/testfilter/libjpeg/libjpeg-v7/O2/json/'
-    # path2 = '/home/yijiufly/Downloads/projects/lineage_inference/data/testfilter/libjpeg/libjpeg-v7/O3/json/'
-    # path1 = '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O0/bin/json/'
-    # path2 = '/home/yijiufly/Downloads/projects/diaphora/binaries/OpenSSL_1_0_1g_O3/bin/json/'
-    path1 = '/home/yijiufly/Downloads/projects/PseudocodeDiffing/Dataset_for_BinDiff/binutils/output/binutils-2.13-O1/addr2line_stripped/'
-    path2 = '/home/yijiufly/Downloads/projects/PseudocodeDiffing/Dataset_for_BinDiff/binutils/output/binutils-2.13-O3/addr2line_stripped/'
-    # test_filter(path1, path2)
-    # compare_two_functions('Dataset_for_BinDiff/binutils/output/binutils-2.13-O1/addr2line_stripped/FUN_00404944.json', 'Dataset_for_BinDiff/binutils/output/binutils-2.13-O2/addr2line_stripped/FUN_00405460.json', None, None)
-    test_infer_inlining(path1, path2)
-

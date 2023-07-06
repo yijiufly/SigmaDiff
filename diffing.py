@@ -14,8 +14,6 @@ from queue import PriorityQueue
 
 from scipy.optimize import linear_sum_assignment
 import numpy as np
-import pickle
-from tarjan_sort import robust_topological_sort
 from load_emb import load_file, load_file_with_debug
 
 def log(msg):
