@@ -15,6 +15,10 @@
 
 - ghidra                    9.2.2 or higher
 
+- torch-scatter             2.0.9
+
+- torch-sparse              0.6.12
+
 **import json-simple-1.1.1.jar to ghidra**
 
 json-simple-1.1.1.jar is located at ./ghidra_script. And we need to import it to ghidra in order to run VSAPCode.java. Please do the following steps:
