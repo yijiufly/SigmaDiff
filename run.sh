@@ -1,6 +1,6 @@
 home=`pwd`
 # export path/to/conda/env/lib if missing some .so
-export LD_LIBRARY_PATH="/home/administrator/.conda/envs/myenv/lib:$LD_LIBRARY_PATH"
+# export LD_LIBRARY_PATH="/home/administrator/.conda/envs/myenv/lib:$LD_LIBRARY_PATH"
 
 # replace with your path to ghidra
 ghidra_home=/home/administrator/Downloads/Lian/ghidra_9.2.2_PUBLIC
