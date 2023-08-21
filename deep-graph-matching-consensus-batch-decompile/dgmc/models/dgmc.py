@@ -563,7 +563,7 @@ class DGMC(torch.nn.Module):
         correct = (pred == y[1]).sum().item()
         return correct / y.size(1) if reduction == 'mean' else correct
 
-    def accdiff(self, S, source_lineNum_list,dst_lineNum_list,func_matching_dict,src_func_dict,des_func_dict,source_type_list,dst_type_list,un_matched_list,source_value_dict,dst_value_dict,subject_path,subject_dir, node_mapping1, node_mapping2,final=False):
+    def accdiff(self, S, source_lineNum_list,dst_lineNum_list,func_matching_dict,src_func_dict,des_func_dict,source_type_list,dst_type_list,un_matched_list,source_value_dict,dst_value_dict,subject_path,subject_dir, node_mapping1, node_mapping2,final=False, with_gt=False):
 
         TP=0
         total=0
@@ -712,12 +712,15 @@ class DGMC(torch.nn.Module):
 
         if(filter_total==0):
             filter_total=1
+        
+        
         accuracy=float(TP)/total
-        print('True Positive='+str(TP))
-        print('TP+FP='+str(total))
-        print('Filter True Positive='+str(filter_TP))
-        print('Accuracy='+str(accuracy))
-        print('After Filter Accuracy='+str(float(filter_TP)/filter_total))
+        if with_gt:
+            print('True Positive='+str(TP))
+            print('TP+FP='+str(total))
+            print('Filter True Positive='+str(filter_TP))
+            print('Accuracy='+str(accuracy))
+            print('After Filter Accuracy='+str(float(filter_TP)/filter_total))
         return accuracy
 
 

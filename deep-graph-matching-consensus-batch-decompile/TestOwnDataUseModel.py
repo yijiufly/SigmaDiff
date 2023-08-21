@@ -17,7 +17,7 @@ model_path = 'llvm_3_7_0_vs_llvm_3_8_1'
 
 def processDGMC(dir, filename1, filename2, args):
     print(dir, filename1, filename2, args)
-    
+    with_gt = args.with_gt
     each_conf =  filename1 + '_vs_' + filename2
     subject_dir=dir+'/'+each_conf
 
@@ -53,7 +53,7 @@ def processDGMC(dir, filename1, filename2, args):
     corpus = Corpus()
     current_dir = os.path.dirname(os.path.realpath(__file__))
     pretrained_subject = os.path.join(current_dir, 'casestudy/llvm_3_7_0_vs_llvm_3_8_1/not')
-    ids_1_list,edges_1_list,ids_2_list,edges_2_list,train_y_list,source_type_list_list,dst_type_list_list,source_lineNum_list_list,dst_lineNum_list_list,func_matching_dict_list,src_func_dict_list,des_func_dict_list,source_value_dict_list,dst_value_dict_list,source_decompile_dict_list,dst_decompile_dict_list, node_mapping1_list, node_mapping2_list = corpus.get_data(node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_dir,pretrained_subject)
+    ids_1_list,edges_1_list,ids_2_list,edges_2_list,train_y_list,source_type_list_list,dst_type_list_list,source_lineNum_list_list,dst_lineNum_list_list,func_matching_dict_list,src_func_dict_list,des_func_dict_list,source_value_dict_list,dst_value_dict_list,source_decompile_dict_list,dst_decompile_dict_list, node_mapping1_list, node_mapping2_list = corpus.get_data(node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_dir,pretrained_subject, with_gt)
     vocab_size = len(corpus.dictionary)
     subject_name=subject_path.strip('/').replace('/','-')
     result_dir=subject_dir+'_Finetuned-results'
@@ -112,7 +112,7 @@ def processDGMC(dir, filename1, filename2, args):
             _, S_L = model(ids_1, edge_index_1, None, None, ids_2,
                         edge_index_2, None, None)
 
-            accuracy = model.accdiff(S_L, source_lineNum_list,dst_lineNum_list,func_matching_dict,src_func_dict,des_func_dict,source_type_list,dst_type_list,None,source_value_dict,dst_value_dict,subject_path,result_dir, node_mapping1, node_mapping2,final)
+            accuracy = model.accdiff(S_L, source_lineNum_list,dst_lineNum_list,func_matching_dict,src_func_dict,des_func_dict,source_type_list,dst_type_list,None,source_value_dict,dst_value_dict,subject_path,result_dir, node_mapping1, node_mapping2, final, with_gt)
             return accuracy
 
         print(ids_1.size())

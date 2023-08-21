@@ -8,3 +8,5 @@ Trained_Model.pkl
 nohup*.out
 addrMapping
 *.pyc
+tmp*
+.vscode/

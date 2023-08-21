@@ -25,7 +25,7 @@ class Corpus(object):
     def __init__(self):
         self.dictionary = Dictionary()
 
-    def get_data(self, node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_dir,pretrained_subject):
+    def get_data(self, node_label_file_1,edge_file_1,node_label_file_2,edge_file_2,training_file,func_matching_file,subject_dir,pretrained_subject, with_gt):
         f_model=open(pretrained_subject+'/Doc2Vec_Model.pkl','rb')
         model = pickle.load(f_model)
 
@@ -151,7 +151,10 @@ class Corpus(object):
             decompile_code=records[4]
             source_decompile_dict[node_seq]=decompile_code
 
-            lineNum=records[6]
+            if with_gt:
+                lineNum=records[6]
+            else:
+                lineNum=records[5]
             source_lineNum_list[node_seq]=lineNum
 
         label_file=open(node_label_file_2,'r')
@@ -204,7 +207,10 @@ class Corpus(object):
             decompile_code=records[4]
             dst_decompile_dict[node_seq]=decompile_code
 
-            lineNum=records[6]
+            if with_gt:
+                lineNum=records[6]
+            else:
+                lineNum=records[5]
             dst_lineNum_list[node_seq]=lineNum
             # print('#######')
             # print(node_seq)

@@ -1,5 +1,5 @@
 import os
-from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter, BooleanOptionalAction
 from diffing import diff_two_files
 from choose_train_nodes import process_two_files
 import shutil
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter, conflict_handler='resolve')
     parser.add_argument('--input1', required=True, help='The path of input bin file 1 or a group of bin files')
     parser.add_argument('--input2', required=True, help='The path of input bin file 2 or a group of bin files')
-    parser.add_argument('--with_gt', required=True, help='True or False, whether the input has ground truth or not')
+    parser.add_argument('--with_gt', required=False, action=BooleanOptionalAction, help='whether the input has ground truth or not, True if add this option, False if use --no-with_gt')
     parser.add_argument('--src_dir', required=False, help='The home directory of source code, used for cross-version diffing evaluation')
     parser.add_argument('--ghidra_home', required=True, help='Home directory of Ghidra')
     parser.add_argument('--output_dir', required=True, help='Specify the output directory') 
