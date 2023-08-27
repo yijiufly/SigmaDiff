@@ -1,4 +1,5 @@
 # SigmaDiff
+[![DOI](https://zenodo.org/badge/468943199.svg)](https://zenodo.org/badge/latestdoi/468943199)
 
 ## Dependency
 - python                    3.9.7
