@@ -46,12 +46,27 @@ The sample dataset for Diffutils is located at ./data/binaries.
 To obtain the complete dataset of our evaluation, you
 can download it from: https://drive.google.com/drive/folders/1IimJi-03B4ljogtk4hli6B5G12MnpWJ-?usp=sharing.
 
+# Supported OS and hardware requirements
+- Ubuntu system
+- NVIDIA GPU with compute capability of 5.2 (or above) and with at least 11GB of memory
+
 
 ## Run SigmaDiff
 To test the sample data, update the ghidra-related locations, and run ./run.sh.
 
 Otherwise, run python sigmadiff.py with specific arguments (see examples in run.sh).
-To run stripped binaries, select the without ground truth, and the evaluation process will be skipped.
+
+| Option    | Explanations |
+| -------- | ------- |
+| --input1 | The path of input bin file 1 or a group of bin files |
+| --input2 | The path of input bin file 2 or a group of bin files |
+| --ghidra_home | Home directory of Ghidra | 
+| --output_dir | The output directory |
+| --with_gt | Whether the input has ground truth or not |
+| --src_dir | The home directory of source code, used for cross-version diffing evaluation |
+| --ghidra_proj_name | The project name required by ghidra |
+
+To run stripped binaries, use the --no-with_gt option, and the evaluation process will be skipped.
 
 ## Type Matrix
 The type compatibility matrix we mentioned in paper is implemented in check_compatibility function in dgmc.py. In summary,

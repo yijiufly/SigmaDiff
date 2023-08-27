@@ -105,7 +105,7 @@ def compare_two_bins(filepath1, filepath2, args):
         f = open(os.path.join(args.output_dir, 'time.txt'), 'a')
         size2 = os.path.getsize(filepath2[:-8])
         size1 = os.path.getsize(filepath1[:-8])
-        size = size1+size2/2
+        size = (size1+size2)/2
         f.write(','.join([filename1 + '_vs_' + filename2, str(total_time), str(size), str(f1)]) + '\n')
         f.close()
         return prec, recall, f1, total_time
