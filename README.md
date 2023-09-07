@@ -1,5 +1,4 @@
-# SigmaDiff
-[![DOI](https://zenodo.org/badge/468943199.svg)](https://zenodo.org/badge/latestdoi/468943199)
+# SigmaDiff   [![DOI](https://zenodo.org/badge/468943199.svg)](https://zenodo.org/badge/latestdoi/468943199)
 
 ## Dependency
 - python                    3.9.7
@@ -68,6 +67,7 @@ Otherwise, run python sigmadiff.py with specific arguments (see examples in run.
 | --ghidra_proj_name | The project name required by ghidra |
 
 To run stripped binaries, use the --no-with_gt option, and the evaluation process will be skipped.
+The bin file name cannot contain the underscore mark.
 
 ## Type Matrix
 The type compatibility matrix we mentioned in paper is implemented in check_compatibility function in dgmc.py. In summary,
